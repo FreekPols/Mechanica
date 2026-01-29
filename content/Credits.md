@@ -70,7 +70,8 @@ The interactive elements, such as Python code, hover over functionality, embedde
 
 We also include interactive exercises made with [Grasple](https://grasple.com/). These exercises provide immediate feedback on your answers, allowing you to learn from your mistakes and deepen your understanding of the material. Here is an example exercise:
 
-```{iframe}  https://embed.grasple.com/exercises/f6c1bb4b-e63e-492e-910a-5a8c433de281?id=75093
+```{grasple}  https://embed.grasple.com/exercises/f6c1bb4b-e63e-492e-910a-5a8c433de281?id=75093
+:title: grasple example
 ``` 
 
 New concepts, such as *{abbr}`Free body diagram (a simplified drawing that shows all the external forces acting on a single object, isolated from its surroundings.)`*, are introduced with a hover-over. If you move your mouse over the italicized part of the text, you will get a short explanation. 

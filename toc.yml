@@ -1,71 +1,70 @@
 version: 1
-
 project:
   toc:
     - file: index.md
     - file: content/Credits.md      
       
-    # - file: content/classic/Mechanics.md
-    #   children:    
-    #     - file: content/classic/1_Language.md
-    #       children:
-    #         - file: content/classic/1_Language_ex.ipynb        
+    - file: content/classic/Mechanics.md
+      children:    
+        - file: content/classic/1_Language.md
+          children:
+            - file: content/classic/1_Language_ex.ipynb        
+                      
+        - file: content/classic/2_NewtonsLaws.md
+          children:
+            - file: content/classic/2_NewtonsLaws_ex.ipynb
 
-    #     - file: content/classic/2_NewtonsLaws.md
-    #       children:
-    #         - file: content/classic/2_NewtonsLaws_ex.ipynb
+        - file: content/classic/3_WorkEnergy.md
+          children:
+            - file: content/classic/3_WorkEnergy_ex.ipynb
 
-    #     - file: content/classic/3_WorkEnergy.md
-    #       children:
-    #         - file: content/classic/3_WorkEnergy_ex.ipynb
+        - file: content/classic/4_AngularMomentum.md
+          children:
+            - file: content/classic/4_AngularMomentum_ex.ipynb
 
-    #     - file: content/classic/4_AngularMomentum.md
-    #       children:
-    #         - file: content/classic/4_AngularMomentum_ex.ipynb
+        - file: content/classic/5_ConservationEquations.md
+          children:
+            - file: content/classic/5_ConservationEquations_ex.md
 
-    #     - file: content/classic/5_ConservationEquations.md
-    #       children:
-    #         - file: content/classic/5_ConservationEquations_ex.md
+        - file: content/classic/6_Oscillations.md
+          children:
+            - file: content/classic/6_Oscillations_ex.ipynb
 
-    #     - file: content/classic/Ch6_Oscillations.md
-    #       children:
-    #         - file: content/classic/6_Oscillations_ex.ipynb
+        - file: content/classic/7_Collisions.md
+          children:
+            - file: content/classic/7_Collisions_ex.ipynb
 
-    #     - file: content/classic/7_Collisions.md
-    #       children:
-    #         - file: content/classic/7_Collisions_ex.ipynb
-
-    #     - file: content/classic/8_TwoBody.md
-    #       children:
-    #         - file: content/classic/8_TwoBody_ex.ipynb
+        - file: content/classic/8_TwoBody.md
+          children:
+            - file: content/classic/8_TwoBody_ex.ipynb
 
 
-    # - file: content/special/SpecialRelativity.md
-    #   children:        
-    #     - file: content/special/ChX2_CracksInMecha.md
-    #       children:
-    #         - file: content/special/ChX2_ex.md
+    - file: content/special/SpecialRelativity.md
+      children:        
+        - file: content/special/ChX2_CracksInMecha.md
+          children:
+            - file: content/special/ChX2_ex.md
 
-    #     - file: content/special/ChX3_IntroSpecialRelativity.md
-    #       children:
-    #         - file: content/special/ChX3_ex.md
+        - file: content/special/ChX3_IntroSpecialRelativity.md
+          children:
+            - file: content/special/ChX3_ex.md
 
-    #     - file: content/special/ChX4_VelotransDoppler.md
-    #       children:
-    #         - file: content/special/ChX4_ex.md
+        - file: content/special/ChX4_VelotransDoppler.md
+          children:
+            - file: content/special/ChX4_ex.md
 
-    #     - file: content/special/ChX5_FourVectors.md
-    #       children:
-    #         - file: content/special/ChX5_ex.md
+        - file: content/special/ChX5_FourVectors.md
+          children:
+            - file: content/special/ChX5_ex.md
 
-    #     - file: content/special/ChX6_FourMomentum.md
-    #       children:
-    #         - file: content/special/ChX6_ex.md
+        - file: content/special/ChX6_FourMomentum.md
+          children:
+            - file: content/special/ChX6_ex.md
 
-    #     - file: content/special/ChX7_RelDynColl.md
-    #       children:
-    #         - file: content/special/ChX7_ex.md
-
+        - file: content/special/ChX7_RelDynColl.md
+          children:
+            - file: content/special/ChX7_ex.md
+ 
     
     - file: content/appendix/appendix.md
       children:
@@ -75,7 +74,9 @@ project:
             - file: content/appendix/Calculus.md
             - file: content/appendix/LinAlg.md
             - file: content/appendix/LinDif.md
-            - file: content/classic/1_Language_ex.ipynb        
+            - file: content/appendix/Taylor.md
+        - file: content/appendix/Example_exam.md
+
 
     # - title: Project
     #   children:

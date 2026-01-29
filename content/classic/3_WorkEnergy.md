@@ -332,6 +332,7 @@ Change the various graph settings (what is on the x/y axis). Change the starting
 Can you make sense of the motion and the graphs? 
 ```
 
+(ch3_conservartive)=
 ## Conservative force
 
 As we saw, work done on $m$ by $F$ during motion from 1 to 2 over a prescribed trajectory, is defined as:

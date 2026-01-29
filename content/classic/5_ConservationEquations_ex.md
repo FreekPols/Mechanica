@@ -7,7 +7,33 @@ numbering:
 
 # Exercises, examples & solutions
 
-## Worked Example
+## Worked examples
+### Title of example
+
+::::{tab-set}
+:::{tab-item} Interpret the problem
+
+HIER DE INTERPRETATIE
+
+::: 
+:::{tab-item} Develop the solution
+
+HIER DE DEVELOPMENT
+
+::: 
+:::{tab-item} Evaluate the problem
+
+HIER DE EVALUATE
+
+::: 
+:::{tab-item} Assess the problem
+
+HIER DE ASSESS
+
+::: 
+::::
+
+## Superballs
 
 In class you have seen the *Superballs* example. Let's dive more deep into what is happening.
 

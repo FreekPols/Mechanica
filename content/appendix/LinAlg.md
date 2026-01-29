@@ -9,6 +9,7 @@ kernelspec:
   name: python3
   display_name: 'Python 3'
 ---
+(linalg)=
 # Linear Algebra
 
 ## Vectors
@@ -51,7 +52,6 @@ plt.ylim(-1, 3)
 plt.legend()
 plt.grid()
 plt.show()
-
 ```
 
 What should be noted is that these two vectors are orthogonal: they don't share any direction. We know that the work done by a force in the direction of the displacement is zero if the force and displacement are orthogonal and can show this by taking the inner product. The inner product is also called the dot product and is denoted by a dot between the two vectors: $\vec{F} \cdot \vec{r}$. Mathematically, the inner product of these two vectors is defined as:
@@ -112,6 +112,7 @@ print(torque)  # Output: [0 0 2]
 A vector field, for instance a force field or an electric field, assigns a vector to every point in space. When visualized, each point in space has an arrow indicating both the direction and the magnitude of the vector. By changing the function F below, you can create your own vector fields.
 
 ```{code-cell} python
+:tag: [hide-input]
 import numpy as np
 import matplotlib.pyplot as plt
 

@@ -245,8 +245,8 @@ from IPython.display import display
 
 # Constants
 h = 6.62607015e-34  # Planck constant, J*s
-c = 3.0e8  # Speed of light, m/s
-k = 1.380649e-23  # Boltzmann constant, J/K
+c = 3.0e8           # Speed of light, m/s
+k = 1.380649e-23    # Boltzmann constant, J/K
 
 # Wavelength range (from 1 nm to 3000 nm)
 wavelengths = np.linspace(1e-9, 3000e-9, 1000)
@@ -285,7 +285,7 @@ def plot_planck_curve(T):
     
     # Plot settings
     plt.xlim(0, 3000)
-    plt.ylim(0, 4.5E14))
+    plt.ylim(0, 4.5E14)
     plt.xlabel('Wavelength (nm)')
     plt.ylabel('Spectral Radiance')
     plt.title('Planck Curve')

@@ -1,3 +1,14 @@
+---
+title: Differential equations
+
+# numbering:
+#   title:
+#     offset: 0
+
+kernelspec:
+  name: python3
+  display_name: 'Python 3'
+---
 # Differential equations
 
 Already in chapter 1 we have seen the concept of a differential equation: an equation that relates a function to its derivatives. In mechanics, differential equations arise naturally when we express Newton's laws in terms of position, velocity, and acceleration. 
@@ -57,36 +68,3 @@ $$ x(t) = A \cos(\omega t) + B \sin(\omega t) $$
 
 where $\omega = \sqrt{\frac{k}{m}}$ is the angular frequency, and $A$ and $B$ are constants determined by initial conditions. 
 
-
-## notation
-
-For two or three dimensional vector fields, the derivative can apply to all directions. For this, the nabla operator $\nabla$ exists. In 3 dimensions, the nabla operator is a vector that takes the partial derivative along each coordinate: 
-
-$$\nabla = \begin{pmatrix} \frac{\partial}{\partial x} \\ \frac{\partial}{\partial y} \\ \frac{\partial}{\partial z} \end{pmatrix}$$
-
-The nabla operator can be applied to a scalar (gradient) or to a vector using the dot or cross product (divergence and curl).
-
-## Gradient
-
-The gradient of function $f$ is $\nabla f$. It creates a vector that indicates the directions in which $f$ increases or decreases:
-
-$$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \\ \frac{\partial f}{\partial z} \end{pmatrix}$$
-
-## Divergence
-
-When applied with a dot product to a vector, nabla shows the divergence $\nabla \cdot \textbf{f}$ of a vector field. The divergence outputs a scalar representing how much the field is increasing or decreasing at a point.
-
-$$\nabla \cdot \textbf{f} = \frac{\partial f_x}{\partial x} + \frac{\partial f_y}{\partial y} + \frac{\partial f_z}{\partial z}$$
-
-## Curl
-
-When applied with a cross product to a vector, nabla shows the curl $\nabla \times \textbf{f}$ of a vector field. The curl of a vector vield is a vector that shows in what direction a vector field rotates at a point.
-
-$$
-
-
-stokes, conservative fields
-
-curl
-div
-gradient

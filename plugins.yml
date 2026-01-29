@@ -13,4 +13,5 @@ project:
     # - plugins/iframe2.mjs    
     - plugins/typst_eq.mjs              # for unknown symbols in typst
     - https://github.com/jupyter-book/myst-plugins/releases/download/page-last-updated/page-last-updated.mjs
-     
+    - plugins/grasple.mjs
+    - plugins/h5p.mjs 

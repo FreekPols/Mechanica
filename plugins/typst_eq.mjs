@@ -39,7 +39,8 @@ const DEFAULTS = {
   "\\\\mathbb\\{N\\}": "ℕ",
   "\\\\mathbb\\{Z\\}": "ℤ",
   "\\\\mathbb\\{Q\\}": "ℚ",
-  "\\\\mathbb\\{C\\}": "ℂ"
+  "\\\\mathbb\\{C\\}": "ℂ",
+  "\\\\hbar": "ħ" //added 21 jan 2026
 };
 
 // replacing \hspace

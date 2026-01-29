@@ -1,4 +1,92 @@
 
+/* h5p */
+.H5P-embed {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+div:has(> iframe[src*="h5p.com"]) {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+div:has(> iframe[src*="h5p.com"]) > iframe[src*="h5p.com"] {
+  width: 100% !important;
+  height: 100% !important;     /* <-- key */
+  display: block;              /* avoids inline gaps */
+  border: 0;
+  zoom: 1.0;
+}
+
+aside.admonition-h5p {
+  border-color: rgb(133, 132, 132) !important; /* Important zorgt ervoor dat we over de oude stijl heen schrijven */
+  background-color: rgb(255, 255, 255); /* Change background color text part*/
+} 
+
+aside.admonition-h5p > div:first-child {
+  background-color: rgb(156, 154, 154);  /* Change header background color */
+}
+
+aside.admonition-h5p .myst-admonition-header-text { /* set title size */
+  font-weight: 300 !important;
+}
+
+.dark aside.admonition-h5p .dark\:text-white {
+   color: rgb(23 25 25); 
+}
+
+html.dark iframe[src*="h5p.com"] {
+  filter: invert(1) hue-rotate(180deg) saturate(0.75) contrast(1.15) brightness(0.88);
+  mix-blend-mode: plus-lighter;
+} 
+
+/* grasple exercise */
+.grasple-embed {
+  width: 100% !important;
+  height: 500px !important;
+}
+
+div:has(> iframe[src*="embed.grasple.com"]) {
+  width: 100% !important;
+  height: 500px !important;
+}
+
+div:has(> iframe[src*="embed.grasple.com"]) > iframe[src*="embed.grasple.com"] {
+  width: 100% !important;
+  height: 100% !important;     /* <-- key */
+  display: block;              /* avoids inline gaps */
+  border: 0;
+  zoom: 0.7;
+}
+
+aside.admonition-grasple {
+  border-color: rgb(133, 132, 132) !important; /* Important zorgt ervoor dat we over de oude stijl heen schrijven */
+  background-color: rgb(255, 255, 255); /* Change background color text part*/
+} 
+
+aside.admonition-grasple > div:first-child {
+  background-color: rgb(156, 154, 154);  /* Change header background color */
+}
+
+aside.admonition-grasple .myst-admonition-header-text { /* set title size */
+  font-weight: 300 !important;
+}
+
+.dark aside.admonition-grasple .dark\:text-white {
+   color: rgb(23 25 25); 
+}
+
+.dark aside.admonition-grasple .dark\:text-white {
+   color: rgb(23 25 25); 
+}
+
+html.dark iframe[src*="embed.grasple.com"] {
+  filter: invert(0.93) saturate(0.75) contrast(1.15) brightness(0.88);
+}
+
+/* end grasple */
+
+
 /* Code toegevoegd 17/05. Leuke kleurtjes zodat het makkelijk te zien is wat waar komt */
 
 
