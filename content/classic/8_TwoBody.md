@@ -23,7 +23,7 @@ Two-particle system, with an action/reaction pair of forces.
 
 The *two-body problem* is stated hereby as:
 
-Particle $m_1$ feels an external force $\vec{F}_1$ and an interaction force from particle two, $\vec{F}_{21}$. Similarly for particle $m_2$: it feels an external force $\vec{F}_2$ and an interaction force from particle one, $\vec{F}_{12}$.
+Particle $m_1$ feels an external force $\vec{F}_1$ and an interaction force from particle two, $\vec{F}_{12}$. Similarly for particle $m_2$: it feels an external force $\vec{F}_2$ and an interaction force from particle one, $\vec{F}_{21}$.
 
 Consider the situation in the figure:
 
@@ -42,7 +42,7 @@ m_1 \ddot{\vec{x}}_1 + m_2 \ddot{\vec{x}}_2 = \vec{F}_1 + \vec{F}_{2} \Leftright
 $$
 
 $$
-\dot{\vec{P}} = \vec{F}_{1} + \vec{F}_2
+\frac{d\vec{P}}{dt} = \vec{F}_{1} + \vec{F}_2
 $$
 
 with $\vec{P} \equiv \vec{p}_1 + \vec{p}_2$. In words, it is as if a particle with (total) momentum $\vec{P}$ responds to the external forces but does not react to internal forces (the mutual interaction).
@@ -94,7 +94,7 @@ Further note: the position of $M$ is always on the line from $m_1$ to $m_2$. If 
 
 We call this position the **center of mass**, or CM for short. Reason: if we look at the response of our two particle system to the forces, it is as if there is a particle $M$ at position $\vec{R}$ that has all the momentum of the system.
 
-It turns out to be convenient to define relative coordinates with respect to the center of mass position (see also the figure above):
+It turns out to be convenient to define relative coordinates with respect to the center of mass position (see also figure {numref}`fig:TCM_r1r2.png`):
 
 $$
 \vec{r}_1 \equiv \vec{x}_1 - \vec{R} \text{ and } \vec{r}_2 \equiv \vec{x}_2 - \vec{R}
@@ -153,7 +153,7 @@ $$
 We can write this in the new coordinates:
 
 $$
-\vec{L} = \vec{R} \times \vec{P} + \vec{r}_1 \times \vec{p}_1 + \vec{r}_2 \times \vec{p}_2 = \vec{L}_{cm} + \vec{L}'
+\vec{L} = \vec{R} \times \vec{P} + \vec{r}_1 \times \vec{p}_1 + \vec{r}_2 \times \vec{p}_2 = \vec{L}_{\text{CM}} + \vec{L}'
 $$
 
 We find: that the total angular momentum can be seen as the contribution of the CM and the sum of the angular momentum of the individual particles as seen from the CM.
@@ -196,7 +196,7 @@ $$
 \mu \frac{d^2 \vec{r}_{12}}{dt^2} = \vec{F}_{12}  
 $$
 
-If $m_1 \gg m_2 $ we have $\mu \rightarrow m_2$. This is not surprising: when $m_1$ is much larger than $m_2$, it will look like $m_1$ is not changing its velocity at all. Or seen from the CM: is appears to be not moving. In this case, we can ignore particle 1 and replace it by a force coming out of a fixed position.
+If $m_1 \gg m_2 $ we have $\mu \rightarrow m_2$. This is not surprising: when $m_1$ is much larger than $m_2$, it will look like $m_1$ is not changing its velocity at all. Or seen from the CM: it appears to be not moving. In this case, we can ignore particle 1 and replace it by a force coming out of a fixed position.
 
 ### Back to the Two-Body Problem
 
@@ -261,12 +261,12 @@ Position of CM in the sun-earth system.
 ```
 
 
-We can easily find the center of mass of the Earth-Sun system. Chose the origin on the line through the Sun and the Earth (see fig.)
+We can easily find the center of mass of the Earth-Sun system. Chose the origin on the line through the Sun and the Earth (see figure {numref}`fig:KeplerRevisited.png`). 
 
 <br/>
 
 $$
-R = \frac{m_s x_s + m_e x_e }{m_s + m_e} = x_s + \frac{m_e}{m_s + m_e} (x_e - x_s)\approx x_s + 450km
+R = \frac{m_s x_s + m_e x_e }{m_s + m_e} = x_s + \frac{m_e}{m_s + m_e} (x_e - x_s)\approx x_s + 450 \text{ km}
 $$
 
 In other words: the Sun and Earth rotate in an ellipsoidal trajectory around the center of mass that is 450 km out of the center of the Sun. Compare that to the radius of the Sun itself: $R_s = 7 \cdot 10^5$ km. No wonder Kepler didn't notice. The common CM and rotation point is called [Barycenter](https://en.wikipedia.org/wiki/Barycenter) in astronomy.
@@ -291,110 +291,11 @@ Changing intensity of star light due to a period passage of a planet orbiting th
 ```
 
 
-
-## Many-Body System
-
-We have seen that we could reduce the two-body problem of sun-earth to a single body question via the concept of reduced mass. But that this strategy does not work for 3, 4, 5, ... bodies.
-
-### Linear Momentum
-
-We can, however, find some basic features of $N$-body problems. In the figure, a collection of $N$ interacting particles is drawn.
-
-```{figure} ../images/ManyParticles.png
-:label: fig:ManyParticles.png
-:width: 150px
-:align: center
-
-Many particle system.
-```
-
-Each particle has mass $m_i$ and is at position $x_i(t)$. For each particle, we can set up N2:
-
-$$
-m_i \ddot{\vec{x}}_i = \vec{F}_{i, ext} + \sum_{i \neq j} \vec{F}_{ji.}
-$$
-
-Summing over all particles and using that all mutual interaction forces form "action = -reaction pairs", we get:
-
-$$
-\sum_i m_i \ddot{\vec{x}}_i = \sum_i \vec{F}_{i, ext} \Leftrightarrow \sum_i \dot{\vec{p}}_i = \sum_i \vec{F}_{i, ext}
-$$
-
-The second part can be written as:
-
-$$
-\frac{d\vec{P}}{dt} = \sum_i \vec{F}_{i, ext} \text{    with    } \vec{P} \equiv \sum_i \vec{p}_i
-$$
-
-In other words: the total momentum changes due to external forces. If there are no external forces, then the total momentum is conserved. This happens quite a lot actually, if you consider e.g. collisions or scattering.
-
-### Center of Mass
-
-Analogous to the two-particle case, we see from the total momentum that we can pretend that there is a particle of total mass $M=\sum_i m_i$ that has momentum $\vec{P}$, i.e., it moves at velocity $\vec{V} \equiv\frac{\vec{P}}{M}$ and is located at position:
-
-$$
-\vec{V} = \frac{d\vec{R}}{dt} =\frac{\sum m_i \frac{d\vec{x}_i}{dt}}{\sum m_i} \Rightarrow \vec{R} = \frac{\sum m_i \vec{x}_i}{\sum m_i}
-$$
-
-Continuing with the analogy, we define relative coordinates:
-
-$$
-\vec{r}_i \equiv \vec{x}_i - \vec{R}
-$$
-
-and have a similar rule constraining the relative positions:
-
-$$
-\sum m_i \vec{r}_i  = 0
-$$
-
-### Energy
-
-In terms of relative coordinates, we can write the kinetic energy as a part associated with the center of mass and a part that describes the kinetic energy with respect to the center of mass, i.e., 'an internal kinetic energy'.
-
-$$
-\begin{split}
-E_{kin} &\equiv \sum \frac{1}{2} m_i v_i^2 \\
-        &= \frac{1}{2} M \dot{\vec{R}}^2 + \sum \frac{1}{2} m_i \dot{\vec{r}}_i^2 \\
-        &= E_{kin,cm} + E'_{kin}
-\end{split}
-$$
-
-For the potential energy, we may write:
-
-$$
-V = \sum V_i + \frac{1}{2} \sum_{i \neq j} \left ( V_{ij} + V_{ji} \right )
-$$
-
-with $V_i$ the potential related to the external force on particle $i$ and $V_{ij}$ the potential related to the mutual interaction force from particle $i$ exerted on particle $j$ (assuming that all forces are conservative).
-
-### Angular Momentum
-
-The total angular momentum is, like the total momentum, defined as the sum of the angular momentum of all particles:
-
-$$
-\vec{L} = \sum \vec{l}_i = \sum \vec{x}_i \times \vec{p}_i
-$$
-
-We can write this in the new coordinates:
-
-$$
-\vec{L} = \vec{R} \times \vec{P} + \sum \vec{r}_i \times \vec{p}_i = \vec{L}_{cm} + \vec{L}'
-$$
-
-Again, we find that the total angular momentum can be seen as the contribution of the center of mass and the sum of the angular momentum of all individual particles as seen from the center of mass.
-
-The N-body problem is, of course, even more complex than the three-body problem. If we can solve it, it will be under very specific conditions only. However, a numerical approach can be done with great success. Moreover, current computers are so powerful that the system can contain hundred, thousands of particles up to billions depending on the type or particle-particle interaction. 
-
-All kind of computational techniques have been developed and various averaging techniques are employed in statistical techniques are introduced from the start. the reason is often, that a particular 'realization' of all positions and velocities of all particles is needed nor sought for. A system is at its macro level described by averaged properties, the exact location of the individual atoms is not needed. You will find applications in cosmology all the way to molecular dynamics, trying to simulate the behavior of proteins or pharmaceuticals. 
-
-
-
 ## Three body Problem
 
 Now that we have reduced a two-particle system to a single particle problem, the question arises: can we repeat this 'trick' and turn a three-body problem in a two body problem, that in its turn can be reduced to a single particle problem?
 
-The answer is: no. There is no general strategy to reduce a three body problem two a two body-one. 
+The answer is: no. There is no general strategy to reduce a three body problem to a two body-one. 
 
 The three body problem is an old one. Already Newton himself worked on it. Its importance stems e.g. from navigation on sea. It would be of great help if the position of the moon could be predicted in advance with great accuracy. Then sailors in the 17$^{\text{th}}$, 18$^{\text{th}}$ and 19$^{\text{th}}$ could have found much better their position at full sea. But no one succeeded in providing a closed solution in basic functions. 
 
@@ -408,7 +309,7 @@ The king of Sweden, Oscar II, announced, as celebration of his 60$^{\text{th}}$ 
 [Click here for the Wikipedia page of Poincaré.](https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9)
 ```
 
-He showed that it was impossible to find such a solution as he reached the conclusion that the three body problem showed chaotic features. It led Poincaré to develop a whole new field: dynamic systems and what we call now *deterministic chaos*.  
+He showed that it was impossible to find such a solution as he reached the conclusion that the three body problem showed chaotic features. It led Poincaré to develop a whole new field: dynamic systems and, what we now call, *deterministic chaos*.  
 The work of Poincaré was the trigger of yet another 'revolution' in our understanding of the universe. 
 
 
@@ -472,3 +373,102 @@ A stable solution of the three body problem, but slightly change one of the para
 ```{tip} Three body problem
 NetFlix has a great tv series called [3 Body Problem](https://www.netflix.com/nl-en/title/81024821)
 ```
+
+
+## Many-Body System
+
+We have seen that we could reduce the two-body problem of sun-earth to a single body question via the concept of reduced mass. But this strategy does not work for 3, 4, 5, ... bodies.
+
+### Linear Momentum
+
+We can, however, find some basic features of $N$-body problems. In figure {numref}`fig:ManyParticles.png`, a collection of $N$ interacting particles is drawn.
+
+```{figure} ../images/ManyParticles.png
+:label: fig:ManyParticles.png
+:width: 150px
+:align: center
+
+Many particle system.
+```
+
+Each particle has mass $m_i$ and is at position $x_i(t)$. For each particle, we can set up N2:
+
+$$
+m_i \ddot{\vec{x}}_i = \vec{F}_{i, ext} + \sum_{i \neq j} \vec{F}_{ji.}
+$$
+
+Summing over all particles and using that all mutual interaction forces form "action = -reaction pairs", we get:
+
+$$
+\sum_i m_i \ddot{\vec{x}}_i = \sum_i \vec{F}_{i, ext} \Leftrightarrow \sum_i \dot{\vec{p}}_i = \sum_i \vec{F}_{i, ext}
+$$
+
+The second part can be written as:
+
+$$
+\frac{d\vec{P}}{dt} = \sum_i \vec{F}_{i, ext} \text{    with    } \vec{P} \equiv \sum_i \vec{p}_i
+$$
+
+In other words: the total momentum changes due to external forces. If there are no external forces, then the total momentum is conserved. This happens quite a lot actually, if you consider e.g. collisions or scattering.
+
+### Center of Mass
+
+Analogous to the two-particle case, we see from the total momentum that we can pretend that there is a particle of total mass $M=\sum_i m_i$ that has momentum $\vec{P}$, i.e., it moves at velocity $\vec{V} \equiv\frac{\vec{P}}{M}$ and is located at position:
+
+$$
+\vec{V} = \frac{d\vec{R}}{dt} =\frac{\sum m_i \frac{d\vec{x}_i}{dt}}{\sum m_i} \Rightarrow \vec{R} = \frac{\sum m_i \vec{x}_i}{\sum m_i}
+$$
+
+Continuing with the analogy, we define relative coordinates:
+
+$$
+\vec{r}_i \equiv \vec{x}_i - \vec{R}
+$$
+
+and have a similar rule constraining the relative positions:
+
+$$
+\sum m_i \vec{r}_i  = 0
+$$
+
+### Energy
+
+In terms of relative coordinates, we can write the kinetic energy as a part associated with the center of mass and a part that describes the kinetic energy with respect to the center of mass, i.e., 'an internal kinetic energy'.
+
+$$
+\begin{split}
+E_{kin} &\equiv \sum \frac{1}{2} m_i v_i^2 \\
+        &= \frac{1}{2} M \dot{\vec{R}}^2 + \sum \frac{1}{2} m_i \dot{\vec{r}}_i^2 \\
+        &= E_{kin,\text{CM}} + E'_{kin}
+\end{split}
+$$
+
+For the potential energy, we may write:
+
+$$
+V = \sum V_i + \frac{1}{2} \sum_{i \neq j} \left ( V_{ij} + V_{ji} \right )
+$$
+
+with $V_i$ the potential related to the external force on particle $i$ and $V_{ij}$ the potential related to the mutual interaction force from particle $i$ exerted on particle $j$ (assuming that all forces are conservative).
+
+### Angular Momentum
+
+The total angular momentum is, like the total momentum, defined as the sum of the angular momentum of all particles:
+
+$$
+\vec{L} = \sum \vec{l}_i = \sum \vec{x}_i \times \vec{p}_i
+$$
+
+We can write this in the new coordinates:
+
+$$
+\vec{L} = \vec{R} \times \vec{P} + \sum \vec{r}_i \times \vec{p}_i = \vec{L}_{\text{CM}} + \vec{L}'
+$$
+
+Again, we find that the total angular momentum can be seen as the contribution of the center of mass and the sum of the angular momentum of all individual particles as seen from the center of mass.
+
+The $N$-body problem is, of course, even more complex than the three-body problem. If we can solve it, it will be under very specific conditions only. However, a numerical approach can be done with great success. Moreover, current computers are so powerful that the system can contain hundred, thousands of particles up to billions depending on the type or particle-particle interaction. 
+
+All kind of computational techniques have been developed and various averaging techniques are employed and statistical techniques are introduced from the start. The reason is often that a particular 'realization' of all positions and velocities of all particles is needed nor sought for. A system is at its macro level described by averaged properties, the exact location of the individual atoms is not needed. You will find applications in cosmology all the way to molecular dynamics, trying to simulate the behavior of proteins or pharmaceuticals. 
+
+

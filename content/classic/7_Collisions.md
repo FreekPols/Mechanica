@@ -27,7 +27,7 @@ Collision of two particles.
 
 Firstly, the mutual interaction means that the objects interact with each other through a mutual force, i.e. a force (pair) that obeys Newton's third law.
 
-Secondly, we assume that this force works over a small distance only. Or re-phrased we will only consider the situation before the objects feel the force and compare that to after they have felt it. We don't bother about the details of the motion of the objects *during* their interaction. Hence, when we depict a collision as in {numref}`fig:ch9_collision.svg`, we usually draw the situation before the collision, then some kind of 'comic way' of showing the collision and finally we draw the outcome of the collision, so after the interaction. In many cases, people leave the middle part out of their drawing.
+Secondly, we assume that this force works over a small distance only. Or re-phrased, we will only consider the situation before the objects feel the force and compare that to after they have felt it. We don't bother about the details of the motion of the objects *during* their interaction. Hence, when we depict a collision as in {numref}`fig:ch9_collision.svg`, we usually draw the situation before the collision, then some kind of 'comic way' of showing the collision and finally we draw the outcome of the collision, so after the interaction. In many cases, people leave the middle part out of their drawing.
 
 There are two principle types of collisions to distinguish: *elastic* and *inelastic* collisions. For an elastic collision the kinetic energy is conserved, whereas for an inelastic that is not the case. In the latter case, energy can be converted into deformation or heat.
 
@@ -39,18 +39,18 @@ $$
 Why? No external forces implies constant total momentum.
 
 ````{experiment} Shooting coins
-Line up two coins on a table, placed edge to edge. Then position a third coin in front of them, a short distance away. Push the coin in the middle hard down.
+Line up two coins on a table, placed edge to edge. Then position a third coin in front of them, a short distance away. Push the coin in the middle hard down.  
 
-Now use your other hand to flick the third coin strongly, aiming to hit the middle coin and cause a collision.
+Now use your other hand to flick the third coin strongly, aiming to hit the middle coin and cause a collision.  
 
 ```{figure} ../images/exp_coll.jpg
 :width: 30%
 :label: fig_exp_coll
 
-Try varying the setup—for example, using a heavier coin or a lighter one as the target—and observe the effects.
+Try varying the setup—for example, using a heavier coin or a lighter one as the target—and observe the effects.  
 ```
-
-What happens? Compare the velocities, qualitatively, before and after the collision.
+  
+What happens? Compare the velocities, qualitatively, before and after the collision.  
 ````
 
 
@@ -87,7 +87,7 @@ We can write down two equations using conservation of momentum and kinetic energ
 
 $$
 \begin{array}{rcl}
-2m(2v)+0 &=& 2mv' + 3mu' \quad (*)\\
+2m(2v)+0 &=& 2mv' + 3mu' \\
 \frac{1}{2}2m(2v)^2 + 0 &=& \frac{1}{2}2mv'^2 + \frac{1}{2} 3mu'^2
 \end{array}
 $$
@@ -106,10 +106,10 @@ $$
 Now we divide the two equations (verify yourselves!), this makes the solution very easy as the squares of the velocities always divide out.
 
 $$
-\Rightarrow 2v+v'=u' \quad (**)
+\Rightarrow 2v+v'=u' 
 $$
 
-We can use this to find both unknowns by smartly adding equations $(*)$ and $(**)$. Smartly in the sense that we can multiply either of the equations with a scalar in such way that one quantity can be discarded.
+We can use this to find both unknowns by smartly adding equations (2.428) and (2.430). Smartly in the sense that we can multiply either of the equations with a scalar in such way that one quantity can be discarded.
 
 $$\begin{array}{lcl}
 \begin{split}
@@ -126,7 +126,7 @@ $$\begin{array}{lcl}
   \end{split}  
 \end{array}$$
 
-This solution strategy always works. NB: you need to practice this. Although it is conceptually easy, we often see that students have problems when actually solving for the 2 unknowns.
+This solution strategy always works. Note that you need to practice this. Although it is conceptually easy, we often see that students have problems when actually solving for the 2 unknowns.
 
 ```{figure} ../images/sol_col.jpg
 :width: 80%
@@ -140,12 +140,12 @@ Above we provided a {ref}`Vpython <Vpyt_col>` simulation. Change the code in ord
 
 ```
 
-Actually, now we think about this strategy: isn't it strange, the kinetic energy equation is squared in our unknowns. Shouldn't we expect 2 solutions? 
+Actually, now we think about this strategy: isn't it strange, the kinetic energy equation is squared in our unknowns. Shouldn't we expect two solutions? 
 
-The answer is yes: there ought to be 2 solutions. Where is the second one?
+The answer is yes: there ought to be two solutions. Where is the second one?
 Note that when dividing the two equations, we have to make sure that we do not divide by 0. It is very well possible that we do so: suppose $u' = 0$, then also $2v-v' = 0$ and we cannot do the division. But what does that mean: $u'=0$ and $2v-v'=0$? Well, of course, then we have after the collision that the incoming particle $2m$ still has velocity $2v$ and the other particle $3m$ is still at rest. 
 
-In retrospect: of course this must be one of the solutions to the problem. We haven't specified anything about the interaction force. But suppose it is absent, that is, the particles don't interact at all. Then of course the situation before the collision (a bit strange calling this a collision, but anyway), will still be present after the 'collision'. If nothing happens to the particles, then obviously the sum of the momentum as well as of the kinetic energy stays the same. This actually provides a great check of your work: do you recover the initial conditions?
+In retrospect: of course this must be one of the solutions to the problem. We haven't specified anything about the interaction force. But suppose it is absent, that is, the particles don't interact at all, then of course the situation before the collision (a bit strange calling this a collision, but anyway), will still be present after the 'collision'. If nothing happens to the particles, then obviously the sum of the momentum as well as of the kinetic energy stays the same. This actually provides a great check of your work: do you recover the initial conditions?
 
 
 ### Collisions in a plane
@@ -204,7 +204,7 @@ Rotating the coordinate system.
 
 We see that we now have a 1-dimensional elastically collision with a particle of mass $3m$ coming in over the $x"$-axis with velocity $-\sqrt{5}v$. It will collide with a particle of mass $2m$ which is at rest. We know how to solve this problem and find the velocities of both particles after the collision. If we do this, we find that after the collision the velocity of the blue particle is $U^{''}_{x^{''}} = -\frac{6}{5}\sqrt{5}v$ and of the red particle $V^{''}_{x^{''}} = -\frac{1}{5}\sqrt{5}v$. Note that we have specified these velocity in the $(x",y")$ coordinate system.
 
-Next steps would be to convert the velocities back to the initial coordinate frame. That is a bit cumbersome, but again conceptually easy. The final answer in the original frame of reference is: 
+Next steps would be to convert the velocities back to the initial coordinate frame. That is a bit cumbersome, but again conceptually easy, especially with linear algebra, see appendix. The final answer in the original frame of reference is: 
 
 $$\begin{array}{lll}
 2m: &v'_x = -\frac{2}{5}v, &v'_y = \frac{6}{5}v\\
@@ -542,7 +542,7 @@ Figure made by [Simon Steinmann](https://commons.wikimedia.org/wiki/File:Elastis
 
 
 
-In an angle-free representation - using vectors rather than angles, the changed velocities are computed using the centers $x1$ and $x2$ at the time of contact as:
+In an angle-free representation - using vectors rather than angles, the changed velocities are computed using the centers $x_1$ and $x_2$ at the time of contact as:
 
 $$
 \begin{align}
@@ -570,11 +570,11 @@ For inelastic collisions only the *momentum is conserved*, but *not the kinetic 
 The amount of "inelasticity" or loss of energy can be quantified by the *coefficient of restitution* $e$
 
 $$
-e\equiv - \frac{v_{rel,after}}{v_{rel,before}}
+e\equiv - \frac{v_{\text{rel,after}}}{v_{\text{rel,before}}}
 $$
 
 $$
-e^2 \equiv \frac{E_{kin,after}}{E_{kin,before}} \text{ in CM frame}
+e^2 \equiv \frac{E_{\text{kin,after}}}{E_{\text{kin,before}}} \text{ in CM frame}
 $$
 
 For $e=0$ the collision is fully inelastic, for $e=1$ it is fully elastic.

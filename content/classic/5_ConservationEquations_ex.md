@@ -34,7 +34,7 @@ Although the cars are next to each other, they have a relative velocity to each 
 ## Examples
 ````{example} Superballs
 
-In class you have seen the *Superballs* example. Let's dive more deep into what is happening.
+You have seen the *Superballs* example. Let's dive more deep into what is happening.
 
 ```{iframe} https://www.youtube.com/embed/Oxte-YmnnHI?si=31wjK00Fe0QMEMJO
 
@@ -86,7 +86,7 @@ The conclusion is, that we did make an approximation and did not solve the energ
 
 $$ v' = \frac{\frac{m}{M}-1}{\frac{m}{M}+1} v $$
 
-For $M \gg m$ you indeed see $v'=-v$. Thus the smaller ball will have a smaller velocity than reasoned above *and* the larger ball with also have a smaller velocity (in the experiment you can clearly notice that it does not fly as high as when it drops without the small ball on top). In real life, the balls also deform which makes the collision inelastic.
+For $M \gg m$ you indeed see $v'=-v$. Thus the smaller ball will have a smaller velocity than reasoned above *and* the larger ball will also have a smaller velocity (in the experiment you can clearly notice that it does not fly as high as when it drops without the small ball on top). In real life, the balls also deform which makes the collision inelastic.
 
 In a later chapter we will deal with collisions and pay attention to this limit $M \gg m$ in much more detail.
 ````
@@ -94,7 +94,7 @@ In a later chapter we will deal with collisions and pay attention to this limit 
 
 ````{example} Bicycling
 
-Consider yourself biking at a constant velocity on an unlikely day with zero wind. Still, you experience a frictional force from the air, with the following observation: the faster you bike, the larger this force. An experimentalist is trying to measure the friction force of the air and relate it to your velocity. She finds that, by and large, these forces turn out to scale with the square of your velocity $v_b$
+Consider yourself biking at a constant velocity on an unlikely day with (in the Netherlands that is) zero wind. Still, you experience a frictional force from the air, with the following observation: the faster you bike, the larger this force. An experimentalist is trying to measure the friction force of the air and relate it to your velocity. She finds that, by and large, these forces turn out to scale with the square of your velocity $v_b$
 
 $$ F_f \propto v_b^2 $$
 
@@ -116,7 +116,7 @@ $$ F_f \propto (v_b - v_{air} )^2 $$
 
 ````{example} in the rain
 
-Riding a bike while it rains. You have done this hundreds of times. Your front gets soaked, while the backside of your coat stays dry. Or if you have a passenger on your carrier he/she will not get wet, while you take all the water. From a GT to the reference frame of the biker it is obvious  why this is the case. The rain is not falling straight from the sky, but at an angle towards him. 
+Riding a bike while it rains. Dutch students have done this hundreds of times. Your front gets soaked, while the backside of your coat stays dry. Or if you have a passenger on your carrier he/she will not get wet, while you take all the water. From a GT to the reference frame of the biker it is obvious  why this is the case. The rain is not falling straight from the sky, but at an angle towards him. 
 
 ```{figure} ../images/ch7_RainBike.svg
 :label: fig:ch7_RainBike
@@ -127,7 +127,7 @@ Riding a bike while it rains. You have done this hundreds of times. Your front g
 Riding a bike in the rain.
 ```   
 
-NB: For Dutch bikers you have had this experiences with head wind and rain all your life.
+NB: True Dutch bikers have had these experiences with head wind and rain all your life.
 ````
 
 ## Demo
@@ -307,7 +307,7 @@ require: $x"_o(t"^*) = 0$
 $$x"_o(t"^*) = L + v"_s t"^* \rightarrow t"^* = -\frac{L}{v"_o} = 0.4\; \mathrm{s}$$
 And, again the snowball will conclude that it all happened in its origin.
 
-Galilean Transformation  
+**Galilean Transformation**  
 We now have three different time/place coordinates for the event 'snowball hits opponent'.
 
 $$\begin{split}

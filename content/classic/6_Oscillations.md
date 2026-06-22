@@ -18,7 +18,7 @@ kernelspec:
 
 There are many, many examples of periodic systems. We see them in physics, like the orbit of planets around their star. We find them in biology (like the predator-prey systems), in chemistry (oscillating reactions like the [Belousov-Zhabotinsky reaction](https://en.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction)), and in economics (like demand-supply fluctuations). They show up in daily life: the day-night rhythm, the tides, children on a swing, your heart-beat. Periodic motions are by definition motions that repeat themselves after a fixed period of time, usually called 'the period'.
 
-A specific class of periodic motion is known as oscillatory motion, or simply oscillations. All oscillations are periodic, but not all periodic motions are oscillations. An oscillation involves movement back and forth around an equilibrium position. It is typically caused by a restoring force: a force that acts to return the system to equilibrium (in case of the mass spring system: $\vec{F}=-k\vec{u}$). However, due to inertia, the system overshoots this position. The restoring force then reverses direction, pushing the system back again, leading to continued oscillation.
+A specific class of periodic motion is known as oscillatory motion, or simply oscillations. *All oscillations are periodic, but not all periodic motions are oscillations*. An oscillation involves movement back and forth around an equilibrium position. It is typically caused by a restoring force: a force that acts to return the system to equilibrium (in case of the mass spring system: $\vec{F}=-k\vec{u}$). However, due to inertia, the system overshoots this position. The restoring force then reverses direction, pushing the system back again, leading to continued oscillation.
 
 
 A few simple examples will illustrate the above. 
@@ -42,7 +42,7 @@ Spinning carousel. By Oxana Mayer, from [Wikimedia Commons](https://commons.wiki
 
 ### Rabbits and Foxes
 
-As an example of a dynamic system that is periodic, we will take a look at the so-called predator-prey systems. These are well-known in biology and provide an interesting case. The idea is simple: the populations of rabbits growth as they multiply quickly. The idea in the prey-predator model is that growth rate is proportional to the population itself. For the rabbits that means that the derivative of the population of rabbits (with respect to time) is positive. If there are no foxes, the rabbit population will grow exponentially. Of course, in the real world that doesn't happen as sooner or later, the rabbits will ran out of food, resulting in starvation. However, we will assume here, that food is not limiting: but the number of foxes is. They stop the rabbit population from unbounded increasing. The more rabbits there are, the easier the foxes find food and the more foxes will survive childhood. A simple model reads as follows:
+As an example of a dynamic system that is periodic, we will take a look at the so-called predator-prey systems. These are well-known in biology and provide an interesting case. The idea is simple: the populations of rabbits growth as they multiply quickly. The idea in the prey-predator model is that growth rate is proportional to the population itself. For the rabbits that means that the derivative of the population of rabbits (with respect to time) is positive $\left ( \frac{dr}{dt}=\lambda_r r \right )$. If there are no foxes, the rabbit population will grow exponentially. Of course, in the real world that doesn't happen as sooner or later, the rabbits will ran out of food, resulting in starvation. However, we will assume here, that food is not limiting, but the number of foxes is. They stop the rabbit population from unbounded increasing. The more rabbits there are, the easier the foxes find food and the more foxes will survive childhood. A simple model reads as follows:
 
 $$\begin{split}
 \frac{dr}{dt} &= \lambda_r r - \mu_r r \cdot f \\
@@ -51,7 +51,7 @@ $$\begin{split}
 
 here $r$ and $f$ represent the rabbit and fox population, resp. $\lambda_r$ is the growth rate of the rabbits: the more rabbits, the larger the offspring. The higher $\lambda_r$ the more babies per rabbit. $\mu_r$, on the other hand, represents the effectiveness of the hunting foxes: the larger this value the more rabbits they kill. Of course: more rabbits, but also more foxes also means more kills. Similar arguments apply to $\lambda_f$ and $\mu_f$. Note that the term with $\lambda_f$ carries a negative sign: the net increase of the fox population is negative if there is insufficient food, that is, by itself more foxes die then that are born if there is no food.
 
-This is clearly a coupled and dynamic system. It is non-linear due to the product $r \cdot f$, making it much more difficult to solve analytically then linear versions. In literature, this kind of system is known as Lotka-Volterra or prey-predator models. Below is a plot of the numerical solution of the rabbit and fox population (for $( \lambda_r, \mu_r,\lambda_f, mu_f) = (0.2, 0.03, 0.1, 0.01) $ and initial conditions ($r_0$, $f_0$) = (80, 2)).
+This is clearly a coupled and dynamic system. It is non-linear due to the product $r \cdot f$, making it much more difficult to solve analytically then linear versions. In literature, this kind of system is known as *Lotka-Volterra* or prey-predator models. Below is a plot of the numerical solution of the rabbit and fox population (for $( \lambda_r, \mu_r,\lambda_f, mu_f) = (0.2, 0.03, 0.1, 0.01) $ and initial conditions ($r_0$, $f_0$) = (80, 2)).
 
 ```{figure} ../images/RabbitsAndFoxes.png
 :label: fig:RabbitsAndFoxes.png
@@ -122,7 +122,7 @@ Numerical solution of the Wilberforce pendulum using a (too) simple numerical me
 
 We indeed see the oscillating motion and that the vertical oscillation changes over to rotation and back again.
 
-But there is something really disturbing: the amplitude of our oscillation is increasing and it seems to do so for every cycle. That cannot be true: It violates energy conservation. What did we do wrong? Well, our numerical method is just not good enough. If we use again a higher order method, we obtain the results in the figure below.
+But there is something really disturbing: the amplitude of our oscillation is increasing and it seems to do so for every cycle. That cannot be true: It violates energy conservation. What did we do wrong? Well, our numerical method is just not good enough. If we use again a higher order numerical method, we obtain the results in the figure below.
 
 
 ```{figure} ../images/WilberforceHigherOrder.png
@@ -147,7 +147,7 @@ Animation of the Wilberforce pendulum using a higher-order numerical method.
 
 The Wilberforce pendulum is clearly periodic. Moreover, it is an oscillation as there is back and forth motion around an equilibrium.
 
-But, it does give us a **big warning**: (numerical) solutions always have to be **assessed** against the features and principles of the problem at hand. In this case, our first numerical solution could not be right: **it violated energy conservation**. We were able, right from the start, to formulate the problem in terms of energy. Since we only had kinetic energy and potential energy we **knew up front** that the motion must be bounded!   
+But, our analysis does give us a **big warning**: (numerical) solutions always have to be **assessed** against the features and principles of the problem at hand. In this case, our first numerical solution could not be right: **it violated energy conservation**. We were able, right from the start, to formulate the problem in terms of energy. Since we only had kinetic energy and potential energy we **knew up front** that the motion must be bound!   
 That is why, we need a thorough understanding of physics. It is not sufficient to have the equations and put them in a 'solver'. It is the job of a physicist to understand and assess models, outcomes, etc against the laws of physics. Hence, we will dive into oscillations, starting from the beginning. 
 
 ## Harmonic Oscillation - archetype: Mass-Spring
@@ -175,7 +175,7 @@ Or
 
 $$ m\ddot{x} + kx = 0 $$
 
-To solve this, we need two initial condition. Let's take $t=0: x(0) = x_0, v(0) = 0$. We need to find a function $x(t)$ that upon differentiating twice it spits itself back but with an opposite sign. We do know two functions that do so: $x(t) = \sin ( \omega_0 t)$ and $x(t) = \cos ( \omega_0 t)$. Thus, the general solution of the above equation is known.
+To solve this, we need two initial conditions. Let's take at $t=0: x(0) = x_0, v(0) = 0$. We need to find a function $x(t)$ that upon differentiating twice it spits itself back but with an opposite sign. We do know two functions that do so: $x(t) = \sin ( \omega_0 t)$ and $x(t) = \cos ( \omega_0 t)$. Thus, the general solution of the above equation is known.
 
 Harmonic Oscillator:
 
@@ -201,7 +201,7 @@ v(0) = \dot{x}(0) = 0 \rightarrow A \omega_0 \underbrace{\cos 0}_{=1} - B \omega
 x(0) = \Delta x \rightarrow B \cos 0 = \Delta x 
 \end{cases} \\
 \\
-&\Rightarrow x(t) = \Delta x \cos \sqrt{\frac{k}{m}} t
+&\Rightarrow x(t) = x_0 \cos \sqrt{\frac{k}{m}} t
 \end{split}$$
 
 A system is called a harmonic oscillator if and only if it obeys $m\ddot{x} + kx = 0$. You will find them in almost every branch of science and engineering. The reason why will become apparent in a moment.
@@ -212,8 +212,8 @@ Since $F_v = -kx$ we need to find a function $V(x)$ that satisfies $\frac{dV}{dx
 
 $$ \frac{dV}{dx} = kx \Rightarrow V(x) = \frac{1}{2} kx^2 + C $$
 
-We have the freedom to decide ourselves where we want the potential energy to be zero. Note: $V$ is quadratic.   
-It does make sense, to set the minimum of the potential energy such that if the mass is at the equilibrium position, the potential energy is zero, that is - take $C=0$:
+We have the freedom to decide ourselves where we want the potential energy to be zero. Note that $V$ is quadratic.   
+It does make sense to set the minimum of the potential energy such that if the mass is at the equilibrium position, the potential energy is zero, that is, take $C=0$:
 
 $$ V(x) = \frac{1}{2}kx^2 $$
 
@@ -235,10 +235,10 @@ and $\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0} > 0$.
 Thus, we can expand the potential as follows:
 
 $$
-V(x) \approx V(x_0) +\frac{1}{2} \underbrace{\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0}}_{=k} (x-x_0 )^2 + \mathcal{O} \left [ (x-x_0 )^3 \right ]
+V(x) \approx V(x_0) +\frac{1}{2} \underbrace{\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0}}_{=k (2.345)} (x-x_0 )^2 + \mathcal{O} \left [ (x-x_0 )^3 \right ]
 $$
 
-If we plug this in, in the energy equation and cut off after the quadratic term, we find 
+If we plug this in the energy equation and cut off after the quadratic term, we find 
 
 $$\frac{1}{2}mv^2 + V(x_0) +\frac{1}{2} \underbrace{\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0}}_{=k} (x-x_0 )^2 = E_0 $$
 
@@ -251,7 +251,7 @@ Move the constant $V(x_0)$ to the right hand side and change coordinate $ s \equ
 $$ \frac{1}{2}m\dot{s}^2 + \frac{1}{2}ks^2 = C $$
 
 The harmonic oscillator!!! 
-No wonder we find harmonic oscillators 'everywhere'. Any system that has a stable equilibrium point with a positive second derivative of its potential will start to oscillated as a harmonic one if we push it a little bit out of its equilibrium position. Doesn't matter how $V(x)$ exactly is. It doesn't have to be quadratic in $x$. But it will be pretty close to that, if we stay close enough to the equilibrium point. Hence, any small natural kick, any small amount noise will push a system out of its stable equilibrium point into an harmonic oscillating motion with a given, natural frequency given by $\omega_0^2 = \frac{\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0}}{m}$.
+No wonder we find harmonic oscillators 'everywhere'. Any system that has a stable equilibrium point with a positive second derivative of its potential will start to oscillate as a harmonic one if we push it a little bit out of its equilibrium position. Doesn't matter how $V(x)$ exactly is. It doesn't have to be quadratic in $x$. But it will be pretty close to that, if we stay close enough to the equilibrium point. Hence, any small natural kick, any small amount noise will push a system out of its stable equilibrium point into an harmonic oscillating motion with a given, natural frequency given by $\omega_0^2 = \frac{\left [ \frac{d^2V}{dx^2} \right ]_{x=x_0}}{m}$.
     
 
 ## Examples of Harmonic Oscillators
@@ -268,7 +268,7 @@ Torsion Pendulum.
 
 The disk can rotate about a vertical axis. We call the rotation angle $\theta$. The equilibrium position is $\theta = 0$. If we rotate the disc over a small angle, the wire will resist and apply a torque $\tau$ on the disc trying to rotate the disc back to its equilibrium position, for which the torque, obviously is zero.
 
-For small angles, the torque is proportional to the rotation angle and -of course -working in the direction opposite of the rotated angle. We can set up an angular momentum equation and find that it reads as:
+For small angles, the torque is proportional to the rotation angle and, of course, working in the direction opposite of the rotated angle. We can set up an angular momentum equation and find that it reads as:
 
 $$ I \frac{d^2\theta}{dt^2} = - k_t \theta $$
 
@@ -286,7 +286,7 @@ with $\omega \equiv \frac{d\theta}{dt}$, the angular velocity.
 
 
 ### L-C circuit
-In Electronics alternating current (AC) circuits are building blocks of many complex systems. One of these is the L-C circuit, in which an inductor, $L$, and a capacitor, $C$, are in series coupled. See {numref}`fig:ch8_LCcircuit.svg`.
+In electronics, alternating current (AC) circuits are building blocks of many complex systems. One of these is the L-C circuit, in which an inductor, $L$, and a capacitor, $C$, are in series coupled, see {numref}`fig:ch8_LCcircuit.svg`.
 
 ```{figure} ../images/ch8_LCcircuit.svg
 :label: fig:ch8_LCcircuit.svg
@@ -299,21 +299,21 @@ L-C circuit.
 
 ````{intermezzo} Intermezzo: Kichhoff's Laws
 
-In dealing with electronic circuits, there are two helpful laws. They carry the name of the German Physicist Gustav Kirchhoff, who wrote them down in 1845.
+In dealing with electronic circuits, there are two helpful laws. They carry the name of the German Physicist Gustav Kirchhoff, who wrote them down in 1845.  
 
-The first law is 'current law'. Picture a node in an electronic circuit, that is a point where a number of elements are connected to each other. This may be resistors, capacitances, batteries, any element. Then the total current flowing in to the node is the same as the total current flowing out of the node. In other words: a node cannot store charge; what flows in must flow out. In a more mathematical form we write: the sum of currents in a node is zero.
+The first law is 'current law'. Picture a node in an electronic circuit, that is a point where a number of elements are connected to each other. This may be resistors, capacitances, batteries, any element. Then the total current flowing in to the node is the same as the total current flowing out of the node. In other words: a node cannot store charge; what flows in must flow out. In a more mathematical form we write: the sum of currents in a node is zero.  
 
 ```{figure} ../images/ch8_KirchhoffCurrent.svg
 :label: fig:ch8_KirchhoffCurrent.svg
 :width: 250px
 :align: center
  
-Currents in and out of a node must add to zero.
-```
+Currents in and out of a node must add to zero.  
+```  
 
-In the example in the figure, with a resistor a capacitance and a battery, this is: $I_1 + I_2 + I_3 = 0$
+In the example in the figure, with a resistor a capacitance and a battery, this is: $I_1 + I_2 + I_3 = 0$  
 
-The second law is the Kirchhoff's Voltage Law. Now we go around a loop in a circuit, that is any loop you can find. We start at a certain point and after each element we write down the voltage after that element. Once we have returned to our starting point, we sum up all voltage differences that we now have (that is the voltage difference over each element). The result is zero: no matter which loop we take, the sum of voltages differences is always zero: $\sum V_i = 0$.
+The second law is the Kirchhoff's Voltage Law. Now we go around a loop in a circuit, that is any loop you can find. We start at a certain point and after each element we write down the voltage after that element. Once we have returned to our starting point, we sum up all voltage differences that we now have (that is the voltage difference over each element). The result is zero: no matter which loop we take, the sum of voltages differences is always zero: $\sum V_i = 0$.  
 
 
 ```{figure} ../images/ch8_KirchhoffVoltage.svg
@@ -321,7 +321,7 @@ The second law is the Kirchhoff's Voltage Law. Now we go around a loop in a circ
 :width: 250px
 :align: center
  
-Voltage differences across a loop add up to zero.
+Voltage differences across a loop add up to zero.  
 ```
 
 In the example in the figure, again with a resistor, a capacitance and a battery, this is: $V_1 + V_2 + V_3 = 0$
@@ -331,7 +331,7 @@ It is comparable with a closed loop walk in the mountains: you start at a certai
 ````
 
 
-We could charge the capacitor and then close the circuit. What would happen? The capacitor will try to discharge via the inductor. Hence a current, $I$, starts flowing. In response, the inductor builds up a potential difference that is directly proportional to the rate of change of the current through the inductor. 
+We could charge the capacitor and then close the circuit. What would happen? The capacitor will try to discharge via the inductor. Hence a current, $I$, starts flowing. In response, the inductor builds up a potential difference that is directly proportional to the rate of change of the current through the inductor $\left ( V_c \propto \frac{\delta I}{\delta t} \right )$. 
 
 Basic electronics shows that the voltage over the capacitor is coupled to the charge, $Q_C$, of the capacitor according to: $V_C = \frac{Q_C}{C}$. For the inductor we have: $ V_L = L \frac{dI_L}{dt}$.
 
@@ -341,7 +341,7 @@ $$\begin{split}
 V_L + V_C &= 0 \Rightarrow \\
 \frac{dV_L}{dt} + \frac{dV_C}{dt} &= 0 \Rightarrow \\
 L \frac{d^2 I}{dt^2} + \frac{1}{C}I &= 0 \Rightarrow \\
-\frac{d^2I}{dt^2} + \frac{1}{LC} I &= 0 \text{ Harmonic Oscillator!!!}
+\frac{d^2I}{dt^2} + \frac{1}{LC} I &= 0 \quad \text{ Harmonic Oscillator!!!}
 \end{split}$$
 
 As we see, this LC-circuit will start to oscillate. In the animation below the current through the circuit and the voltage across the inductor are shown for $C = 1 \mu F$ and $L = 1 \mu H$.
@@ -356,14 +356,14 @@ Harmonic oscillation of an LC-circuit.
 
 ### Musical Instruments
 
-Musical instruments produce sound waves. In many cases they do that via vibrations of strings, like the guitar, the violin, harp or piano. The strings of these instruments are displaced out of their equilibrium position. Due to the tension in these strings, there is a restoring force that is proportional to the displacement. Consequently, the string will start to oscillate in an harmonic way. 
+Musical instruments produce sound waves. In many cases they do that via vibrations of strings, like the guitar, the violin, harp or piano. The strings of these instruments are displaced out of their equilibrium position. Due to the tension in these strings, there is a restoring force that is proportional to the displacement. Consequently, the string will start to oscillate in a harmonic way. 
 
 Not only strings, but also beams will exhibit this behavior, well-known example: a tuning fork. We will come back to waves at the end of this chapter.
 
 
 ## The pendulum
 
-Another example of oscillatory motion is the pendulum. In it's most simple form it is a point-mass $m$, attached to a massless rod of length $L$. The rod is fixed to a pivotal point that allows it to swing freely.
+Another example of oscillatory motion is the pendulum. In its most simple form it is a point-mass $m$, attached to a massless rod of length $L$. The rod is fixed to a pivotal point that allows it to swing freely.
 
 ```{figure} ../images/ch8_Pendulum.svg
 :label: fig:ch8_Pendulum.svg
@@ -373,7 +373,7 @@ Another example of oscillatory motion is the pendulum. In it's most simple form 
 Sketch of a pendulum.
 ```
 
-On the mass, gravity is acting vertically downwards. Also the rod exerts a force on the mass. This force is always parallel to the rod and points to the pivotal point. It is the response of the rod to the component of gravity  parallel to the rod (the dark blue arrow in {numref}`fig:ch8_Pendulum.svg`). It is good to realize, that this force makes sure that the distance from $m$ to the pivotal point is always $L$. In other words, this force is a consequence of the fixed length $L$ of the rod. It is the physics translation of the constraint: $L$ is constant.
+Gravity is acting on the mass vertically downwards. The rod exerts a force on the mass as well. This force is always parallel to the rod and points to the pivotal point. It is the response of the rod to the component of gravity  parallel to the rod (the blue arrow in {numref}`fig:ch8_Pendulum.svg`). It is good to realize, that this force makes sure that the distance from $m$ to the pivotal point is always $L$. In other words, this force is a consequence of the fixed length $L$ of the rod. It is the physics translation of the constraint: $L$ is constant.
 
 ### N2 for the pendulum: Equation of motion via N2
 
@@ -381,19 +381,19 @@ We will set up Newton's second Law for $m$.
 
 $$ m\frac{d\vec{v}}{dt} = -mg\hat{z} + \vec{F}_t $$
 
-As stated above, the blue, parallel part of gravity is balanced by a tensional force in the rod. So, we don't need to worry about motion of $m$ parallel to the rod. That leaves us with the direction perpendicular of the rod. In that direction only the red arrow works on $m$. 
+As stated above, the blue, parallel part of gravity is balanced by a tensional force in the rod. So, we don't need to worry about motion of $m$ parallel to the rod. That leaves us with the direction perpendicular to the rod. In that direction only the red arrow works on $m$. 
 
 In the other direction only the red, perpendicular component of gravity acts on $m$. This component is equal to $-mg \sin \phi $. The velocity component in this direction is $v = L\frac{d\phi}{dt}$. Thus we get:
 
-$$ m L \frac{d^2 \phi}{dt^2} = -mg \sin \phi $$
+$$ m \frac{d \hat{v}}{dt} = m L \frac{d^2 \phi}{dt^2} = -mg \sin \phi $$
 
 Or rewritten 
 
-$$ m L \frac{d^2 \phi}{dt^2} + mg \sin \phi =0 $$
+$$ L \frac{d^2 \phi}{dt^2} + g \sin \phi =0 $$
 
 We do know from experience that the pendulum will swing back and forth in a periodic way. However, as we see from the above equation of motion: it is not a harmonic oscillator. The term with the sine prevents that.
 
-But for small values of the angle $\phi$, that is for small oscillations around the stable equilibrium $\phi_{eq} = 0$, we can approximate the sinus via a Taylor series and write: 
+But for small values of the angle $\phi$, that is for small oscillations around the stable equilibrium $\phi_{eq} = 0$, we can approximate the sinus via a [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) and write: 
 
 $$ \begin{split}
 \phi \ll 1 \Rightarrow\sin \phi &\approx \sin 0 + \frac{1}{1!} \cos 0 \: \phi - \frac{1}{2!} \sin 0 \: \phi^2 + ...  \\
@@ -414,7 +414,7 @@ Further, note that under this assumption, the period of the pendulum does not de
 
 ### N2 for the pendulum: Equation of motion via Angular Momentum
 
-Before we continue with the analysis of the pendulum, we will derive the equation of motion also via angular momentum considerations. On $m$ gravity exerts a torque: $\vec{\tau} = \vec{r} \times \vec{F}_g$ It has a magnitude $-Lmg \sin \phi$ and points into the screen. The angular momentum of $m$ is given by $\vec{L} = \vec{r} \times \vec{p}$. This has magnitude $ mL^2\frac{d\phi}{dt}$ and also points into the screen.
+Before we continue with the analysis of the pendulum, we will derive the equation of motion also via angular momentum considerations. On $m$ gravity exerts a torque: $\vec{\tau} = \vec{r} \times \vec{F}_g$. It has a magnitude $-Lmg \sin \phi$ and points into the screen. The angular momentum of $m$ is given by $\vec{L} = \vec{r} \times \vec{p}$. This has magnitude $ mL^2\frac{d\phi}{dt}$ and also points into the screen.
 
 Thus N2 for angular momentum gives us:
 
@@ -616,7 +616,7 @@ or bringing all terms to the left hand side:
 
 $$ m\ddot{x} + b \dot{x} + kx = 0 $$
 
-To solve this equation, it is easier not to try to look directly for sinus and cosines, but use the complex notation. 
+To solve this equation, it is easier not to try to look directly for sinus and cosines, but use the complex notation, see the intermezzo. 
 
 
 ```{intermezzo} Intermezzo: complex exponential and sin, cos 
@@ -711,19 +711,19 @@ Both have the same real part: $-\frac{b}{2m}$ showing that both solutions are da
 
 So, our solution reads as:
 
-$$ x(t) = \underbrace{\left ( A e^{i\omega t} + B e^{-i\omega t} \right )}_{sinusoidal \; oscillation} \underbrace{e^{-\frac{b}{2m} t}}_{exponential damping}
+$$ x(t) = \underbrace{\left ( A e^{i\omega t} + B e^{-i\omega t} \right )}_{sinusoidal \; oscillation} \underbrace{e^{-\frac{b}{2m} t}}_{exponential \; damping}
 \; \\
 \; \\
-with \\
+\text{with} \\
 \; \\
 \omega \equiv \sqrt{\frac{k}{m} - \frac{b^2}{4m^2}} \lt \sqrt{\frac{k}{m}} = \omega_0
 $$
 
-Conclusion: the damped oscillator oscillates with a smaller frequency than the undamped one and it amplitude decreases over time. The later is of course to be expected due to friction: sooner or later friction has dissipated all the kinetic \& potential energy.
+Conclusion: the damped oscillator oscillates with a smaller frequency than the undamped one and it amplitude decreases over time. The latter is of course to be expected due to friction: sooner or later friction has dissipated all the kinetic \& potential energy.
 :::
 
 :::{tab-item} D = b² - 4mk = 0
-For this specific combination of $b, k, m$ we see that the frequency of the oscillation is 0. In other words, the systems does not perform oscillations. Furthermore, our two values of $\lambda$ are now equal. Consequently the general solution that we presented is no longer complete (we now only have one integration constant, or only one independent function if you prefer.) We need a second one and that turns out to be of the form $t e^{\lambda t}$. You can verify that by substituting it in the equation of motion for the damped case.
+For this specific combination of $b, k, m$ we see that the frequency of the oscillation is 0. In other words, the systems does not perform oscillations. Furthermore, our two values of $\lambda$ are now equal. Consequently the general solution that we presented is no longer complete (we now only have one integration constant, or only one independent function if you prefer, see the appendix for proof). We need a second one and that turns out to be of the form $t e^{\lambda t}$. You can verify that by substituting it in the equation of motion for the damped case.
 
 Thus we have know:
 
@@ -745,7 +745,7 @@ Note that $ -b + \sqrt{b^2 - 4mk} \lt 0 $. So, both terms are decreasing to zero
 
 Further, note that the first part (with $A$) has an exponent that is closer to zero than the one of the other part (with $B$). Thus the second part will decay faster and for sufficiently large $t$, the solution behaves like $A e^{\frac{-b + \sqrt{b^2 - 4mk}}{2m}t}$.
 
-In the figure below, an example of case 1 and case 3 is shown together with the solution of case 2. We see, that case 2 is the one that decays fastest: it has the highest damping coefficient in its exponent. This is called critical damping. If you need to dampen unwanted oscillations: make sure you tune your damping parameter b such that $b^2 - 4mk = 0$.
+In the figure below, an example of case 1 and case 3 is shown together with the solution of case 2. We see, that case 2 is the one that decays fastest: it has the highest damping coefficient in its exponent. This is called critical damping. If you need to dampen unwanted oscillations: make sure you tune your damping parameter $b$ such that $b^2 - 4mk = 0$.
 
 :::
 ::::
@@ -786,7 +786,7 @@ This gives quickly a qualitative view on the different regimes of the damping. T
 
 The root walks over the shown graph from $b=0$ on the imaginary axis to $b\to\infty$ over the blue and then yellow part of the graph. The yellow graph does not cross the imaginary axis.
 
-From this plot you can directly see that the system is stable for $b>0$, but unstable for $b=0$ without the need to check the frequency that the system is driven with (for $b=0$ driven with the resonance frequency results in an infinite amplitude - an instable system). How you can see that so quickly you will learn in the second year class *Systems and Signals*.
+From this plot you can directly see that the system is stable for $b>0$, but unstable for $b=0$ without the need to check the frequency that the system is driven with (for $b=0$ driven with the resonance frequency results in an infinite amplitude - an instable system). How you can see that so quickly you will learn later in your study.
 
 
 ## Driven Damped Harmonic Oscillator
@@ -827,7 +827,7 @@ $$
 
 ## Coupled Oscillators
 
-In this course we mostly only consider one oscillator, but of course there could be many that are coupled in one way or another. Already [Christiaan Huygens](https://nl.wikipedia.org/wiki/Christiaan_Huygens) considered them.
+Here we mostly consider one oscillator only, but of course there could be many that are coupled in one way or another. [Christiaan Huygens](https://nl.wikipedia.org/wiki/Christiaan_Huygens) already considered them.
 
 
 ```{figure} ../images/ch8_coupled_huygens.svg
@@ -838,11 +838,11 @@ In this course we mostly only consider one oscillator, but of course there could
 Huygens experiment of weakly coupled pendula.
 ```
 
-There are 2 pendula suspended from a common connection, which rests on two chairs. If you set the pendula in motion, they will be initially *out of phase*, i.e. the relative position of the pendula is different. But over time their motion synchronises!  What has happend? Apparently the two pendula are connected, *coupled*, via the suspension and act on each other, they are not independent, but influence the motion of the other pendulum.
+There are two pendula suspended from a common connection, which rests on two chairs. If you set the pendula in motion, they will be initially *out of phase*, i.e. the relative position of the pendula is different. But over time their motion synchronises!  What has happend? Apparently the two pendula are connected, *coupled*, via the suspension and act on each other, they are not independent, but influence the motion of the other pendulum.
 
-The [following video](https://www.youtube.com/embed/DD7YDyF6dUk?si=Zt65wJNNQCosMU5n) of weakly coupled metronomes below shows a modern day version of this phenomena. 
+The [following video](https://www.youtube.com/embed/DD7YDyF6dUk?si=Zt65wJNNQCosMU5n) of weakly coupled metronomes shows a modern day version of this phenomena. 
 
-Here the pendula are coupled via the ground. This influence is called *weak coupling*. In this course we cannot treat this coupling mathematically, but in the second year course on *Classical Mechanics* you will learn to study systems like these.
+Here the pendula are coupled via the ground. This influence is called *weak coupling*. In this course we cannot treat this coupling mathematically, but in (second year course) *Classical Mechanics* you will learn to study systems like these.
 
 ## Examples
 
@@ -979,7 +979,7 @@ Read [here](https://devblogs.microsoft.com/oldnewthing/20220816-00/?p=106994?WT.
 5. The blue sky: Rayleigh scattering (adapted from {cite:t}`Mudde`).  
 Light from the sun (and stars) will have to travel through the atmosphere before reaching the ground level. On
 its way it will be subject to absorption and scattering.  
-When you look on a clear day into the sky its color is blue, everybody knows that. But few people know why. The reason is found in the scattering properties of the molecules: the probability of light being scattered by an air molecule is proportional to the wave length of the light to the power -4, or rephrased: proportional to $f^4$ ($f$ the frequency of the light, the theory of molecular scattering was given first given by Lord Rayleigh). Thus, blue light of a wavelength of 450nm is compared to red light ($\lambda$ = 650nm) $\left ( 650/450 \right ) ^4 = 4.4$ times more likely to be scattered. Consequently, the blue end from the (white) sun light has a reduced probability to reach our eye directly in comparison with the red end. And thus most of the scattered light that reaches us is blue: the sky is blue.  
+When you look on a clear day into the sky its color is blue. Everybody knows that, but few people know why. The reason is found in the scattering properties of the molecules: the probability of light being scattered by an air molecule is proportional to the wave length of the light to the power -4, or rephrased: proportional to $f^4$ ($f$ the frequency of the light, the theory of molecular scattering was given first given by Lord Rayleigh). Thus, blue light of a wavelength of 450nm is compared to red light ($\lambda$ = 650nm) $\left ( 650/450 \right ) ^4 = 4.4$ times more likely to be scattered. Consequently, the blue end from the (white) sun light has a reduced probability to reach our eye directly in comparison with the red end, and thus most of the scattered light that reaches us is blue: the sky is blue.  
 We will look at scattering of light by considering a simple molecule made of a fixed nucleus with one electron orbiting it. The equation of motion of the electron can be written as that of a harmonic oscillator, with eigen frequency $\omega_0$:
 
 $$
@@ -993,7 +993,7 @@ $$
  
 Simple model of electron-light scattering.
 ```
-When light passes the electron, the electron feels a force since light is an electro-magnetic wave. The electric field is the dominating force. For light of wave length $\lambda$, i.e. angular frequency $\omega = 2 \pi f = 2 \pi \frac{c}{\lambda}$, the electric field can be written as $E_0 \sin \omega t$. Such a field will produce a force $F_e = e E_0 \sin \omega t$ on the electron, modifying its equation of motion to:
+When light passes the electron, the electron "feels" a force since light is an electro-magnetic wave. The electric field is the dominating force. For light of wave length $\lambda$, i.e. angular frequency $\omega = 2 \pi f = 2 \pi \frac{c}{\lambda}$, the electric field can be written as $E_0 \sin \omega t$. Such a field will produce a force $F_e = e E_0 \sin \omega t$ on the electron, modifying its equation of motion to:
 
 $$
 \ddot{x} + \omega_0^2 x = \frac{e}{m} E_0 \sin \omega t
@@ -1005,8 +1005,8 @@ $$
 x(t) = c_1 \sin \omega_0 t + c_2 \cos \omega_0 t + \frac{e E_0}{m} \frac{\sin \omega t}{\omega_0^2 - \omega^2}
 $$
 
-The important part is the last one: the extra motion cause by the passing electric field. This causes an additional acceleration of the electron: $a(t) = -\frac{e E_0}{m} \frac{\omega^2}{\omega_0^2 - \omega^2} \sin \omega t$.  
-The electron in its original orbit does not radiate. However, due to the extra acceleration the electron starts radiating. It sends out an electromagnetic field with the wave length of the incoming light and an intensity proportional to the square of the acceleration, , i.e. 
+The important part of this equation is the last one: the extra motion caused by the passing electric field. This causes an additional acceleration of the electron: $a(t) = -\frac{e E_0}{m} \frac{\omega^2}{\omega_0^2 - \omega^2} \sin \omega t$.  
+The electron in its original orbit does not radiate. However, due to the extra acceleration the electron starts radiating. It sends out an electromagnetic field with the wave length of the incoming light and an intensity proportional to the square of the acceleration, i.e. 
 
 $$
 I \propto \left [ \frac{\omega^2}{\omega_0^2 - \omega^2} \right ]^2
@@ -1023,7 +1023,7 @@ The bridge in Rotterdam, but also others, suffer from long cables that the wind 
 
 ## Waves and oscillations
 
-In the previous sections, we talked about oscillations of individual particles. Oscillations can also occur in a more collective mode. And there are plenty of examples: take for instance a violin or piano string. It is in essence an elastic string suspended between two fixed points. The string is under tension, that is: its natural length is (slightly) less than the distance between the two end points. As a consequence, equilibrium position of the string is a straight line and when brought out of equilibrium there is a net restoring force much like for the mass-spring system.
+In the previous sections, we talked about oscillations of individual particles. Oscillations can also occur in a more collective mode. There are plenty of examples: take for instance a violin or piano string. It is in essence an elastic string suspended between two fixed points. The string is under tension, that is: its natural length is (slightly) less than the distance between the two end points. As a consequence, equilibrium position of the string is a straight line and when brought out of equilibrium there is a net restoring force much like for the mass-spring system.
 
 However, there are at least two important differences: (1) the restoring force is the net result from pulling on a small part of the string by its neighbor parts; (2) the entire string can oscillate in a direction perpendicular to the equilibrium position of the string, making the problem multi-dimensional.
 
@@ -1049,7 +1049,7 @@ m\frac{d^2x}{dt^2} & = -T \cos \theta_1 + T \cos\theta_2 \\
 m\frac{d^2y}{dt^2} & = -T \sin \theta_1 + T \sin\theta_2
 \end{split}$$
 
-Next, we simplify by only looking at situations where the angle $\theta_1$ and $\theta_2$ are small. The we can approximate the $\sin$ and $\cos$ terms: if $\theta \ll 1$ then $\sin \ theta \approx \theta$ and $\cos \theta \approx 1$ and we can write
+Next, we simplify by only looking at situations where the angle $\theta_1$ and $\theta_2$ are small. Then we can approximate the $\sin$ and $\cos$ terms: if $\theta \ll 1$ then $\sin \theta \approx \theta$ and $\cos \theta \approx 1$ and we can write
 
 $$\begin{split}
 m\frac{d^2x}{dt^2} & = -T + T = 0 \\
@@ -1058,7 +1058,7 @@ m\frac{d^2y}{dt^2} & = -T \theta_1 + T \theta_2
 
 Thus: for the $x$ direction we don't need to worry, nothing interesting happening there.
 
-For the $y$-direction we face that we have too many unknowns. We need relations between $\theta_1, \theta_2, y$ and $x$. We are going to use again that $\theta \ll 1$ but know to make it seemingly more complex. 
+For the $y$-direction we face that we have too many unknowns. We need relations between $\theta_1, \theta_2, y$ and $x$. We are going to use again that $\theta \ll 1$ but now to make it seemingly more complex. 
 
 If $\theta \ll 1$ then $\tan \theta \approx \theta$. And we are going to replace $\theta$ by $\tan \theta$. Is that smart??? Now we get trigonometry back in the equation!! Don't worry. We use the $\tan \theta$ in another way. It is also the direction of the tangent to the curve the spring is making at the point where we are looking. In formula:
 
@@ -1066,7 +1066,7 @@ $$\tan \theta = \frac{dy}{dx}$$
 
 And this is the coupling between angles and coordinates that we have been looking for.
 
-We are going to plug this in in N2 for the $y$-direction. But before doing so: the left position of the red piece is at position $x$. So instead of label '1' we will use subscript $x$. Similarly, the right end of the red piece is at $x+dx$. Thus we can write
+We are going to plug this in N2 for the $y$-direction. But before doing so: the left position of the red piece is at position $x$. So instead of label '1' we will use subscript $x$. Similarly, the right end of the red piece is at $x+dx$. Thus we can write
 
 $$
 m\frac{d^2y}{dt^2} = -T \left [ \frac{dy}{dx} \right ]_x + T \left [ \frac{dy}{dx} \right ]_{x+dx}
@@ -1084,7 +1084,7 @@ $$
 \frac{d^2y}{dt^2} = \frac{T}{\mu} \frac{d^2y}{dx^2} 
 $$
 
-To make clear that we mean on the left hand side we mean: take the derivative only with respect to time we use $\partial t$ instead of $dt$. Similarly on the right hand $\partial x$ instead of $dx$. And we get our final result replacing $\frac{T}{\mu}$ by $\mathsf{v}^2$
+To make clear that we mean on the left hand side we mean: take the derivative only with respect to time we use $\partial t$ instead of $dt$. Similarly on the right hand $\partial x$ instead of $dx$. And we get our final result replacing $\frac{T}{\mu}$ by $\mathrm{v}^2$
 
 $$\frac{\partial^2 y}{\partial t^2} = v^2 \frac{\partial^2 y}{\partial x^2}$$
 
@@ -1096,13 +1096,13 @@ This equation is called the **wave equation** and you will find it back in many 
 
 This is straightforward to prove: given $y(x,t) = y(x-vt)$ then call $s \equiv $
 
-$$ \frac{\partial y}{\partial t} = \frac{dy}{ds} \underbrace{\frac{\partial s}{\partial t}}_{=\mathsf{-v}}$$
+$$ \frac{\partial y}{\partial t} = \frac{dy}{ds} \underbrace{\frac{\partial s}{\partial t}}_{=\mathrm{-v}}$$
 
-Note the meaning of $\partial t$: differentiate $s = x - \mathsf{v}t$ as if $x$ is a constant, not depending on $t$.
+Note the meaning of $\partial t$: differentiate $s = x - \mathrm{v}t$ as if $x$ is a constant, not depending on $t$.
 
 We can differentiate this once more:
 
-$$\frac{\partial^2 y}{\partial t^2} = \frac{\partial}{\partial t} \left ( -\mathsf{v} \frac{dy}{ds} \right ) = -\mathsf{v} \frac{d}{ds} \left ( \frac{dy}{ds} \right ) \frac{\partial s}{\partial t} = \mathsf{v}^2 \frac{d^2y}{ds^2}$$
+$$\frac{\partial^2 y}{\partial t^2} = \frac{\partial}{\partial t} \left ( -\mathrm{v} \frac{dy}{ds} \right ) = -\mathrm{v} \frac{d}{ds} \left ( \frac{dy}{ds} \right ) \frac{\partial s}{\partial t} = \mathrm{v}^2 \frac{d^2y}{ds^2}$$
 
 Subsequently we look at $\frac{\partial^2 y}{\partial x^2}$:
 
@@ -1112,24 +1112,24 @@ If we now substitute these two results in the wave equation we see:
 
 $$
 \begin{split}
-\frac{\partial^2 y}{\partial t^2} - \mathsf{v}^2 \frac{\partial^2 y}{\partial x^2} &= \mathsf{v}^2 \frac{d^2y}{ds^2} - \mathsf{v}^2 \frac{d^2y}{ds^2} = 0 \Rightarrow \\
-\frac{\partial^2 y}{\partial t^2} &= \mathsf{v}^2 \frac{\partial^2 y}{\partial x^2}
+\frac{\partial^2 y}{\partial t^2} - \mathrm{v}^2 \frac{\partial^2 y}{\partial x^2} &= \mathrm{v}^2 \frac{d^2y}{ds^2} - \mathrm{v}^2 \frac{d^2y}{ds^2} = 0 \Rightarrow \\
+\frac{\partial^2 y}{\partial t^2} &= \mathrm{v}^2 \frac{\partial^2 y}{\partial x^2}
 \end{split}
 $$
 
-And we see that our choice for $y(x,t) = y(x-\mathsf{v}t)$ automatically obeys the wave equation.
+And we see that our choice for $y(x,t) = y(x-\mathrm{v}t)$ automatically obeys the wave equation.
 
-From the above we also learn that if the string has a certain 'amplitude' $y$ at position $x$ on time $t$ a little later this same amplitude will show up at a position a bit further along the string. Argument: given $x$ and $t$ then at $(x,t)$ the amplitude of the string is $y(x-\mathsf{v}t)$ and a little later, at $t+\Delta t$ we can look at position $x+\mathsf{v} \Delta t$: there $y(x+\Delta x, t +\Delta t)$ is 
+From the above we also learn that if the string has a certain 'amplitude' $y$ at position $x$ on time $t$ a little later this same amplitude will show up at a position a bit further along the string. Argument: given $x$ and $t$ then at $(x,t)$ the amplitude of the string is $y(x-\mathrm{v}t)$ and a little later, at $t+\Delta t$ we can look at position $x+\mathrm{v} \Delta t$: there $y(x+\Delta x, t +\Delta t)$ is 
 
-$$y(x+\Delta x, t +\Delta t) = y(x+\mathsf{v}\Delta t -\mathsf{v} (t +\Delta t)) = y(x -\mathsf{v} t ) = y(x,t)$$
+$$y(x+\Delta x, t +\Delta t) = y(x+\mathrm{v}\Delta t -\mathrm{v} (t +\Delta t)) = y(x -\mathrm{v} t ) = y(x,t)$$
 
-This actually means, that a traveling wave can be present in the string. We now this from our childhood when we probably all have been playing with a long rope making waves in it by quickly moving one end up and down.
-
-
-The wave equation has as constant $\mathsf{v}^2$. We have identified this as a velocity and we now understand that it is the velocity with which a wave travels. But since the equation contains the square of the velocity, we conclude that if we have a solution with $+\mathsf{v}$, then also a solution with $-\mathsf{v}$ holds. In other words: waves can travel in 2 directions and they do so with the same speed (in magnitude).
+This actually means, that a traveling wave can be present in the string. We probably know this from our childhood when we played with a long rope making waves by quickly moving one end up and down.
 
 
-In the figure below, a wave is shown that starts as seemingly one hump. But it actually is two traveling waves on a rope.
+The wave equation has as constant $\mathsf{v}^2$. We have identified this as a velocity and we now understand that it is the velocity with which a wave travels. But since the equation contains the square of the velocity, we conclude that if we have a solution with $+\mathsf{v}$, then also a solution with $-\mathsf{v}$ holds. In other words: waves can travel in two directions and they do so with the same speed (in magnitude).
+
+
+In figure {numref}`fig:OscillatingRope.gif`, a wave is shown that starts as seemingly one hump. But it actually is two traveling waves on a rope.
 
 Moreover, the rope has a fixed end at the left and a free one at the right. Notice the difference in reflection of the waves at both ends.
 
@@ -1157,21 +1157,21 @@ $$y(t) = A \sin (2 \pi f t)$$
 
 with $f$ its frequency (and thus $\omega = 2 \pi f$ its angular frequency).
 
-As we have seen above, in general the wave is also a function of position:
+As we have seen, in general the wave is also a function of position:
 
 $$y(x,t) \sim A \sin ( x - vt)$$
 
 How can we connect these two forms? First, we need to realize that the last equation has a dimensional issue: what is the sinus of say 7 meter? In other words, the argument of the sin-function should be dimensionless. So we write is in a different form, introducing the frequency in it:
 
-$$y(x,t) =  A \sin \left ( \frac{2 \pi f}{\mathsf{v}} x - 2\pi f t \right ) $$
+$$y(x,t) =  A \sin \left ( \frac{2 \pi f}{\mathrm{v}} x - 2\pi f t \right ) $$
 
-This seems unnecessary complicated. But it is not! The factor $\frac{f}{\mathsf{v}}$ has dimension 1 over length. If we call it $\frac{f}{\mathsf{v}} \equiv \frac{1}{\lambda}$ we can write
+This seems unnecessary complicated. But it is not! The factor $\frac{f}{\mathrm{v}}$ has dimension 1 over length. If we call it $\frac{f}{\mathrm{v}} \equiv \frac{1}{\lambda}$ we can write
 
 $$ y(x,t) = A \sin \left [2\pi \left ( \frac{x}{\lambda} - ft \right ) \right ] $$
 
 Interpretation: for a fixed value of $t$ the wave is periodic in space with period $\lambda$. This is what we already know: the wave has a wave length $\lambda$.
 
-On the other hand: for a fixed position $x$ the point at $x$ oscillates with a frequency $f$ and thus has a period $T = \frac{1}{f}$. Note that $\lambda$ and $f$ are coupled to each other:
+On the other hand: for a fixed position $x$, the point at $x$ oscillates with a frequency $f$ and thus has a period $T = \frac{1}{f}$. Note that $\lambda$ and $f$ are coupled to each other:
 
 $$\lambda \cdot f = \mathsf{v}$$
 
@@ -1189,12 +1189,13 @@ $$f^2=\frac{EA}{4\mu L^3}\Delta l + f_0^2$$
 
 ### Standing waves versus traveling waves
 
-If we look at the motion of the string on a violin closely, we will not see traveling waves running from one side of the string to the other. Instead, we see all parts of the string moving up and down collectively: they have formed a standing wave. that is a wave that does not travel, but has a fixed, stationary shape whose amplitude various with time. 
+If we closely look at the motion of the string on a violin, we will not see traveling waves running from one side of the string to the other. Instead, we see all parts of the string moving up and down collectively: they have formed a standing wave. That is a wave that does not travel, but has a fixed, stationary shape whose amplitude various with time. 
 
-For a string with two ends fixed like on a piano or violin, the string can only show standing waves that 'fit'. These standing waves are sinusoidal and their wave length should be such that the beginning and end of the string don't oscillate. In the figure below four possibilities are shown.
+For a string with two ends fixed like on a piano or violin, the string can only show standing waves that 'fit'. These standing waves are sinusoidal and their wave length should be such that the beginning and end of the string don't oscillate. In figure {numref}`fig:String_animation.gif` four possibilities are shown.
 
 
 ```{figure} ../images/String_animation.gif
+:label: fig:String_animation.gif
 :width: 350px
 :align: center
  
@@ -1205,20 +1206,20 @@ We see that there is a simple relation between the length of the string, $L$ and
 
 $$ \frac{n}{2} \lambda  = L \Leftrightarrow \lambda = \frac{2L}{n}  \text{   with } n \in N$$
 
-Further we see that the smaller the wavelength, the faster the oscillation. This is due to the relation $\lambda \cdot f = \mathsf{v}$ that still holds: $f = \frac{\mathsf{v}}{\lambda} = \frac{n\mathsf{v}}{2L}$.
+Further we see that the smaller the wavelength, the faster the oscillation. This is due to the relation $\lambda \cdot f = \mathrm{v}$ that still holds: $f = \frac{\mathrm{v}}{\lambda} = \frac{n\mathrm{v}}{2L}$.
 
-The traveling waves had as mathematical form $\sin \left (x - \mathsf{v} t \right )$. The standing waves take forms like $\sin \frac{x}{\lambda} \cdot \sin ( 2\pi ft)$. You will learn much more about this in e.g. Fourier Analysis classes.
+The traveling waves had as mathematical form $\sin \left (x - \mathrm{v} t \right )$. The standing waves take forms like $\sin \frac{x}{\lambda} \cdot \sin ( 2\pi ft)$. You will learn much more about this in e.g. Fourier Analysis classes.
 
 ### Water waves and Sound waves
 
-It is not necessary that a wave is caused by a tension in the material that tries to restore the equilibrium position. The restoring force can be of a different nature. A well know example is the water waves that we see on lakes and seas. Here gravity is the restoring force: it tries to pull a crest down and push a through up. The water inertia causes overshoot resulting in oscillations, that we call waves. In dealing with waves, we usually don't use the frequency $f$, but instead the angular velocity $\omega = 2 \pi f$. Similarly, frequently the wave length $\lambda$ is replaced by the wavenumber $k \equiv \frac{2\pi}{\lambda}$. Note that these two quantities are also related to each other by the speed of the waves: $\lambda \cdot f = \frac{2\pi}{\lambda} \frac{\omega}{2\pi} = \frac{\omega}{k} = \mathsf{v}$. 
+It is not necessary that a wave is caused by a tension in the material that tries to restore the equilibrium position. The restoring force can be of a different nature. A well know example is the water waves that we see on lakes and seas. Here gravity is the restoring force: it tries to pull a crest down and push a through up. The water inertia causes overshoot resulting in oscillations, that we call waves. In dealing with waves, we usually don't use the frequency $f$, but instead the angular velocity $\omega = 2 \pi f$. Similarly, the wave length $\lambda$ is often replaced by the wavenumber $k \equiv \frac{2\pi}{\lambda}$. Note that these two quantities are also related to each other by the speed of the waves: $\lambda \cdot f = \frac{2\pi}{\lambda} \frac{\omega}{2\pi} = \frac{\omega}{k} = \mathrm{v}$. 
 
 For water waves (with large wave length) the angular momentum and the wave number are coupled to the depth, $h$, of the water:
 
 $$\omega^2 = g k \tanh (kh)$$
 
-From this we learn that waves on deep water travel much faster than on shallow water. This can be seen on our shores: the waves coming from the open sea are slowed down when the approach our beaches. But behind them the fast ones still come in. As a consequence, the wave gets squeezed in length and thus must get higher. This can be extreme with dramatic consequences: the Tsunami. The wave of the Tsunami is formed out in the open, where the sea is very deep. Here it travels at a very high speed which also means that it is a long wave. The Tsunami waves can travel at velocities of 200m/s and have wave length of hundreds of kilometers. However at full sea their amplitude is in the centimeter, decimeter range. A ship at full sea will hardly notice the passing Tsunami wave. But when the approach the shore, the front of the wave is slowed down to tens of m/s. As the back is still coming in at full speed the wave amplitude has to increase. And thus a huge wave in terms of amplitude storms towards the shore. A wall of water is seen coming, crushing everything in its way.
+From this we learn that waves on deep water travel much faster than on shallow water. This can be seen on our shores: the waves coming from the open sea are slowed down when they approach our beaches. But behind them the fast ones still come in. As a consequence, the wave gets squeezed in length and thus must get higher. This can be extreme with dramatic consequences: the Tsunami. The wave of the Tsunami is formed out in the open, where the sea is very deep. Here it travels at a very high speed which also means that it is a long wave. The Tsunami waves can travel at velocities of 200 m/s and have wave length of hundreds of kilometers. However at full sea their amplitude is in the centimeter, to decimeter range. A ship at full sea will hardly notice the passing Tsunami wave. But when the approach the shore, the front of the wave is slowed down to tens of m/s. As the back is still coming in at full speed the wave amplitude has to increase, and thus a huge wave in terms of amplitude storms towards the shore. A wall of water is seen coming, crushing everything in its way.
 
-Sound waves are another type of waves that occur frequently. They can exist in solids, liquids and gasses. In contrast to the waves we have discussed so far, the amplitude is not perpendicular to the direction of traveling. It is what we call a longitudinal wave that oscillates in the same direction as it moves. The other waves are called transversal waves. 
+<!-- Sound waves are another type of waves that occur frequently. They can exist in solids, liquids and gasses. In contrast to the waves we have discussed so far, the amplitude is not perpendicular to the direction of traveling. It is what we call a longitudinal wave that oscillates in the same direction as it moves. The other waves are called transversal waves. 
 
-For sound waves it is the pressure that is the restoring force. The 'crest' is compressed material, the 'through' is an expansion part. Newton was intrigued by sound waves and provided a theory for them. He found that the speed of sound in air, according to his theory, was about 290 m/s. In reality it is some 340 m/s. Newton was well aware of the mismatch. But he couldn't find a good explanation. It took another 100 years for Pierre Laplace corrected Newton's work and arrived at the correct answer. Newton did not know that sound is connected to adiabatic compression. He couldn't as the entire concept was not know. Laplace realized that Newton basically had made an isothermal solution and corrected this.
+For sound waves it is the pressure that is the restoring force. The 'crest' is compressed material, the 'through' is an expansion part. Newton was intrigued by sound waves and provided a theory for them. He found that the speed of sound in air, according to his theory, was about 290 m/s. In reality it is some 340 m/s. Newton was well aware of the mismatch. But he couldn't find a good explanation. It took another 100 years for Pierre Laplace corrected Newton's work and arrived at the correct answer. Newton did not know that sound is connected to adiabatic compression. He couldn't as the entire concept was not know. Laplace realized that Newton basically had made an isothermal solution and corrected this. -->

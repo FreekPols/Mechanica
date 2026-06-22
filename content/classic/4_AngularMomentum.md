@@ -892,7 +892,7 @@ Now we have an equation with only one unknown $r(t)$.
 
 We can interpret this in a different way: the second term, with the angular momentum, originates from kinetic energy, but now looks like a potential energy. And that is exactly what we are going to do: treat it as a potential energy. 
 
-Hence, we can first inspect the global features of our energy equation. Notice that the gravity potential energy is an increasing function of the distance from the planet to the sun (located and fixed in the origin). This shows that the underlying force attractive is. The new part, coming from angular momentum, on the other hand is a decreasing function of distance. Thus, the related force is repelling. 
+Hence, we can first inspect the global features of our energy equation. Notice that the gravity potential energy is an increasing function of the distance from the planet to the sun (located and fixed in the origin). This shows that the underlying force is attractive. The new part, coming from angular momentum, on the other hand is a decreasing function of distance. Thus, the related force is repelling. 
 
 We can make a drawing of the energy. See {numref}`fig:ch6_KeplerEnergy.svg`.
 
@@ -948,7 +948,7 @@ We see, that the energy cannot be just any value: the kinetic energy of our quas
 
 Suppose, we would prepare the system such that its total energy was equal to the minimum of the black line, i.e. of the total potential energy. Then, of course, via the arguments we have given above this is only possible if the kinetic energy is zero. 
 
-$$ E_{kin} + U_{eff}(r) = U_{eff, min} \Rightarrow E_{kin} = 0 $$
+$$ E_{kin} + U_{eff}(r) = \frac{1}{2} m \dot{r}^2 + \frac{l^2}{2mr^2} + G\frac{mM}{r} = U_{eff, min} \Rightarrow E_{kin} = 0 $$
 
 This implies that $\dot{r} = 0$:
 
@@ -962,7 +962,7 @@ $$
 \dot{r}=0 \rightarrow r=r_0=const, l = mr_0 v_\perp =const \rightarrow v_\perp = \frac{l}{m_{r_0}}= const 
 $$ 
 
-Thus, if a planet orbits its sun such that its (pseudo-)potential $U_{eff} = minimum$, then its orbit is a circle of radius $r_0$ that corresponds to the minimum in $U_{eff}$ and the planet has a velocity that is constant in magnitude $v = \frac{l}{mr_0}$.
+Thus, if a planet orbits its sun such that its (pseudo-)potential $U_{eff} = minimum$, then its orbit is a circle of radius $r_0$ that corresponds to the minimum in $U_{eff}$ and the planet has a velocity that is constant in magnitude $v = \frac{l}{mr_0}$, with $l$ the magnitude of the angular momentum. 
 
 :::
 
@@ -970,7 +970,7 @@ Thus, if a planet orbits its sun such that its (pseudo-)potential $U_{eff} = min
 
 Next, we consider a case where the total energy of the planet has a value between the minimum of the curve of the effective potential and 0. Call the value of the energy $E_2$.
 
-From {numref}`fig:ch6_KeplerEnergy2.svg` we see that the planet will now be confined to an area where the effective potential is either equal to or smaller than this particular value $E_2$ 
+From {numref}`fig:ch6_KeplerEnergy2.svg` we see that the planet will now be confined to an area where the effective potential is either equal to or smaller than this particular value $E_2$.  
 
 ```{figure} ../images/ch6_KeplerEnergy2.svg
 :label: fig:ch6_KeplerEnergy2.svg
@@ -1023,7 +1023,7 @@ $$ \frac{(x+ea)^2}{a^2} + \frac{y^2}{b^2} = 1 $$
 Ellipse in Cartesian coordinates.
 ```
 
-This is an ellipse with semi major and minor-axis $a$ and $b$, respectively. The center of the ellipse is located at $(-ea,0)$. Note that the sun is in the origin and that seen from the center of the ellipse, the origin is at one of the focal points of the ellipse. Consequently, the orbit is not symmetric as viewed from the sun. We notice this on earth: the summer and winter (when the sun is closest respectively furthest from the sun) are not symmetric, even if we take the tilted axis of the earth into account.
+This is an ellipse with semi major and minor-axis $a$ and $b$, respectively. The center of the ellipse is located at $(-ea,0)$. Note that the sun is in the origin and that seen from the center of the ellipse, the origin is at one of the focal points of the ellipse. Consequently, the orbit is not symmetric as viewed from the sun. We notice this on earth: the summer and winter (when the sun is closest, January 21${\text{st}}$, respectively furthest from the sun, June 21${\text{st}}$) are not symmetric, even if we take the tilted axis of the earth into account.
 
 The half and short long axis are given by:
 
@@ -1071,7 +1071,7 @@ We are left with proving Kepler's third law:
 
 $$ \frac{T_A^2}{R_A^3} = \frac{T_B^2}{R_B^3}= const $$
 
-Now that we know the orbit, this is not difficult. We concentrate on the motion during one lapse (one 'year'). From Keppler's 1$^\text{st}$ law we know that the area a planet sweeps out of its ellipse is given by
+Now that we know the orbit, this is not difficult. We concentrate on the motion during one lapse (one 'year'). From Keppler's 1$^{\text{st}}$ law we know that the area a planet sweeps out of its ellipse is given by
 
 $$ A(t) = \frac{l}{2m}t + C $$
 
@@ -1081,13 +1081,13 @@ However, we can easily back out what happens after exactly one round, or one 'ye
 
 $$ A(T) = \pi a b \Rightarrow \pi ab = \frac{l}{2m}T $$
 
-If we put back what we found for $a$ and $b$, we get
+If we substitute our values for $a$ and $b$ given above, we get
 
 $$ \frac{T^2}{a^3} = \frac{4\pi^2}{GM}$$
 
 Thus, indeed Kepler was right. Moreover, we note that the constant is only depending on the mass of the sun. The same law will hold for other solar systems, but with a different constant.
 
-In {numref}`fig:ch6_FigureKepler3.svg` Kepler's third law is shown for our solar system. The red data points are based on the measured 'year' of each planet and the distance to the sun. The blue line is the prediction from Newton's theory.
+In {numref}`fig:ch6_FigureKepler3.svg` Kepler's third law is shown for our solar system. The *red* data points are based on the measured 'year' of each planet and the distance to the sun. The *blue* line is the prediction from Newton's theory.
 
 ```{figure} ../images/ch6_FigureKepler3.svg
 :label: fig:ch6_FigureKepler3.svg
@@ -1124,8 +1124,8 @@ Starting from Kepler 3, we can compute the orbital speed of a planet around the 
 
 
 $$ \begin{split}
-T^2 &= \frac{4\pi^2}{GM}a^3\\
-\omega^2 &= \frac{GM}{a^3}, \quad T=\frac{2\pi}{\omega}, \omega=\frac{v}{r},  a \approx r \\
+T^2 &= \frac{4\pi^2}{GM}a^3, \quad \text{with} a = \frac{GMm}{2|E|}\\
+T=\frac{2\pi}{\omega}, \quad \omega=\frac{v}{r}, \quad a \approx r \quad \text{using } \omega^2 = \frac{GM}{a^3} \\
 \Rightarrow v &= \sqrt{\frac{GM}{r}}
 \end{split} $$
 
