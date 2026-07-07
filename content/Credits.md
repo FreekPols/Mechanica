@@ -95,7 +95,7 @@ You have the opportunity to download some of the materials as Jupyter Notebook f
 
 (buildlocal)=
 ### Building this book locally 
-You can build this book locally. Download the source files from the repository and install [Jupyter Book](https://jupyterbook.org/stable/get-started/install/). Within the root folder of the book, run:
+You can build this book locally. Download the [source files](https://github.com/FreekPols/Mechanica/archive/refs/heads/main.zip) from the repository and install [Jupyter Book](https://jupyterbook.org/stable/get-started/install/). Within the root folder of the book, run:
 
 ```bash
 jupyter book start

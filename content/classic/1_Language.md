@@ -267,7 +267,7 @@ For a more elaborate description of quantities, units and dimension analysis, se
 
 Most of the undergraduate theory in physics is presented in the language of Calculus. We do a lot of differentiating and integrating, and for good reasons. The basic concepts and laws of physics can be cast in mathematical expressions, providing us the rigor and precision that is needed in our field. Moreover, once we have solved a certain problem using calculus, we obtain a very rich solution, usually in terms of functions. We can quickly recognize and classify the core features that help us understand the problem and its solution much deeper.
 
-Given the example of the base jumper, we would like to know the jumper's position as a function of time. We can answer this question by applying Newton's second law (though it is covered in secondary school, the next [chapter](./Ch2_NewtonsLaws.ipynb) explains in detail Newton's laws of motion):
+Given the example of the base jumper, we would like to know the jumper's position as a function of time. We can answer this question by applying Newton's second law (though it is covered in secondary school, the next [chapter](./2_NewtonsLaws.md) explains in detail Newton's laws of motion):
 
 $$\sum F = F_g - F_f = m a = m \frac{dv}{dt} $$ 
 

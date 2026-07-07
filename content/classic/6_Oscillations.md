@@ -109,7 +109,7 @@ I\ddot{\theta} &= -\delta \theta - \epsilon z
 
 Don't worry, if you don't follow this. The point here is, that we have a coupled system of two oscillators. This can be solved numerically.
 
-We could use a simple numerical scheme like we have employed in Chapter 3. In the figure below $z(t)$ and $\theta (t)$ are shown using such a simple numerical scheme.
+We could use a simple numerical scheme like we have employed in [the first chapters](./1_Language.md). In the figure below $z(t)$ and $\theta (t)$ are shown using such a simple numerical scheme.
 
 
 ```{figure} ../images/WilberforceEuler.png
@@ -381,9 +381,7 @@ We will set up Newton's second Law for $m$.
 
 $$ m\frac{d\vec{v}}{dt} = -mg\hat{z} + \vec{F}_t $$
 
-As stated above, the blue, parallel part of gravity is balanced by a tensional force in the rod. So, we don't need to worry about motion of $m$ parallel to the rod. That leaves us with the direction perpendicular to the rod. In that direction only the red arrow works on $m$. 
-
-In the other direction only the red, perpendicular component of gravity acts on $m$. This component is equal to $-mg \sin \phi $. The velocity component in this direction is $v = L\frac{d\phi}{dt}$. Thus we get:
+As stated above, the blue, parallel part of gravity is balanced by a tensional force in the rod. So, we don't need to worry about motion of $m$ parallel to the rod. That leaves us with the direction perpendicular to the rod. In that direction only the red arrow works on $m$. This component is equal to $-mg \sin \phi $. The velocity component in this direction is $v = L\frac{d\phi}{dt}$. Thus we get:
 
 $$ m \frac{d \hat{v}}{dt} = m L \frac{d^2 \phi}{dt^2} = -mg \sin \phi $$
 
@@ -467,7 +465,7 @@ In the above we have frequently used the approximation $\sin \phi \approx \phi $
 
 $$ \begin{split}
 \frac{d^2\phi}{dt^2} + \frac{g}{L} \sin \phi &= 0 \\
-\text{ with i.c. } \phi(0) = \phi_0 \text{ and } \frac{d\phi}{dt} = \dot{\phi}_0
+\text{ with initial condition } \phi(0) = \phi_0 \text{ and } \frac{d\phi}{dt} = \dot{\phi}_0
 \end{split} $$
 
 This equation is much more difficult to solve analytically and we will, therefore, use a numerical approach here. The animation below compares the motion of the pendulum numerically simulated to that of the pendulum when using the small amplitude approximation. 

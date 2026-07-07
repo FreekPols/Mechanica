@@ -187,7 +187,7 @@ Before answering: first we need to think about **direction of rotation**. Does i
 
 Again the seesaw will give guidance. Suppose we remove the smaller mass all together. Then, it is obvious: the 'heavy' left side will rotate to the ground and the light right side upwards. From the point of view we are standing: the seesaw will rotate counter clockwise. 
 
-We will use the corkscrew rule or right hand rule to give that a direction: rotate a corkscrew clockwise and the screw will move into the cork away from you; rotate a corkscrew counter clockwise and it will move out of the cork, towards you. Of course, in stead of a corkscrew you can think of a screwdriver or a water tap: closing is rotating 'clock wise, opening the tap is counter clockwise (righty tighty, lefty loosy). 
+We will use the corkscrew rule or right hand rule to give that a direction: rotate a corkscrew clockwise and the screw will move into the cork away from you; rotate a corkscrew counter clockwise and it will move out of the cork, towards you. Of course, instead of a corkscrew you can think of a screwdriver or a water tap: closing is rotating 'clock wise, opening the tap is counter clockwise (righty tighty, lefty loosy). 
 
 ```{figure} ../images/ch6_RotatingDirection.svg
 :label: fig:ch6_SeeSaw5.svg
@@ -825,7 +825,7 @@ We divide both sides by $dt$ and take the limit $dt \rightarrow 0$:
 
 $$ \frac{dA}{dt} = ( \frac{1}{2} r v_\perp + \frac{1}{2}v_\perp v_{//}dt ) \rightarrow \frac{1}{2} r v_\perp $$
 
-In stead of $v_\perp$ we can also write $\frac{p_\perp}{m}$:
+Instead of $v_\perp$ we can also write $\frac{p_\perp}{m}$:
 
 $$ \frac{dA}{dt} = \frac{1}{2m} r p_\perp $$
 

@@ -152,6 +152,40 @@ The gravitational force acts from the earth on the jumper. Newton's law states t
 Although this sounds silly, when comparing this idea to the sun and the planets, we must draw the conclusion that the sun is actually wobbling as it is pulled towards the various planets! See also this [animated explanation](https://youtube.com/shorts/SLRGX5H1bt4?si=ded_KLH9kxSxQwQs)
 ```
 
+```{code-cell} python
+:tag: hide-input
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Tennis ball impact model
+contact_time = 0.005      # seconds, about 5 ms
+peak_force = 1200         # Newtons, example peak racket force
+n_points = 500
+
+t = np.linspace(0, contact_time, n_points)
+F = peak_force * np.sin(np.pi * t / contact_time)
+
+
+plt.figure(figsize=(8, 5))
+plt.plot(t * 1000, F, linewidth=2)
+plt.xlabel("Time during contact (ms)")
+plt.ylabel("Force on ball (N)")
+plt.grid(True)
+plt.show()
+``` 
+
+````{exercise} Tennisbal
+Consider the force acting on a tennis ball ($m=56\;\mathrm{g}$) being served. What are the steps required to calculate the velocity of the tennis ball?
+
+```{figure} ../images/tennis.png
+:label: fig_tennis
+:width: 100%
+
+Given the force-time graph of a tennis ball upon hit with the racket, what is the velocity of the tennis ball?
+```
+````
+
 (ch_NLaws_sec:_conservation)=
 ## Conservation of Momentum
 
@@ -485,9 +519,9 @@ Watch the recording below. What happens with the horizontal distance traveled pe
 
 ```{figure} ../images/Parabolic.*
 :width: 70%
+:alt: A short video of a small ball being shot upward at an angle. For each frame, it position is marked by a dot. The dots make up a parabola. 
 
 A parabolic motion visualized, with the position stored per time unit
-:alt: A short video of a small ball being shot upward at an angle. For each frame, it position is marked by a dot. The dots make up a parabola. 
 ```
 
 Assume the object with mass $m_1$ is shot from the ground with a velocity of $v_0$ at an angle of $\theta$. Derive where the object hits the ground in terms of $m_1$, $v_0$ and $\theta$.

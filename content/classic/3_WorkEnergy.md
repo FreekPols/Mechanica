@@ -351,7 +351,7 @@ In general, the amount of work depends on the path followed. That is, the work d
 :alt: Two points are plotted (r1 and r2). Two different curvy paths between the two points are drawn. 
 :align: center
 
-Two different paths.
+Two different paths. In a conservative force field the work done will be the same.
 ```
 
 
