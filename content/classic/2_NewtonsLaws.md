@@ -152,6 +152,11 @@ The gravitational force acts from the earth on the jumper. Newton's law states t
 Although this sounds silly, when comparing this idea to the sun and the planets, we must draw the conclusion that the sun is actually wobbling as it is pulled towards the various planets! See also this [animated explanation](https://youtube.com/shorts/SLRGX5H1bt4?si=ded_KLH9kxSxQwQs)
 ```
 
+
+
+````{exercise} Tennisbal
+Consider the force acting on a tennis ball ($m=56\;\mathrm{g}$) being served. What are the steps required to calculate the velocity of the tennis ball?
+
 ```{code-cell} python
 :tag: hide-input
 
@@ -174,9 +179,6 @@ plt.ylabel("Force on ball (N)")
 plt.grid(True)
 plt.show()
 ``` 
-
-````{exercise} Tennisbal
-Consider the force acting on a tennis ball ($m=56\;\mathrm{g}$) being served. What are the steps required to calculate the velocity of the tennis ball?
 
 ```{figure} ../images/tennis.png
 :label: fig_tennis
@@ -456,7 +458,7 @@ Initial conditions: $t=0 \rightarrow s(0) = s_0 = 1.5 \: \mathrm{m} \text{ and }
 $s(1.02) = -\frac{1}{2}\cdot9.81\cdot1.02^2 + 10\cdot1.02 + 1.5 = 6.6 \mathrm{m}$
 2. See above.
 3.  $s(t) = \frac{1}{2}at^2 + v_0t + s_0 = s_e$  
-$t = \frac{-v_0\pm\sqrt{v_0^2-4(\frac{1}{2}a(s_0-s_e))}}{2\frac{1}{2}a} = \frac{-10\pm\sqrt{10^2-4(\frac{1}{2}(-9.81)(1.5))}}{-9.81}=2.18\mathrm{s}$  
+$t = \frac{-v_0\pm\sqrt{v_0^2-4(\frac{1}{2}a(s_0-s_e))}}{2\frac{1}{2}a} = \frac{-10\pm\sqrt{10^2-4(\frac{1}{2}(-9.81)(1.5))}}{-9.81}=2.18\; \mathrm{s}$  
 $v(2.18)=\dot{s}(2.18)=v_0 + at=10-9.81\cdot2.18=-11.3 \: \mathrm{m/s}$  
 Note that $t=-0.14\; \mathrm{s}$ is another solution, but not physically realistic.
 :::
@@ -849,6 +851,7 @@ Not always are the friction coefficients constants. They may, for instance, depe
 ```{code-cell} python
 :tag: hide-input
 
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
