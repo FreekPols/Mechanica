@@ -230,6 +230,8 @@ Use the Python app below, and answer the following questions:
 
 ```{code-cell} python
 :tag: hide-input
+import micropip
+await micropip.install('ipywidgets')
 
 import numpy as np
 import matplotlib.pyplot as plt
