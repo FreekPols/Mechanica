@@ -240,7 +240,7 @@ NB: If you buy a light bulb for a lamp, then a temperature is indicated on the p
 
 ```{code-cell} python
 :tag: hide-input
-
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 import ipywidgets

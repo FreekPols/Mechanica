@@ -417,6 +417,7 @@ Push the ON-button at the top right and the play button next to launch the pytho
 :tag: hide-input
 # App on vector addition
 
+%pip install ipywidgets
 import matplotlib.pyplot as plt
 import numpy as np
 from ipywidgets import interact, FloatSlider

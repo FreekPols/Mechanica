@@ -643,7 +643,7 @@ $$ \frac{T_A^2}{R_A^3} = \frac{T_B^2}{R_B^3}= \text{const.} $$
 
 ```{code-cell} python
 :tag: hide-input
-
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 from ipywidgets import interact
@@ -1098,6 +1098,33 @@ In {numref}`fig:ch6_FigureKepler3.svg` Kepler's third law is shown for our solar
 Kepler 3 for our solar system.
 ```
 
+````{exercise}
+Below are data on the planets, as taken from [Nasa](https://solarsystem.nasa.gov/planet-compare/)
+
+|Planet |Orbit distance (km) |Orbit period (earth years) |
+| --- | --- | --- |
+|Mercury |57909227   |0.2408467 |
+|Venus |108209475    |0.6151973 |
+|Earth |149598262    |1.0000174 |
+|Mars |227943824     |1.8808476 |
+|Jupiter |778340821  |11.862615 |
+|Saturn |1426666422  |29.447498 |
+|Uranus |2870658186  |84.016846 |
+|Neptune |4498396441 |164.79132 |
+
+Use these data to reproduce the graph depicted in @fig:ch6_FigureKepler3.svg.
+							
+```{pyodide}
+import numpy as np
+import matplotlib.pyplot as plt
+
+planets = np.array(["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"])
+orbit_distance_km = np.array([57909227, 108209475, 149598262, 227943824, 778340821, 1426666422, 2870658186, 4498396441])
+orbit_period_years = np.array([0.2408467, 0.6151973, 1.0000174, 1.8808476, 11.862615, 29.447498, 84.016846, 164.79132])
+
+```
+```` 
+
 
 ````{note} Haley's comet 
 The planets aren't the only objects that move around the sun. Several icy, rocky smaller objects are trapped in a closed orbit around the sun. These objects, comets from the Greek word for 'long-haired star', are left-overs from when our solar system was formed, some  4.6 billion years ago. There are many comets in our solar system. More than 4500 have been identified, but there are probably much more. Usually the orbit of a comet, if it's a closed one, has a high eccentricity (i.e. close to 1). Moreover, their orbital period may be very long.
@@ -1157,7 +1184,7 @@ This mismatch is not understood to this day! The mass $M$ here is calculated fro
 
 The majority of all matter in the universe is believed to be *dark*. And we have no clue what it could be! Most scientist even think it must be [non-baryonic](https://en.wikipedia.org/wiki/Baryon), that is, other stuff than our well-known protons or neutrons. It remains most confusing.
 
-The usual distance unit for distances in astronomy outside the solar system is not light years (ly), but [parsec](https://en.wikipedia.org/wiki/Parsec) [pc], or kpc, or Mpc. One parsec is about 3.3 ly (or $10^{13} \ \mathrm{km}$). Note: stars visible to the eye are typically not more than a few hundred parsec away. The Milky Way is perfectly visible to the naked eye as a band/stripe of "milk" sprayed over the night sky. But you cannot see it anywhere close to Delft, there is much too much light from cities and greenhouses. Go to Scandinavia in the winter ("wintergatan") or any place remote where there are few people. The reason you see a "band" in the night sky, is that the Milky Way is a spiral galaxy, sort of pancake shaped, and you see the band in the direction of the pancake. 
+The usual distance unit for distances in astronomy outside the solar system is not light years (ly), but [parsec](https://en.wikipedia.org/wiki/Parsec) [pc], or kpc, or Mpc. One parsec is about $3.3 \mathrm{ly}$ (or $10^{13} \ \mathrm{km}$). Note: stars visible to the eye are typically not more than a few hundred parsec away. The Milky Way is perfectly visible to the naked eye as a band/stripe of "milk" sprayed over the night sky. But you cannot see it anywhere close to Delft, there is much too much light from cities and greenhouses. Go to Scandinavia in the winter ("wintergatan") or any place remote where there are few people. The reason you see a "band" in the night sky, is that the Milky Way is a spiral galaxy, sort of pancake shaped, and you see the band in the direction of the pancake. 
 
 
 

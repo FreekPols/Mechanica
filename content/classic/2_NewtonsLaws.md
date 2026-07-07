@@ -1170,7 +1170,7 @@ If we inspect and assess our solution, we see: the particle slows down (as is to
 
 ```{code-cell} python
 :tag: hide-input
-
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 from ipywidgets import interact, FloatSlider
@@ -1199,9 +1199,7 @@ interact(
 
 (ch_NLaws_sec:_inertia)=
 ### Inertia
-We often take the idea of mass for granted. It is how heavy something is. However, we can think of mass as the resistance to changing velocity, also called intertia and denoted by m. 
-
-Inertia is denoted by the letter $ m $ for mass. And mass is that property of an object that characterizes its resistance to changing its velocity. Actually, we should have written something like $ m_i $, with subscript i denoting inertia.
+We often take the idea of mass for granted. It is how heavy something is. However, we can think of mass as the resistance to changing velocity, also called intertia and denoted by $m$ for mass. And mass is that property of an object that characterizes its resistance to changing its velocity. Actually, we should have written something like $ m_i $, with subscript i denoting inertia.
 
 Why? There is another property of objects, also called mass, that is part of Newton's Gravitational Law.
 
@@ -1330,6 +1328,15 @@ plt.tight_layout()
 plt.show()
 ```
 
+```{figure} ../images/consEfield.png
+:label: fig_consEfield
+:width: 90%
+
+The force field that a positively charged particle would feel due to the presence of 2 negatively charged particles (both of the same charge).
+```
+
+
+
 **Measuring mass or force**  
 So far we did not address how to measure force. Neither did we discuss how to measure mass. This is less trivial than it looks at first side. Obviously, force and mass are coupled via N2: $ F = m a $. 
 
@@ -1400,7 +1407,6 @@ The essence of the Eötvös experiment is finding a set up in which both gravity
 ```{figure} ../images/ch2_EotvosExperiment.svg
 :name: fig:EotvosExperiment
 :width: 50%
-align: center
 :alt: Mass m1 and m2 are connected to either end of a horizontal rod. The rod, in turn, is connected by a vertical wire to the ceiling. The rod can rotate around its suspension point. 
  
 Torsion balance used by Eötvös.

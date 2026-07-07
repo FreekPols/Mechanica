@@ -230,9 +230,7 @@ Use the Python app below, and answer the following questions:
 
 ```{code-cell} python
 :tag: hide-input
-import micropip
-await micropip.install('ipywidgets')
-
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle

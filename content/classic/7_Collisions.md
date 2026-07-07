@@ -12,7 +12,7 @@ kernelspec:
   display_name: 'Python 3'
 ---
 
-
+(ch_collisions)=
 # Collisions
 
 ## What are collisions?
@@ -220,7 +220,7 @@ The 3Blue1Brown series on linear algebra describes the linear transformations ab
 
 ```{code-cell} python
 :tag: hide-input
-
+%pip install ipywidgets
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
