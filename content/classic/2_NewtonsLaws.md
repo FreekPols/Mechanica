@@ -1166,6 +1166,8 @@ $$x(t) = \frac{m v_0}{b} \left ( 1 - e^{-\frac{b}{m}t} \right ) $$
 
 If we inspect and assess our solution, we see: the particle slows down (as is to be expected with a frictional force acting on it) and eventually comes to a stand still. At that moment, the force has also decreased to zero, so the particle will stay put.
 
+````
+
 ```{code-cell} python
 :tag: hide-input
 
@@ -1193,8 +1195,6 @@ interact(
     b=FloatSlider(value=0.5, min=0.1, max=5.0, step=0.1),
 )
 ```
-
-````
 
 
 (ch_NLaws_sec:_inertia)=
