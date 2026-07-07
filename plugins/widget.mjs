@@ -1,5 +1,5 @@
 const PYODIDE_CDN = "https://cdn.jsdelivr.net/pyodide/v0.29.3/full/";
-const DEFAULT_PACKAGES = ["numpy", "pandas", "matplotlib"];
+const DEFAULT_PACKAGES = ["numpy", "pandas", "matplotlib","ipywidgets"];
 
 
 
