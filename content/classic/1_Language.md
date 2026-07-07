@@ -153,7 +153,7 @@ Three forces act on the jumper, shown in the figure below. Finding the terminal 
 
 ```
 
-The buoyancy force is much smaller than the force of gravity (about 0.1%) and we thus may neglect it.
+The buoyancy force is much smaller than the force of gravity (about $0.1%$) and we thus may neglect it.
 
 :::
 :::{tab-item} Develop
@@ -693,7 +693,6 @@ Change the code so that the base jumper starts with an initial velocity along th
 Is the acceleration in the z-direction with and without initial velocity the same? Elaborate.
 
 ```{pyodide}
-:linenos: 
 
 # Simulation of a base jumper 
 
