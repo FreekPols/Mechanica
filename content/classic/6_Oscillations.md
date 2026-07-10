@@ -616,7 +616,7 @@ or bringing all terms to the left hand side:
 
 $$ m\ddot{x} + b \dot{x} + kx = 0 $$
 
-To solve this equation, it is easier not to try to look directly for sinus and cosines, but use the complex notation, see the intermezzo. 
+To solve this equation, it is easier not to try to look directly for sinus and cosines, but use the complex notation, see the intermezzo and the [appendix on complex numbers](../appendix/Complex.md) . 
 
 
 ```{intermezzo} Intermezzo: complex exponential and sin, cos 

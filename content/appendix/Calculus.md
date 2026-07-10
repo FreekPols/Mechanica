@@ -12,17 +12,86 @@ kernelspec:
 # Calculus 
 
 ## Derivatives
+In his work, Redish distinguishes three perspectives on what the derivative is:
+1. **Geometric**: The derivative at a point gives the slope of the tangent line to the curve at that point.
+2. **Physical**: The derivative represents the instantaneous rate of change, such as velocity being the derivative of position with respect to time.
+3. **Analytical**: The derivative is defined as the limit of the average rate of change as the interval approaches zero.
 
+
+
+```{code-cell} python
+:tags: hide-input
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(0,2*np.pi,500)
+y = 2.3*np.sin(x)
+dy_dx = np.gradient(y, x)
+
+
+i = 70
+x0 = x[i]
+y0 = y[i]
+slope = dy_dx[i]
+
+tangent = y0 + slope * (x - x0)
+
+plt.figure()
+plt.plot(x,y)
+plt.plot(x,dy_dx,'r--', label='derivative')
+plt.plot(x,tangent,'b--',label='tangent')
+plt.scatter(x0, y0, zorder=3,label='point of contact')
+plt.ylim(-2.5,2.5)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend()
+# plt.savefig('../derivative.png',dpi=450)
+plt.show()
+```
+
+```{figure} ../images/derivative.png
+:label: fig_derivative
+:width: 80%
+
+A sine function with both its derivative (a cosine function) and its tangent at a certain point.
+```
+
+In general the rate of change at a certain point can be taken using:
+
+
+$$\frac{\Delta y}{\Delta x}=\frac{y(x+\Delta x)-y(x)}{\Delta x}$$ 
+
+
+and the derivative the limit of $\Delta x \rightarrow 0$
+
+$$\frac{dy}{dx}=\underset{\Delta x \rightarrow 0}{\lim} \frac{y(x+\Delta x)-y(x)}{\Delta x}$$ 
+
+
+Remember from high school how to take a derivative
 $$ f(x) = x^2 \implies \frac{d}{dx}f(x) = 2x $$
 
 or in general:
 
 $$ f(x) = x^n \implies \frac{d}{dx}f(x) = nx^{n-1} $$
 
-Three perspectives on the derivative (werk van .. in TPT):
-1. **Geometric**: The derivative at a point gives the slope of the tangent line to the curve at that point.
-2. **Physical**: The derivative represents the instantaneous rate of change, such as velocity being the derivative of position with respect to time.
-3. **Analytical**: The derivative is defined as the limit of the average rate of change as the interval approaches zero.
+
+
+### List of standard derivatives
+Below is a list of some standard functions $Z(x,y)$ and their derivatives with respect to $x$.
+
+| Function $Z(x,y)$ | $\frac{dZ}{dx}$ | 
+|------------------|-----------------|
+| $x + y$          | 1               |
+| $x \cdot y$      | y               |
+| $x^n$            | $n\cdot x^{n-1}$|
+| $e^{cx}$         | $ce^{cx}$       |
+| $n^x$            | $n^x \ln{n}$    |
+| $\ln{x}$         | $\frac{1}{x}$   |
+| $\sin{x}$        | $\cos{x}$       |
+| $\cos{x}$        | $-\sin{x}$      |
+| $\tan{x}$        | $1+\tan^2{x}$   |
+
+
 
 From 
 
@@ -79,27 +148,11 @@ $$ h'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2} = \frac{2x \cdot
 
 ### Summarized
 
-| Function                | Derivative                          |
+| Function               | Derivative                         |
 |------------------------|------------------------------------|
 | $f(x)\cdot g(x)$       | $f'(x)g(x) + f(x)g'(x)$            |
 | $\frac{f(x)}{g(x)}$    | $\frac{g(x)f'(x)-f(x)g'(x)}{g'(x)^2}$ |
 | $f(g(x))$              | $f'(g(x))g'(x)$                    |
-
-
-### List of standard derivatives
-Below is a list of some standard functions $Z(x,y)$ and their derivatives with respect to x.
-
-| Function $Z(x,y)$ | $\frac{dZ}{dx}$ | 
-|------------------|-----------------|
-| $x + y$          | 1               |
-| $x \cdot y$      | y               |
-| $x^n$            | $n\cdot x^{n-1}$|
-| $e^{cx}$         | $ce^{cx}$       |
-| $n^x$            | $n^x \ln{n}$    |
-| $\ln{x}$         | $\frac{1}{x}$   |
-| $\sin{x}$        | $\cos{x}$       |
-| $\cos{x}$        | $-\sin{x}$      |
-| $\tan{x}$        | $1+\tan^2{x}$   |
 
 
 
@@ -197,7 +250,7 @@ $$ \nabla \times \mathbf{F} = \begin{vmatrix} \hat{x} & \hat{y} & \hat{z} \\ \fr
 where $\hat{x}$, $\hat{y}$, and $\hat{z}$ are the unit vectors in the x, y, and z directions, respectively, and $F_x$, $F_y$, and $F_z$ are the components of the vector field $\mathbf{F}$. Note that the outcome of taking the curl at a point returns a vector (or taking the curl of the vector field results in another vector field).
 
 (divergence)=
-### divergence
+### Divergence
 Divergence is used in [chapter ](#link) on ... Divergence of a vector field $\mathbf{F}$ is denoted as $\nabla \cdot \mathbf{F}$. It quantifies the magnitude of a source or sink at a given point in the field. A positive divergence indicates a source (where field lines are diverging), while a negative divergence indicates a sink (where field lines are converging). Mathematically, the divergence in three dimensions is defined as:
 
 $$ \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z} $$
