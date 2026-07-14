@@ -66,20 +66,11 @@ and the derivative the limit of $\Delta x \rightarrow 0$
 
 $$\frac{dy}{dx}=\underset{\Delta x \rightarrow 0}{\lim} \frac{y(x+\Delta x)-y(x)}{\Delta x}$$ 
 
-
-Remember from high school how to take a derivative
-$$ f(x) = x^2 \implies \frac{d}{dx}f(x) = 2x $$
-
-or in general:
-
-$$ f(x) = x^n \implies \frac{d}{dx}f(x) = nx^{n-1} $$
-
-
+We now can calculate the rate of change of a given function, but we can calculate as well the exact value by taking the derivative. Below a list of some standard functions $Z(x,y)$ and their derivatives with respect to $x$. The list is followed by mathematical rules that can be applied to calculate the derivative of more difficult functions.
 
 ### List of standard derivatives
-Below is a list of some standard functions $Z(x,y)$ and their derivatives with respect to $x$.
 
-| Function $Z(x,y)$ | $\frac{dZ}{dx}$ | 
+| function ($Z(x,y)$) | derivative ($\frac{dZ}{dx}$) | 
 |------------------|-----------------|
 | $x + y$          | 1               |
 | $x \cdot y$      | y               |
@@ -93,14 +84,6 @@ Below is a list of some standard functions $Z(x,y)$ and their derivatives with r
 
 
 
-From 
-
-
-
-```{grasple} https://embed.grasple.com/exercises/5681833d-5762-42f1-a1e7-8959da537fb7?id=129579
-
-```
-
 ### Chain rule
 A function with a function $f(g(x))$ (like $\sin(x^2)$) can be differentiated using the chain rule:
 
@@ -109,7 +92,7 @@ $$ \frac{d}{dx}f(g(x)) = f'(g(x)) \cdot g'(x) $$
 ```{example} Chain rule example
 Differentiate $h(x) = \sin(x^2) $. 
 
-Here we first identify our two functions ($f(g(x))=\sin(g(x))$ and $g(x)=x^2$). Using the chain rule we get:
+Here we first identify our two functions $f(g(x))=\sin(g(x))$ and $g(x)=x^2$. Using the chain rule we get:
 
 $$ h'(x) = f'(g(x)) \cdot g'(x) = \cos(x^2) \cdot 2x = 2x\cos(x^2) $$
 ```
@@ -170,10 +153,34 @@ Noted that in the first year physics course, you will encounter this as well as 
 
 
 ## Integration
+The antiderivative (dutch: primitieve) of a function $f(x)$ is the function $F(x)$ such that $F'(x)=f(x)$.
 
 
-## Line integrals
-We encounter line integrals in chapter 4 on work. The amount of work done by a force field $\vec{F}$ when moving an object along a path $C$ is given by the line integral: 
+### List of standard antiderivatives
+Below is a list of some standard functions and their derivatives with respect to $x$.
+
+| function ($Z(x)$) | antiderivative ($\int Zdx$) | 
+|------------------|-----------------|
+| $x^n$            | $\frac{1}{n+1} x^{n+1}$ + C (for $n\neq -1$)|
+| $\frac{1}{x}$    | $\ln \lvert x \rvert + C$ |
+| $e^{cx}$         | $\frac{1}{c}e^{cx} + C$   |
+| $n^x$            | $\frac{n^x}{\ln n} + C$ (for $n > 0, n\neq 1$)   |
+| $\ln{x}$         | $\frac{1}{x} + C$   |
+| $\sin{x}$        | $-\cos{x} + C$       |
+| $\cos{x}$        | $\sin{x} + C$      |
+| $\tan{x}$        | $\ln \lvert \sec(x) \rvert + C$ [^eq_sec]   |
+
+[^eq_sec]: $\sec(x)=\frac{1}{\cos(x)}$
+
+### Substitution rule
+
+$$\int_a^b f(g(x)) \cdot g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$$
+
+
+∫3⁢(8⁢𝑦−1)⁢𝐞4⁢𝑦2−𝑦𝑑𝑦
+
+### Line integrals
+We encounter line integrals in [the chapter on _work_](../classic/3_WorkEnergy.md). The amount of work done by a force field $\vec{F}$ when moving an object along a path $C$ is given by the line integral: 
 
 $$ W = \int_C \vec{F} \cdot d\vec{r} $$
 
@@ -184,7 +191,7 @@ VISUALIZATION
 In a conservative force field, such as gravity or electrostatic forces, the work done is path-independent and only depends on the initial and final positions. 
 
 
-## Closed loop integrals
+### Closed loop integrals
 We encounter closed loop integrals in chapter ... There we see that a closed loop integral is the same as a line integral where the start and end point are the same. A closed loop integral is denoted as:
 
 $$ \oint_C \vec{F} \cdot d\vec{r} $$
@@ -202,9 +209,29 @@ The nabla operator can be applied to a scalar (*gradient*) or to a vector(field)
 
 Note that some of the explanation below is better understood when looking at [linear algebra](#linalg) first.
 
+(gradient)=
+###  Gradient
+
+The gradient of function $f$ is $\nabla f$. It creates a vector that indicates the directions in which $f$ increases or decreases:
+
+$$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \\ \frac{\partial f}{\partial z} \end{pmatrix}$$
+
+```{code-cell}
+:tags: hide-input
+import numpy as np
+import matplotlib.pyplot as plt
+
+X,Y=np.meshgrid(np.arange(-10,11),np.arange(-10,11))
+graddat=numgradfun(X,Y)
+
+plt.figure()
+plt.quiver(X,Y,graddat[0],graddat[1])
+plt.show()
+```
+
 (Curl)=
 ### Curl
-The curl is used in the [chapter on work and energy](#ch_WorkEnergy), specifically in the context of assessing whether a force field is conservative (if so, the path from A to B does not matter on the amount of work that is done). The curl of a vector field $\mathbf{F}$ is denoted as $\nabla \times \mathbf{F}$. In mathematical terms, it provides a measure of the rotation (or swirling strength) of the field at a given point. A zero curl indicates that the field is irrotational, which is a characteristic of conservative fields. To get a better conceptual understanding, we can inspect the two fields below. The left is clearly rotating around the center, while the right one is not as all vectors point to the same direction (0,0). Hence, we expect that if we take the curl of the left field, it will be non-zero, while for the right field it will be zero.
+The curl is used in the [chapter on work and energy](../classic/3_WorkEnergy.md), specifically in the context of assessing whether a force field is conservative (if so, the path from A to B does not matter on the amount of work that is done). The curl of a vector field $\mathbf{F}$ is denoted as $\nabla \times \mathbf{F}$. In mathematical terms, it provides a measure of the rotation (or swirling strength) of the field at a given point. A zero curl indicates that the field is irrotational, which is a characteristic of conservative fields. To get a better conceptual understanding, we can inspect the two fields below. The left is clearly rotating around the center, while the right one is not as all vectors point to the same direction (0,0). Hence, we expect that if we take the curl of the left field, it will be non-zero, while for the right field it will be zero.
 
 ```{code-cell} python
 import numpy as np
@@ -257,9 +284,3 @@ $$ \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_
 
 where $F_x$, $F_y$, and $F_z$ are the components of the vector field $\mathbf{F}$. Note that taking the divergence at a point returns a scalar value, not a vector.
 
-(gradient)=
-###  Gradient
-
-The gradient of function $f$ is $\nabla f$. It creates a vector that indicates the directions in which $f$ increases or decreases:
-
-$$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \\ \frac{\partial f}{\partial z} \end{pmatrix}$$

@@ -68,27 +68,12 @@ project:
     
     - file: content/appendix/appendix.md
       children:
-        - file: content/appendix/Math.md
-          children:
-            - file: content/appendix/Calculus.md
-            - file: content/appendix/LinAlg.md
-            - file: content/appendix/LinDif.md
-            - file: content/appendix/Taylor.md
-            - file: content/appendix/Complex.md
+        - file: content/appendix/Calculus.md
+        - file: content/appendix/LinAlg.md
+        - file: content/appendix/LinDif.md
+        - file: content/appendix/Taylor.md
+        - file: content/appendix/Complex.md
         - file: content/appendix/Example_exam.md
         # - file: content/appendix/grasple.md
         # - file: content/appendix/grasple_sr.md
 
-
-    # - title: Project
-    #   children:
-    #     - file: content/project/Deeltjes.ipynb
-
-    # - file: content/howto/Fordevelopers.md
-    #   children:
-    #     - file: content/howto/Howtostart.md
-    #     - file: content/howto/Cheatsheet.md
-    #     - file: content/howto/test.ipynb
-    #     - file: content/howto/test2.md
-    #     - file: content/howto/GHGL.md
-        

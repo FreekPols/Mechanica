@@ -15,6 +15,7 @@ MechaRela vs 1 feb 2026.pdf
 
 #Ignore backup files/folders
 **/.ipynb_checkpoints/
+.ipynb_checkpoints
 
 _build
 cspell.json

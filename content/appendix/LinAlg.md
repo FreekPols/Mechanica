@@ -91,10 +91,12 @@ we can calculate the cross product as:
 
 $$ \vec{\tau} = \begin{pmatrix} r_{y} F_{z} - r_{z} F_{y} \\ r_{z} F_{x} - r_{x} F_{z} \\ r_{x} F_{y} - r_{y} F_{x} \end{pmatrix} $$
 
-```{note} needs some attention
-or, as a mnemonic (ezelsbruggetje), we can include the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$:
+```{note} Mnemonic
+It might be difficult to remember the steps. As a mnemonic (ezelsbruggetje), we can include the unit vectors $\hat{i}$, $\hat{j}$, and $\hat{k}$:
 
 $$ \vec{\tau} = \begin{pmatrix} \hat{i} & \hat{j} & \hat{k} \\ r_{x} & r_{y} & r_{z} \\ F_{x} & F_{y} & F_{z} \end{pmatrix} $$
+
+We then see that the cross product is the same as taking the determinant. 
 
 ```
 
