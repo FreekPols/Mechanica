@@ -284,7 +284,7 @@ $$
 \frac{h^2f^2}{c^2}-2\frac{hfhf'}{c^2}\cos\theta + \frac{h^2 f'^2}{c^2}=m_e^2 \gamma^2(u)u^2 \quad (*)
 $$
 
-The right hand side of the equation is the space component squared of the momentum after: $p^2_{e'} = m_e^2\gamma^2(u)u^2$, but this can be related to the energy via the [momentum-energy relation](./ChX6_FourMomentum.md#energy-momentum-relation) for the moment after $(p_{e'}c)^2 = E^2_{e'}-(m_ec^2)^2$. We will use this to eliminate the unknown speed $u$.
+The right hand side of the equation is the space component squared of the momentum after: $p^2_{e'} = m_e^2\gamma^2(u)u^2$, but this can be related to the energy via the momentum-energy relation for the moment after $(p_{e'}c)^2 = E^2_{e'}-(m_ec^2)^2$. We will use this to eliminate the unknown speed $u$.
 
 The energies can be related via the 0-component of the 4-momentum
 
