@@ -153,7 +153,7 @@ Three forces act on the jumper, shown in the figure below. Finding the terminal 
 
 ```
 
-The buoyancy force is much smaller than the force of gravity (about $0.1%$) and we thus may neglect it.
+The buoyancy force is much smaller than the force of gravity (about $0.1\%$) and we thus may neglect it.
 
 :::
 :::{tab-item} Develop

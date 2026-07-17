@@ -656,7 +656,7 @@ $$
 	\end{cases} 
 $$
  
-Luckily, the definition of potential energy is such that these rules are easy to visualize in 1D and to remember, see {numref}`fig:ch4_PotentialStableUnstable.svg`
+Luckily, the definition of potential energy is such that these rules are easy to visualize in 1D and to remember, see {numref}`fig:ch4_PotentialStableUnstable.svg`.
 
 ```{figure} ../images/ch4_PotentialStableUnstable.svg
 :label: fig:ch4_PotentialStableUnstable.svg

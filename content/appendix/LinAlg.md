@@ -152,8 +152,10 @@ $$ R = A\vec{r} = \begin{pmatrix} a_{11}x + a_{12}y + a_{13}z \\ a_{21}x + a_{22
 
 ### Rotation matrices
 
-### Two dimensional
-**unit matrix**
+We can use matrix multiplication to rotate vectors in the plane. A rotation matrix changes the direction of a vector while preserving its length and the angle between vectors.
+
+**unit matrix**  
+There is a matrix that if any vector is multiplied by this matrix, the vector itself is returned. This is the unit matrix.
 $$ R = A\vec{r} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix} $$
 
 **rotation matrix**  
@@ -217,7 +219,10 @@ plt.show()
 
 
 ### Three dimensional
+Where we use above only two dimensional rotation matrices, these can be easily extended to three dimensional cases:
 
 $$ R = A\vec{r} = \begin{pmatrix} 1 & 0 & 0\\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} x \\ y \\ z \end{pmatrix} $$
 
 $$ R = A\vec{r} = \begin{pmatrix} 0 & 0 & 1\\ 0 & 1 & 0 \\ 1 & 0 & 0 \end{pmatrix} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} z \\ y \\ x \end{pmatrix} $$
+
+As this book only covers two dimensional cases, we do not elaborate here further.

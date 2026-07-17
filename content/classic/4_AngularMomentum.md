@@ -1150,11 +1150,15 @@ Trajectory of Haley's comet. From [Wikimedia Commons](https://commons.wikimedia.
 Starting from Kepler 3, we can compute the orbital speed of a planet around the sun
 
 
-$$ \begin{split}
-T^2 &= \frac{4\pi^2}{GM}a^3, \quad \text{with} a = \frac{GMm}{2|E|}\\
-T=\frac{2\pi}{\omega}, \quad \omega=\frac{v}{r}, \quad a \approx r \quad \text{using } \omega^2 = \frac{GM}{a^3} \\
-\Rightarrow v &= \sqrt{\frac{GM}{r}}
-\end{split} $$
+$$ 
+T^2 &= \frac{4\pi^2}{GM}a^3, \quad \text{with} \; a = \frac{GMm}{2|E|} \; \text{and}\\
+T&=\frac{2\pi}{\omega}, \quad \omega=\frac{v}{r}, \quad a \approx r \quad
+$$
+
+then using $\omega^2 = \frac{GM}{a^3}$, results in:
+
+$$ v = \sqrt{\frac{GM}{r}} $$
+
 
 Indeed if we measure the speed of the planets in the solar system this prediction holds, the velocity drops with the distance from the sun as $\propto r^{-1/2}$ (see figure). As $M$ we use the mass of the sun here.
 
@@ -1167,7 +1171,7 @@ Indeed if we measure the speed of the planets in the solar system this predictio
 From [LibreTexts Physics](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Big_Ideas_in_Cosmology_%28Coble_et_al.%29/08%3A_Dark_Matter/8.02%3A_Velocities_Mass_and_Gravity-_the_Solar_System), licensed under CC BY-NC-SA 4.0.
 ```
 
-The distance is measured in [Astronomical Units [AU]](https://en.wikipedia.org/wiki/Astronomical_unit), the distance from the earth to the sun (about 8.3 light minutes). Note that the earth is moving with an unbelievable 30 km/s, that is $10^5$ km/h! Do you notice any of that? We will use this motion later with the Michelson-Morley experiment.
+The distance is measured in [Astronomical Units [AU]](https://en.wikipedia.org/wiki/Astronomical_unit), the distance from the earth to the sun (about $8.3 \mathrm{light minutes}$). Note that the earth is moving with an unbelievable $30 \mathrm{km/s}$, that is $10^5 \mathrm{km/h}$! Do you notice any of that? We will use this motion later with the Michelson-Morley experiment.
 
 If we plot the same speed versus distance curve not for the planets in our solar system, but for stars orbiting the center of our galaxy, the milky way, then the picture looks very different. The far away stars orbit at a much higher speed than expected and the form of the found curve does not match $\propto r^{-1/2}$. 
 

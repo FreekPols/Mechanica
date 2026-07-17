@@ -8,7 +8,7 @@ numbering:
 # Exercises, examples & solutions
 
 ## Worked examples
-### Title of example
+### Overtaking on the road
 
 ::::{tab-set}
 :::{tab-item} Interpret the problem
@@ -24,7 +24,7 @@ The relative velocity is $5 \; \mathrm{km/h} = 1.4 \; \mathrm{m/s}$.
 :::{tab-item} Evaluate the problem
 $t = \frac{s}{v} = \frac{90}{1.4}= 64.8 \; \mathrm{s}$ 
 
-The total distance traveled by car is $1854 \mathrm{m}$!
+The total distance traveled by car is $1854 \; \mathrm{m}$!
 
 Although the cars are next to each other, they have a relative velocity to each other. The ball can therefore not be caught by the other. For the thrower the ball remains parallel to their own car. For the catcher the ball seems to travel backwards (other direction than the var is moving). A person next to the scene will always see the ball moving in the same direction of the cars.
 ::: 

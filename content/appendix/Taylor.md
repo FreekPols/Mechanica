@@ -56,4 +56,3 @@ def update(n):
 interact(update, n=widgets.FloatSlider(min=1, max=20, step=1, value=4))
 ```
 
-# Fourier series

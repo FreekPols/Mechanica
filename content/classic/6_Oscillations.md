@@ -94,6 +94,31 @@ A Wilbertforce pendulum made by first year physics students
 
 The system can be modeled with simple means. We will just postulate them. Later on, we will see where the terms come from.  
 First, we note that the mass has kinetic energy, in two forms: due to the vertical motion ($\frac{1}{2}m\dot{z}^2$) and due to the rotational motion ($\frac{1}{2}I\dot{\theta}^2$). Don't worry about the exact meaning for now.  
+
+````{dropdown} Moment of Inertia $I$
+We skipped over the quantity $I$, the moment of inertia. As the name predicts, it relates to inertia $m$ but now relates to the resistance of rotational acceleration. 
+
+```{figure} ../images/momofinertia.png
+:label: fig_momofinertia
+:width: 70%
+
+A ball rolling down a slope not only has kinetic energy ($\frac{1}{2}mv^2$), it also has rotational energy $\frac{1}{2}I\omega^2$.
+```
+
+The moment of inertia depends on the objects shape and rotation axis, officially: 
+
+$$I=\sum m_i r_i^2 \rightarrow \int_0^M r^2dm$$
+
+For some objects, we have given the moment of inertia below:
+
+|Object|Moment of inertia|
+|---|---|
+|Solid cylinder rotating along the symmetry axis|$\frac{1}{2}MR^2$|
+|Hoop rotating along the symmetry axis|$MR^2$| 
+|Solid sphere|$\frac{2}{3}MR^2$  |
+|Hollow sphere |$\frac{2}{3}MR^2$ |
+````
+
 Second, the mass has potential energy. We will ignore gravity (we could for instance do the experiment in the International Space Station, ISS). A potential energy is associated with the vertical motion and is the spring energy: $V_z = \frac{1}{2}kz^2$, with $z$ the vertical position of the mass with respect to the equilibrium position, which we took as $z=0$. $k$ is the spring constant and represents the strength of the spring. We will come back to this later.  
 Then, we have potential energy associated with the rotation: $V_\theta = \frac{1}{2} \delta \theta^2$. $\theta$ represent the rotation angle, where we have taken $\theta = 0$ in the equilibrium position. $\delta$ is the torsional spring constant: it represents how strongly the spring tries to push back against rotation.  
 Finally, the vertical position and the rotation influence each other. That can be understood by realizing that if you shorten the spring, the spring material has to go somewhere. It cannot only change its vertical length as that would mean that the total length of the spring would reduce. But that would compress the spring material and that is not possible for solid material (unless you apply incredibly large forces). The spring just increases its number of windings a bit. But that implies rotation. Similarly, if we only rotate the spring, it will try to adjust its length. As a consequence, there is also a potential energy involved in the influencing of $z$ and $\theta$ of each other. It can be modeled as $V_{z\theta} = \epsilon z \theta$.
@@ -465,10 +490,12 @@ And we have recovered the same equation of motion.
 
 In the above we have frequently used the approximation $\sin \phi \approx \phi $ for $\phi \ll 1$. What about the general case? Then we need to solve 
 
-$$ \begin{split}
-\frac{d^2\phi}{dt^2} + \frac{g}{L} \sin \phi &= 0 \\
-\text{ with initial condition } \phi(0) = \phi_0 \text{ and } \frac{d\phi}{dt} = \dot{\phi}_0
-\end{split} $$
+$$ \begin{gathered}
+\frac{d^2\phi}{dt^2} + \frac{g}{L} \sin \phi = 0 \\
+\text{ with initial conditions:}
+\\ \phi(0) = \phi_0 \text{ and } \left.\frac{d\phi}{dt}\right|_{t=0} = \dot{\phi}_0.
+\end{gathered}
+$$
 
 This equation is much more difficult to solve analytically and we will, therefore, use a numerical approach here. The animation below compares the motion of the pendulum numerically simulated to that of the pendulum when using the small amplitude approximation. 
 
@@ -840,7 +867,7 @@ Huygens experiment of weakly coupled pendula.
 
 There are two pendula suspended from a common connection, which rests on two chairs. If you set the pendula in motion, they will be initially *out of phase*, i.e. the relative position of the pendula is different. But over time their motion synchronises!  What has happend? Apparently the two pendula are connected, *coupled*, via the suspension and act on each other, they are not independent, but influence the motion of the other pendulum.
 
-The [following video](https://www.youtube.com/embed/DD7YDyF6dUk?si=Zt65wJNNQCosMU5n) of weakly coupled metronomes shows a modern day version of this phenomena. 
+The [following video](https://youtu.be/T58lGKREubo?si=1DVIOKRKTvw9_8cY) of weakly coupled metronomes shows a modern day version of this phenomena. 
 
 Here the pendula are coupled via the ground. This influence is called *weak coupling*. In this course we cannot treat this coupling mathematically, but in (second year course) *Classical Mechanics* you will learn to study systems like these.
 
@@ -1002,10 +1029,10 @@ $$
 We recognize this as the forced harmonic oscillator with solution
 
 $$
-x(t) = c_1 \sin \omega_0 t + c_2 \cos \omega_0 t + \frac{e E_0}{m} \frac{\sin \omega t}{\omega_0^2 - \omega^2}
+x(t) = c_1 \sin \omega_0 t + c_2 \cos \omega_0 t + \frac{e}{m} E_0\frac{\sin \omega t}{\omega_0^2 - \omega^2}
 $$
 
-The important part of this equation is the last one: the extra motion caused by the passing electric field. This causes an additional acceleration of the electron: $a(t) = -\frac{e E_0}{m} \frac{\omega^2}{\omega_0^2 - \omega^2} \sin \omega t$.  
+The important part of this equation is the last one: the extra motion caused by the passing electric field. This causes an additional acceleration of the electron: $a(t) = -\frac{e}{m} E_0 \frac{\omega^2}{\omega_0^2 - \omega^2} \sin \omega t$.  
 The electron in its original orbit does not radiate. However, due to the extra acceleration the electron starts radiating. It sends out an electromagnetic field with the wave length of the incoming light and an intensity proportional to the square of the acceleration, i.e. 
 
 $$

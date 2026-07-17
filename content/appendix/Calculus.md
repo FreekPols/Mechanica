@@ -12,7 +12,7 @@ kernelspec:
 # Calculus 
 
 ## Derivatives
-In his work, Redish distinguishes three perspectives on what the derivative is:
+There are multiple interpretations of what a derivative is:
 1. **Geometric**: The derivative at a point gives the slope of the tangent line to the curve at that point.
 2. **Physical**: The derivative represents the instantaneous rate of change, such as velocity being the derivative of position with respect to time.
 3. **Analytical**: The derivative is defined as the limit of the average rate of change as the interval approaches zero.
@@ -74,7 +74,7 @@ We now can calculate the rate of change of a given function, but we can calculat
 |------------------|-----------------|
 | $x + y$          | 1               |
 | $x \cdot y$      | y               |
-| $x^n$            | $n\cdot x^{n-1}$|
+| $x^n$            | $n\cdot x^{n-1}$ ($n \neq 0$)|
 | $e^{cx}$         | $ce^{cx}$       |
 | $n^x$            | $n^x \ln{n}$    |
 | $\ln{x}$         | $\frac{1}{x}$   |
@@ -97,6 +97,11 @@ Here we first identify our two functions $f(g(x))=\sin(g(x))$ and $g(x)=x^2$. Us
 $$ h'(x) = f'(g(x)) \cdot g'(x) = \cos(x^2) \cdot 2x = 2x\cos(x^2) $$
 ```
 
+```{exercise}
+Show that $\frac{d\tan(x)}{dx}=1+\tan^2(x)$ using the chain rule and the identity: 
+
+$$\tan(x)=\frac{\sin(x)}{\cos(x)}$$
+```
 
 ### Product rule
 A function that is the product of two functions $f(x)$ and $g(x)$ can be differentiated using the product rule:
@@ -140,7 +145,7 @@ $$ h'(x) = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2} = \frac{2x \cdot
 
 
 
-## Partial derivatives
+### Partial derivatives
 Above we have only discussed derivatives of functions with one variable. However, many functions depend on multiple variables, e.g. $Z(x,y)$. In such cases, we can compute the partial derivative with respect to one of the variables, treating the other variables as constants. Consider the function $Z(x,y) = x^2y + y^3$. The partial derivative of $Z$ with respect to $x$ is computed as follows:
 
 $$ \frac{\partial Z}{\partial x} = \frac{\partial}{\partial x}(x^2y + y^3) = 2xy + 0 = 2xy $$
@@ -153,11 +158,11 @@ Noted that in the first year physics course, you will encounter this as well as 
 
 
 ## Integration
-The antiderivative (dutch: primitieve) of a function $f(x)$ is the function $F(x)$ such that $F'(x)=f(x)$.
+The antiderivative (Dutch: primitieve) of a function $f(x)$ is the function $F(x)$ such that $F'(x)=f(x)$.
 
 
 ### List of standard antiderivatives
-Below is a list of some standard functions and their derivatives with respect to $x$.
+Below is a list of some standard functions and their antiderivative with respect to $x$.
 
 | function ($Z(x)$) | antiderivative ($\int Zdx$) | 
 |------------------|-----------------|
@@ -172,12 +177,53 @@ Below is a list of some standard functions and their derivatives with respect to
 
 [^eq_sec]: $\sec(x)=\frac{1}{\cos(x)}$
 
+### Sum rule
+
+In case where the antiderivative is (or can be) written in the form of two function, the sum rule can be applied:
+
+$$\int f(x)+g(x) dx = \int f(x) dx + \int g(x) dx$$ 
+
+
+### Product rule
+
+In case of two functions we can make use of the product rule, or integration by parts:
+
+$$\int f(x)g(x) dx = f(x)\int g(x)dx - \int f'(x) \left(\int g(x) dx\right) dx +C$$
+
+```{exercise}
+Check the product rule by calculating the following antiderivative:
+
+$$\int x\cdot x^2 dx$$
+```
+
+
 ### Substitution rule
+When integrating the product of two functions, we may encounter the special case where one function is (up to a constant factor) the derivative of the other. In this situation, the substitution rule provides a straightforward way to evaluate the integral:
 
 $$\int_a^b f(g(x)) \cdot g'(x) dx = \int_{g(a)}^{g(b)} f(u) du$$
 
 
-∫3⁢(8⁢𝑦−1)⁢𝐞4⁢𝑦2−𝑦𝑑𝑦
+```{example} Example
+Determine the antiderivative:
+
+$$\int 2x\cos(x^2)dx$$
+
+We may see that $f(g(x))=\cos(x^2)$ and based on $2x=\frac{dx^2}{dx}$ we see $g'(x)=2x$. Hence: $u=x^2$ and $\frac{du}{dx}=2x \rightarrow du=2xdx$. Using the substitution rule we can see:
+
+$$\int 2x\cos(x^2)dx = \int \cos(u) du = \sin(u) + C $$
+
+slotting in $u=x^2$ returns:
+
+$$\sin(x^2) + C$$
+
+```
+
+```{exercise} 
+Find the antiderivative of:
+
+$$\int\frac{3x}{x^2+1}dx$$
+
+```
 
 ### Line integrals
 We encounter line integrals in [the chapter on _work_](../classic/3_WorkEnergy.md). The amount of work done by a force field $\vec{F}$ when moving an object along a path $C$ is given by the line integral: 
@@ -185,8 +231,6 @@ We encounter line integrals in [the chapter on _work_](../classic/3_WorkEnergy.m
 $$ W = \int_C \vec{F} \cdot d\vec{r} $$
 
 We can visualize this by drawing the force field as arrows in space and the path as a curve. The line integral sums up the contributions of the force along the path, taking into account both the magnitude and direction of the force relative to the path. By looking whether the path goes with or against the force field, we can determine whether the work on the object or by the object.
-
-VISUALIZATION
 
 In a conservative force field, such as gravity or electrostatic forces, the work done is path-independent and only depends on the initial and final positions. 
 
@@ -212,21 +256,23 @@ Note that some of the explanation below is better understood when looking at [li
 (gradient)=
 ###  Gradient
 
-The gradient of function $f$ is $\nabla f$. It creates a vector that indicates the directions in which $f$ increases or decreases:
+We have seen the use of gradient in [chapter 3](../classic/3_WorkEnergy.md). The gradient of function $f$ is $\nabla f$. It creates a vector that indicates the directions in which $f$ increases or decreases:
 
 $$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x} \\ \frac{\partial f}{\partial y} \\ \frac{\partial f}{\partial z} \end{pmatrix}$$
 
-```{code-cell}
-:tags: hide-input
-import numpy as np
-import matplotlib.pyplot as plt
+```{example} gravity
+We have seen
 
-X,Y=np.meshgrid(np.arange(-10,11),np.arange(-10,11))
-graddat=numgradfun(X,Y)
+$$\vec{F} = -\nabla V$$ 
 
-plt.figure()
-plt.quiver(X,Y,graddat[0],graddat[1])
-plt.show()
+given $\vec{F}=-mg\hat{z}$, what is the gravitational potential $V$?
+
+we know: 
+
+$$ -\nabla V = -\begin{pmatrix} \frac{\partial V}{\partial x} \\ \frac{\partial V}{\partial y} \\ \frac{\partial V}{\partial z} \end{pmatrix} = \begin{pmatrix} 0 \\ 0 \\ -mg \end{pmatrix} $$
+
+hence: $-\frac{\partial V}{\partial z} = -mg \rightarrow V = mgz$
+
 ```
 
 (Curl)=
@@ -234,6 +280,7 @@ plt.show()
 The curl is used in the [chapter on work and energy](../classic/3_WorkEnergy.md), specifically in the context of assessing whether a force field is conservative (if so, the path from A to B does not matter on the amount of work that is done). The curl of a vector field $\mathbf{F}$ is denoted as $\nabla \times \mathbf{F}$. In mathematical terms, it provides a measure of the rotation (or swirling strength) of the field at a given point. A zero curl indicates that the field is irrotational, which is a characteristic of conservative fields. To get a better conceptual understanding, we can inspect the two fields below. The left is clearly rotating around the center, while the right one is not as all vectors point to the same direction (0,0). Hence, we expect that if we take the curl of the left field, it will be non-zero, while for the right field it will be zero.
 
 ```{code-cell} python
+:tags: hide-input
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -278,7 +325,7 @@ where $\hat{x}$, $\hat{y}$, and $\hat{z}$ are the unit vectors in the x, y, and 
 
 (divergence)=
 ### Divergence
-Divergence is used in [chapter ](#link) on ... Divergence of a vector field $\mathbf{F}$ is denoted as $\nabla \cdot \mathbf{F}$. It quantifies the magnitude of a source or sink at a given point in the field. A positive divergence indicates a source (where field lines are diverging), while a negative divergence indicates a sink (where field lines are converging). Mathematically, the divergence in three dimensions is defined as:
+The divergence of a vector field $\mathbf{F}$ is denoted by $\nabla \cdot \mathbf{F}$. It quantifies the magnitude of a source or sink at a given point in the field (e.g. how strong a point is attracting or repelling). A positive divergence indicates a source (where field lines are diverging, such as the electric field $\vec{E}$-field around a proton), while a negative divergence indicates a sink (where field lines are converging, such as the electric field $\vec{E}$-field around an electron). Mathematically, the divergence in three dimensions is defined as:
 
 $$ \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z} $$
 
