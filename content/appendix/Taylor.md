@@ -26,7 +26,7 @@ $$\sin(x) = \sum_{k=0}^{\infty} \frac{(-1)^k x^{2k+1}}{(2k+1)!} $$
 Below we can see what happens when we take more and more terms of the Taylor series expansion of the sine function. The black dots represent the actual sine function, while the colored lines represent the Taylor series approximations with increasing numbers of terms.
 
 ```{code-cell} python
-:tags: skip-execution
+:tags: [skip-execution, hide-input]
 import numpy as np
 import matplotlib.pyplot as plt
 import ipywidgets as widgets

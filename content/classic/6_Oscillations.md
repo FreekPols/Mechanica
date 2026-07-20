@@ -14,6 +14,7 @@ kernelspec:
 ```{figure} ../images/pirate.*
 :width: 50%
 
+Video made by Freek Pols.
 ```
 
 ## Periodic Motion
@@ -40,6 +41,7 @@ Spinning carousel. By Oxana Mayer, from [Wikimedia Commons](https://commons.wiki
 ```{figure} ../images/goround.gif
 :width: 50%
 
+Video made by Freek Pols.
 ```
 
 ### Rabbits and Foxes
@@ -371,7 +373,7 @@ L \frac{d^2 I}{dt^2} + \frac{1}{C}I &= 0 \Rightarrow \\
 \frac{d^2I}{dt^2} + \frac{1}{LC} I &= 0 \quad \text{ Harmonic Oscillator!!!}
 \end{split}$$
 
-As we see, this LC-circuit will start to oscillate. In the animation below the current through the circuit and the voltage across the inductor are shown for $C = 1 \mu F$ and $L = 1 \mu H$.
+As we see, this LC-circuit will start to oscillate. In the animation below the current through the circuit and the voltage across the inductor are shown for $C = 1 \; \mathrm{\mu F}$ and $L = 1 \; \mathrm{\mu H}$.
 
 ```{figure} ../images/LC_animation.*
 :label: fig:LC_animation.gif
@@ -1218,7 +1220,7 @@ $$f^2=\frac{EA}{4\mu L^3}\Delta l + f_0^2$$
 
 If we closely look at the motion of the string on a violin, we will not see traveling waves running from one side of the string to the other. Instead, we see all parts of the string moving up and down collectively: they have formed a standing wave. That is a wave that does not travel, but has a fixed, stationary shape whose amplitude various with time. 
 
-For a string with two ends fixed like on a piano or violin, the string can only show standing waves that 'fit'. These standing waves are sinusoidal and their wave length should be such that the beginning and end of the string don't oscillate. In figure {numref}`fig:String_animation.gif` four possibilities are shown.
+For a string with two ends fixed like on a piano or violin, the string can only show standing waves that 'fit'. These standing waves are sinusoidal and their wave length should be such that the beginning and end of the string don't oscillate. In @fig:String_animation.gif four possibilities are shown.
 
 
 ```{figure} ../images/String_animation.gif

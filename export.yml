@@ -289,7 +289,7 @@ project:
       # Optional fields shown in the colophon publication table:
       # colophon_printer: Printer name
       # colophon_publisher: Publisher name
-      colophon_copyright: © 2026 TUDOP
+      colophon_copyright: © 2026 TUDOP - CC BY NC 4.0
 
       
       # Optional custom text shown below the colophon publication table and above the template watermark.

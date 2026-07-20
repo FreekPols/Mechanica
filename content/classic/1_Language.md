@@ -27,7 +27,7 @@ Physics problems and concepts can be represented in multiple ways, each offering
 :width: 70%
 :alt: A base jumper jumping from a very high tower.
 
-A base jumper is used as context to get familiar with representation, picture from https://commons.wikimedia.org/wiki/File:04SHANG4963.jpg
+A base jumper is used as context to get familiar with representation, picture from https://commons.wikimedia.org/wiki/File:04SHANG4963.jpg. CC BY-SA
 ```
 
 (ch_language_s_verbal)=

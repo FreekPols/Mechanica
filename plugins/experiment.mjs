@@ -21,6 +21,7 @@ const experiment = {
         "kind": "note",
         "class": "admonition-experiment",  //Add class (custom.css)
         "icon": false,
+        "breakable": false,
         "children": [
           
           {

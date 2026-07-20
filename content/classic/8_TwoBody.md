@@ -281,14 +281,14 @@ However, in modern times, this slight motion of stars is a way of trying to find
 :width: 80%
 :label: vid_freq
 
-Changing color of star light due to a period motion induced by a planet orbiting the star ([animation from NASA ](https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/#/1)).
+Changing color of star light due to a period motion induced by a planet orbiting the star ([animation from NASA ](https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/#/1)). NON-COMMERCIAL USE, see https://www.nasa.gov/nasa-brand-center/images-and-media/
 ```
          
 ```{figure} ../images/transit_method_single_planet.*
 :width: 80%
 :label: vid_int
 
-Changing intensity of star light due to a period passage of a planet orbiting the star ([animation from NASA](https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/#/2)).
+Changing intensity of star light due to a period passage of a planet orbiting the star ([animation from NASA](https://exoplanets.nasa.gov/alien-worlds/ways-to-find-a-planet/#/2)). NON-COMMERCIAL USE, see https://www.nasa.gov/nasa-brand-center/images-and-media/
 ```
 
 
@@ -307,7 +307,7 @@ The king of Sweden, Oscar II, announced, as celebration of his 60$^{\text{th}}$ 
 :width: 40%
 :align: center
 
-[Click here for the Wikipedia page of Poincaré.](https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9)
+[Click here for the Wikipedia page of Poincaré.](https://en.wikipedia.org/wiki/Henri_Poincar%C3%A9). Public domain
 ```
 
 He showed that it was impossible to find such a solution as he reached the conclusion that the three body problem showed chaotic features. It led Poincaré to develop a whole new field: dynamic systems and, what we now call, *deterministic chaos*.  
