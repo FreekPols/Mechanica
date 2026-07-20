@@ -148,15 +148,27 @@ Special thanks to Hanna den Hertog for (re)making most of the drawings, Luuk FrÃ
 +++
 
 (opened)=
-## Licenses
+## Colophon
 
-This book is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) unless stated otherwise. It is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft Open](https://textbooks.open.tudelft.nl/textbooks/index).
+### License
+````{grid} 2
+```{card} 
+This book is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) unless stated otherwise. Source files are available for download using the button on the top right.
 
-This website is a [Jupyter Book](https://jupyterbook.org/intro.html). Source files are available for download using the button on the top right.
+The book has been used in 2025 by students. A team of student assistants have reviewed the materials as well.  
 
-(software)=
-### Software and license
-This website is a [Jupyter Book](https://jupyterbook.org/intro.html). Markdown source files are available for download using the button on the top right, licensed under CC-BY-NC (unless stated otherwise). All python codes / apps are freely reusable, adaptable and redistributable (CC0).
+Every attempt has been made to ensure the correct source of images and other potentially copyrighted material was ascertained (including a check on copyrights infringements by the Copyright Information Point of TU Delft Library), and that all materials included in this book have been attributed and used according to their license. If you believe that a portion of the material infringes someone elseâ€™s copyright, please contact c.f.j.pols@tudelft.nl  
+```
+```{card}
+This book is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft OPEN Publishing | Delft University of Technology, The Netherlands](https://textbooks.open.tudelft.nl/textbooks/index).
+
+:::{figure} images/OPEN_reg.svg
+:width: 80%
+:align: left
+:::
+```
+```` 
+
 
 (images)=
 ### Images, videos, apps, intermezzos 
@@ -187,6 +199,7 @@ R.F. Mudde, B. Rieger, C.F.J. Pols, *Classical Mechanics \& Special Relativity f
   publisher = {TU Delft Open},
   note      = {CC BY-NC},
   doi       = {TODO},
-  url       = {https://interactivetextbooks.tudelft.nl/mecharela}
+  url       = {https://interactivetextbooks.tudelft.nl/mecharela}, 
+  keywords  = {Mechanics; Physics; Special relativity; Science Education; University physics;  }
 }
 ```
