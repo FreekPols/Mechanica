@@ -454,8 +454,8 @@ Initial conditions: $t=0 \rightarrow s(0) = s_0 = 1.5 \: \mathrm{m} \text{ and }
 3. $s(t) = \frac{1}{2}at^2 + v_0t + s_0$. We are interested in the stone hitting the ground. Thus, solve for $s(t)=0$ to find at what time this happens.
 :::
 :::{tab-item} Evaluate
-1. $\dot{s} = at + v_0 = -gt + v_0 = 0 \Rightarrow t = 1.02 \mathrm{s}$  
-$s(1.02) = -\frac{1}{2}\cdot9.81\cdot1.02^2 + 10\cdot1.02 + 1.5 = 6.6 \mathrm{m}$
+1. $\dot{s} = at + v_0 = -gt + v_0 = 0 \Rightarrow t = 1.02 \; \mathrm{s}$  
+$s(1.02) = -\frac{1}{2}\cdot9.81\cdot1.02^2 + 10\cdot1.02 + 1.5 = 6.6 \; \mathrm{m}$
 2. See above.
 3.  $s(t) = \frac{1}{2}at^2 + v_0t + s_0 = s_e$  
 $t = \frac{-v_0\pm\sqrt{v_0^2-4(\frac{1}{2}a(s_0-s_e))}}{2\frac{1}{2}a} = \frac{-10\pm\sqrt{10^2-4(\frac{1}{2}(-9.81)(1.5))}}{-9.81}=2.18\; \mathrm{s}$  
@@ -1388,7 +1388,7 @@ In 1795 it was decided that 1 gram is the mass of 1 cm$^3$ of water at its melti
 The International Prototype of the Kilogram, whose mass was defined to be one kilogram from 1889 to 2019. Picture by [BIPM](https://www.nist.gov/si-redefinition/kilogram), CC BY-SA 3.0 igo, https://commons.wikimedia.org/w/index.php?curid=117707466
 ```
 
-In recent years, it became clear that using such a standard kilogram does not allow for high precision: the mass of the standard kilogram was, measured over a long time, changing. Not by much (on the order of 50 micrograms), but sufficient to hamper high precision measurements and setting of other standards. In modern physics, the kilogram is now defined in terms of Planck's constant. As Planck's constant has been set (in 2019) at exactly $ h = 6.62607015 \cdot10^{-34} \text{ kg} \text{m}^2 \text{s}^{-1} $, the kilogram is now defined via $h$, the meter and second. 
+In recent years, it became clear that using such a standard kilogram does not allow for high precision: the mass of the standard kilogram was, measured over a long time, changing. Not by much (on the order of 50 micrograms), but sufficient to hamper high precision measurements and setting of other standards. In modern physics, the kilogram is now defined in terms of Planck's constant. As Planck's constant has been set (in 2019) at exactly $ h = 6.62607015 \cdot10^{-34} \; \mathrm{kgm}^2\mathrm{s}^{-1} $, the kilogram is now defined via $h$, the meter and second. 
 
 ````
 

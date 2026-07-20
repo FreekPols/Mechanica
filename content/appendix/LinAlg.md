@@ -103,6 +103,7 @@ We then see that the cross product is the same as taking the determinant.
 The outcome of a cross product is a vector quantity, thus with both a magnitude and direction. Moreover, the direction of the resulting vector is orthogonal to both $\vec{r}$ and $\vec{F}$, following the right-hand rule. Note: $F\times r = - (r \times F)$, meaning the direction is reversed.
 
 ```{code-cell} python
+:tag: [hide-input]
 import numpy as np
 r = np.array([2, 0, 0])
 F = np.array([0, 1, 0])
@@ -170,6 +171,7 @@ $$ R = A\vec{r} = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 
 
 
 ```{code-cell} python
+:tag: [hide-input]
 import numpy as np
 import matplotlib.pyplot as plt
 

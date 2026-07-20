@@ -199,7 +199,7 @@ It is done with facilities of a very large scale to research particles at the sm
 :width: 70%
 :align: center
 
-Circular Accelerator of CERN depicted in its environment. ESO/[José Francisco](josefrancisco.org), licensed under CC-BY 4.0.
+Circular Accelerator of CERN depicted in its environment. ESO/[José Francisco](https://de.wikipedia.org/wiki/Datei:CERN_Aerial_View.jpg), licensed under CC-BY-SA.
 ```
 
 The principles used in scattering can be illustrated by revisiting Rutherford's experiment. 

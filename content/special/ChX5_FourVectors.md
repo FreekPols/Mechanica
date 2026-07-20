@@ -506,7 +506,7 @@ Minkowski made the sketch below to show that the Lorentz transformation is a rot
 :width: 350px
 :align: center
 
-Drawing by Minkowski
+Drawing by Minkowski. From Minkowski’s modern world by [Scott Walter](https://shs.hal.science/halshs-01234434/).
 ``` 
 
 The addition of velocities that we derived earlier is easy with this notation with rotations and rapidity $L(\alpha_1)L(\alpha_2)=L(\alpha_1+\alpha_2)$. In terms of speeds this reads

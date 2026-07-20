@@ -71,7 +71,7 @@ $$ W_1 + W_2 = \int_1^2 \vec{F}_1 \cdot d\vec{r} + \int_1^2 \vec{F}_2 \cdot d\ve
 ```{exercise} Carrying a weight
 :label: ex_carrying
 
-You carry a heavy backpack $m = 20\mathrm{\ kg}$ from Delft to Rotterdam ($20\mathrm{\ km}$). What is the work that you have done against the gravitational force? 
+You carry a heavy backpack $m = 20 \; \mathrm{kg}$ from Delft to Rotterdam ($20\; \mathrm{km}$). What is the work that you have done against the gravitational force? 
 ```
 
 ```{solution} ex_carrying
@@ -211,7 +211,7 @@ Proof that the velocity of an object released from a height $H$ will reach the v
 ```
 
 ```{exercise}
-A point particle of mass $m=1\mathrm{\ kg}$ is at $t=0$ at position $x=0$. It has initial velocity $v_0$. From $t=0$ to $t_{stop}=2\mathrm{\ s}$ it is under the influence of a constant force $F$. This is a 1D problem.
+A point particle of mass $m=1 \; \mathrm{kg}$ is at $t=0$ at position $x=0$. It has initial velocity $v_0$. From $t=0$ to $t_{stop}=2 \; \mathrm{s}$ it is under the influence of a constant force $F$. This is a 1D problem.
 
 The top graph show the position of the particle. The bottom graph shows the Work done on the particle by the force and the kinetic energy of the particle.
 

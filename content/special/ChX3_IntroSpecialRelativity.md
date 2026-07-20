@@ -618,5 +618,5 @@ If you think about this example for a bit, it becomes clear that relativistic ac
 
 ```{iframe} https://www.youtube.com/embed/f72whGQ31Wg?si=SPb-x2oCC2iRwaLE
 
-Embedded with permission
+Embedded with permission. No further use allowed
 ```

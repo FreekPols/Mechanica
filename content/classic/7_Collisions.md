@@ -603,9 +603,9 @@ c \rho \frac{4}{3} \pi r^3 \Delta T &= \rho \frac{4}{3} \pi r^3 g H_0\\
 \end{align}
 $$
 
-with $c= 460 \mathrm{J/(kgK)}$, 
+with $c= 460 \; \mathrm{J/(kgK)}$, 
 
-$\Delta T = \frac{9.81 \mathrm{m/s^2} 1.5\ \mathrm{m}}{460 \mathrm{J/(kgK)}} = 0.03\mathrm{K}$
+$\Delta T = \frac{9.81 \; \mathrm{m/s^2} 1.5\ \mathrm{m}}{460 \; \mathrm{J/(kgK)}} = 0.03\; \mathrm{K}$
 
 Note that the increase in temperature does not depend on the mass of the object!
 ```

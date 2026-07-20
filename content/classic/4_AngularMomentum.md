@@ -1023,7 +1023,7 @@ $$ \frac{(x+ea)^2}{a^2} + \frac{y^2}{b^2} = 1 $$
 Ellipse in Cartesian coordinates.
 ```
 
-This is an ellipse with semi major and minor-axis $a$ and $b$, respectively. The center of the ellipse is located at $(-ea,0)$. Note that the sun is in the origin and that seen from the center of the ellipse, the origin is at one of the focal points of the ellipse. Consequently, the orbit is not symmetric as viewed from the sun. We notice this on earth: the summer and winter (when the sun is closest, January 21${\text{st}}$, respectively furthest from the sun, June 21${\text{st}}$) are not symmetric, even if we take the tilted axis of the earth into account.
+This is an ellipse with semi major and minor-axis $a$ and $b$, respectively. The center of the ellipse is located at $(-ea,0)$. Note that the sun is in the origin and that seen from the center of the ellipse, the origin is at one of the focal points of the ellipse. Consequently, the orbit is not symmetric as viewed from the sun. We notice this on earth: the summer and winter (when the sun is closest, January 21${\text{st}}$, respectively furthest from the sun, June $21^\mathrm{st}$) are not symmetric, even if we take the tilted axis of the earth into account.
 
 The half and short long axis are given by:
 
@@ -1047,7 +1047,7 @@ This type of curve is know as the conic sections. That is, they can be found by 
 :alt: Animated gif showing the different possible conic sections. Left: A three-dimensional illustration of a cone, with a plane passing through it at different heights and increasing steepness. Right: The two-dimensional conic section. The section is first a circle, then an ellipse, a parabola and finally a hyperbola. 
 :align: center
 
-Conic sections animation created by [Sara van der Werf](https://www.saravanderwerf.com/conics-gifs-why-gifs-are-my-new-addiction/), used with permission.
+Conic sections animation created by [Sara van der Werf](https://www.saravanderwerf.com/conics-gifs-why-gifs-are-my-new-addiction/), used with permission. No further use allowed.
 ``` 
 
 Note that in the definition of $e$, the total energy of the system plays a role. This energy can be negative (see {numref}`fig:ch6_KeplerEnergy.svg`). The minimum value of the effective potential energy is easily computed. It is $U_{eff, min} = -\frac{1}{2} \frac{(GmM)^2m}{l^2}$ and is realized when the planet is at a distance $r = \frac{l^2}{GMm^2}$. For this case we have $e = 0$ and the planet is moving in a circle around the sun, as we already argued above.

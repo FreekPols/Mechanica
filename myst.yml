@@ -8,7 +8,7 @@ project:
     - name: C. Freek. J. Pols    
   github: https://github.com/FreekPols/Mechanica
   copyright: Delft University of Technology, CC BY NC 4.0
-  date: 2025-09-28 # first official release
+  date: 2026-08-31 # first official release
   thumbnail: style/avatar.png
 
   numbering:

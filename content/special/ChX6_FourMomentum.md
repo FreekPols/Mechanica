@@ -434,6 +434,6 @@ $c$ is the speed of light in vacuum. In matter the speed of light $v$ is smaller
 :width:  350px
 :align: center
 
-Cherenkov radiation glowing in the core of the Advanced Test Reactor at Idaho National Laboratory (Wikipedia Commons, CC BY-SA 2.0)
+Cherenkov radiation glowing in the core of the Advanced Test Reactor at Idaho National Laboratory ([Wikipedia Commons](https://en.wikipedia.org/wiki/Cherenkov_radiation#/media/File:Advanced_Test_Reactor.jpg), CC BY-SA 2.0)
 ```
 
