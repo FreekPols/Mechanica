@@ -1,5 +1,5 @@
 ---
-title: Introducing Classical Mechanics & Special Relativity
+title: Introducing Classical Mechanics & Special Relativity for Starters
 
 site:
   hide_outline: true
@@ -17,7 +17,9 @@ no-update-date: true
 
 <div style="text-align: center;  font-size: 24px; font-weight: bold;">
 
-Introducing Classical Mechanics & Special Relativity
+Introducing Classical Mechanics  
+&  
+Special Relativity for Starters
 
 </div>
 

@@ -150,56 +150,61 @@ Special thanks to Hanna den Hertog for (re)making most of the drawings, Luuk Fr�
 (opened)=
 ## Colophon
 
-### License
-````{grid} 2
-```{card} 
-This book is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/) unless stated otherwise. Source files are available for download using the button on the top right.
-
-The book has been used in 2025 by students. A team of student assistants have reviewed the materials as well.  
-
-Every attempt has been made to ensure the correct source of images and other potentially copyrighted material was ascertained (including a check on copyrights infringements by the Copyright Information Point of TU Delft Library), and that all materials included in this book have been attributed and used according to their license. If you believe that a portion of the material infringes someone else’s copyright, please contact c.f.j.pols@tudelft.nl  
-```
-```{card}
-This book is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft OPEN Publishing | Delft University of Technology, The Netherlands](https://textbooks.open.tudelft.nl/textbooks/index).
-
-:::{figure} images/OPEN_reg.svg
-:width: 80%
-:align: left
-:::
-```
-```` 
-
-
-(images)=
-### Images, videos, apps, intermezzos 
-
-The cover image is inspired by the work of [3Blue1Brown](https://www.3Blue1Brown.com/) developer Grant Sanderson. 
-
-All vector images have been made by Hanna den Hertog, and are available in vector format through the repository. For reuse, adapting and redistribution, adhere to the CC-BY licences.
-
-We embedded several clips from [3Blue1Brown](https://www.3Blue1Brown.com/) in accord with their [licences requirements](https://www.3Blue1Brown.com/contact#licensing-inquiry).
-
-The embedded vpython apps are made freely available from [trinket](https://trinket.io/).
-
-Some videos from NASA are included, where we adhere to [their regulations](https://www.nasa.gov/nasa-brand-center/images-and-media/).
-
-At various places we use pictures which are in the public domain. We comply to the regulations with regard to references.
-
-The Intermezzos, which elaborate on the lives of various scientists and the efforts behind key physical discoveries, are composed by drawing from a range of different sources. Rather than directly reproducing any one account, these stories have been reworked into a narrative that fits the context and audience of this book. 
-
-(cite)=
-### How to cite this book
-R.F. Mudde, B. Rieger, C.F.J. Pols, *Classical Mechanics \& Special Relativity for Beginners*, CC BY-NC<!--TU Delft Open, 2025, [LINK DOI]-->
+_Classical Mechanics and Relativity for Starters_  
+by Robert Mudde, Bernd Rieger, and Freek Pols
 
 ```bibtex
 @book{MuddeRiegerPols2025,
   author    = {Robert F. Mudde and Bernd Rieger and Freek Pols},
-  title     = {Classical Mechanics \& Special Relativity for Beginners},
+  title     = {Classical Mechanics \& Special Relativity for Starters},
   year      = {2026},
-  publisher = {TU Delft Open},
+  publisher = {TU Delft OPEN Publishing | Delft University of Technology, The Netherlands},
   note      = {CC BY-NC},
   doi       = {TODO},
   url       = {https://interactivetextbooks.tudelft.nl/mecharela}, 
   keywords  = {Mechanics; Physics; Special relativity; Science Education; University physics;  }
 }
 ```
+
+### Keywords
+Mechanics; Physics; Special relativity; Science Education; University physics;
+
+### Copyright statement
+© 2026 Delft University of Technology. Written by Robert Mudde, Bernd Rieger, Freek Pols
+
+This book is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) unless stated otherwise. 
+
+:::{image} ../style/licence_cc-by.png
+:width: 400
+:align: left
+:::
+
+- Source files are available for download using the button on the top right - por through the gitlab repo.
+- Cover design made by Freek Pols inspired by the work of [3Blue1Brown](https://www.3Blue1Brown.com/) developer Grant Sanderson. 
+- All vector images have been made by Hanna den Hertog, and are available in vector format through the repository. For reuse, adapting and redistribution, adhere to the CC-BY licences.
+- Embedded several clips from [3Blue1Brown](https://www.3Blue1Brown.com/) are in accord with their [licences requirements](https://www.3Blue1Brown.com/contact#licensing-inquiry).
+- The embedded vpython apps are made freely available from [trinket](https://trinket.io/).
+- Videos from NASA are included, where we adhere to [their regulations](https://www.nasa.gov/nasa-brand-center/images-and-media/).
+- At various places pictures from the public domain are used. We comply to the regulations with regard to references.
+- The Intermezzos on the lives of various scientists and the efforts behind key physical discoveries, are composed by drawing from a range of different sources. Rather than directly reproducing any one account, these stories have been reworked into a narrative that fits the context and audience of this book. 
+
+Copyright clearance was made by the TU Delft Library copyright team.
+
+**Copyright disclaimer:**  
+Every attempt has been made to ensure the correct source of images and other potentially copyrighted material was ascertained (including a check on copyrights infringements by the Copyright Information Point of TU Delft Library), and that all materials included in this book have been attributed and used according to their license. If you believe that a portion of the material infringes someone else’s copyright, please contact c.f.j.pols@tudelft.nl  
+
+### Published by
+TU Delft OPEN Publishing | Delft University of Technology, The Netherlands
+
+<!-- this will be added after the catalog page is generated -->
+DOI: https://doi.org/10.59490/xx.xxx 
+
+First edition.
+
+This book is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft OPEN Publishing | Delft University of Technology, The Netherlands](https://textbooks.open.tudelft.nl/textbooks/index).
+
+:::{image} images/OPEN_reg.svg
+:width: 300
+
+:::
+
