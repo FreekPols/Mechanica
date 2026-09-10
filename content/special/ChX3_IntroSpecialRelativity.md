@@ -564,7 +564,7 @@ Next, we need to give the events their space-time coordinates, e.g. in the frame
 | --- | --- | --- |
 | 1 | $(0, 0)$ | $(0, 0)$ |
 | 2 | $(\frac{c}{V}L_{0B}, L_{0B})$ | $(\frac{c}{V}\frac{L_{0B}}{\gamma}, 0)$ |
-| 3 | $(\frac{c}{V}L_{0B}, 0)$ | $(\gamma \frac{c}{V}\frac{L_{0B}}{\gamma}, -L_{0L})$ |
+| 3 | $(\frac{c}{V}L_{0B}, 0)$ | $(\frac{c}{V}L_{0L}, -L_{0L})$ |
 
 As we see, according to $B$, the left and right end of the ladder are exactly at the same moment at the left and right door of the barn, respectively (time coordinate of events 2 & 3 $ct_2=ct_3=\frac{c}{V}L_{0B}$). Consequently, observer $B$ measures that the ladder (just) fits into the barn as anticipated by us. So $B$ can close both doors and have the ladder inside the barn.
 
