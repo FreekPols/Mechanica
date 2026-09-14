@@ -1,5 +1,6 @@
 # Mechanics & Special Relativity - Interactive Textbook
 
+
 [![Creative Commons 4.0 Attribution-NonCommercial](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Cc_by-nc_icon.svg/1920px-Cc_by-nc_icon.svg.png)](https://creativecommons.org/licenses/by-nc/4.0/) (Unless stated otherwise)
 
 An interactive, open-access Mechanics & Special Relativity textbook designed for physics students at the bachelor level. 
@@ -48,7 +49,14 @@ math
 
 ## 🛠️ Building the Book
 
-This repository contains the source files for building the interactive textbook using Jupyter Book 2.0.
+This repository contains the source files for building the interactive textbook using Jupyter Book 2.0. 
+
+We created a pixi.toml file with all dependencies. If you haven't got pixi yet, install [pixi](https://pixi.prefix.dev/latest/installation/). Download this [book](https://gitlab.tudelft.nl/opentextbooks/TN_MechaRela/-/archive/main/TN_MechaRela-main.zip?ref_type=heads) and unzip it in dedicated folder e.g. `mecharela`. Using the terminal to this folder (right click on the folder and choose Open in Terminal). Run `pixi install`, this will install all dependencies.
+
+Once everything is installed simply type `pixi run editor` and hit enter. This will work because in the `.toml` file we created a task called `editor` which runs jupyter lab. Hence, running `pixi run editor` is equivalent to `pixi run editor`. 
+
+If you want a live preview of the book, run `pixi run preview`. If you want to build the pdf, run `pixi run pdf`.
+
 
 ### Prerequisites
 

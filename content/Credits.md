@@ -37,8 +37,8 @@ This book is based on [Mudde & Rieger 2025](https://doi.org/10.59490/mt.242). Th
 It is tempting to read this book, and we encourage you to do so. But in order to really understand what is happening, how physics works, this is not enough. Reading provides a first start only. It is advisable to redo calculations and derivations, where we might skip some of the mathematical steps, you may want to verify these missing steps. Moreover, we included various examples and their solutions. It helps when you do the exercises yourselves first and then compare your answers to the solutions that we provide.
 
 
-(disclaimer)=
-### Disclaimer
+(notes_on_pdf)=
+### Notes on pdf
 We included a pdf version of the book. However, not all functionality can be converted automatically. Moreover, there are known limitations to formatting and styling, especially with exercises and admonitions. We see it as a courtesy that we provide a pdf where you can make annotations, (re)do calculations etc. but our main focus is on the digital version.
 
 (features)=
@@ -95,11 +95,7 @@ You have the opportunity to download some of the materials as Jupyter Notebook f
 
 (buildlocal)=
 ### Building this book locally 
-You can build this book locally. Download the [source files](https://github.com/FreekPols/Mechanica/archive/refs/heads/main.zip) from the repository and install [Jupyter Book](https://jupyterbook.org/stable/get-started/install/). Within the root folder of the book, run:
-
-```bash
-jupyter book start
-```
+You can build this book locally. See the instructions in the README file.
 
 
 (feedback)=
@@ -159,7 +155,7 @@ by Robert Mudde, Bernd Rieger, and Freek Pols
   title     = {Classical Mechanics \& Special Relativity for Starters},
   year      = {2026},
   publisher = {TU Delft OPEN Publishing | Delft University of Technology, The Netherlands},
-  note      = {CC BY-NC},
+  note      = {CC BY},
   doi       = {TODO},
   url       = {https://interactivetextbooks.tudelft.nl/mecharela}, 
   keywords  = {Mechanics; Physics; Special relativity; Science Education; University physics;  }
@@ -175,11 +171,11 @@ Mechanics; Physics; Special relativity; Science Education; University physics;
 This book is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) unless stated otherwise. 
 
 :::{image} ../style/licence_cc-by.png
-:width: 400
+:width: 20%
 :align: left
 :::
 
-- Source files are available for download using the button on the top right - por through the gitlab repo.
+- Source files are available for download using the button on the top right - or through the gitlab repo.
 - Cover design made by Freek Pols inspired by the work of [3Blue1Brown](https://www.3Blue1Brown.com/) developer Grant Sanderson. 
 - All vector images have been made by Hanna den Hertog, and are available in vector format through the repository. For reuse, adapting and redistribution, adhere to the CC-BY licences.
 - Embedded several clips from [3Blue1Brown](https://www.3Blue1Brown.com/) are in accord with their [licences requirements](https://www.3Blue1Brown.com/contact#licensing-inquiry).
@@ -204,7 +200,7 @@ First edition.
 This book is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft OPEN Publishing | Delft University of Technology, The Netherlands](https://textbooks.open.tudelft.nl/textbooks/index).
 
 :::{image} images/OPEN_reg.svg
-:width: 300
+:width: 40%
 
 :::
 

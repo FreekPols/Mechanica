@@ -22,4 +22,6 @@ cspell.json
 
 agreement signed.pdf
 typst/
-/admin
+/admin# pixi environments
+.pixi/*
+!.pixi/config.toml
