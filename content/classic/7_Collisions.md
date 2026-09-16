@@ -44,7 +44,7 @@ Why? No external forces implies constant total momentum.
 
 For an elastic collision the kinetic energy is conserved by definition (next to the conservation of momentum). That is the sum of the kinetic energy before the collision is the same as the sum after the collision. This type of collision is also called *hard-ball collision*: as with colliding billiard balls no energy is dissipated into heat or deformation.
 
-```{iframe} https://trinket.io/embed/glowscript/44e9d32f7951
+```{iframe} https://trinket.strivemath.org/embed/glowscript/e9eea3d5c783
 :label: Vpyt_col
 
 A simulation on collisions. Try to change the mass, velocity, angle of contact...

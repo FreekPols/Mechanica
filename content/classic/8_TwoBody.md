@@ -371,6 +371,8 @@ Note: this is a chaotic system and computations need great care.
 A stable solution of the three body problem, but slightly change one of the parameters and the solution is not stable anymore!
 ```
 
+```{iframe} https://trinket.strivemath.org/embed/glowscript/1780224a3003
+```
 
 ```{tip} Three body problem
 NetFlix has a great tv series called [3 Body Problem](https://www.netflix.com/nl-en/title/81024821)
