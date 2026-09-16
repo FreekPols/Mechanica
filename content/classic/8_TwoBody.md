@@ -365,11 +365,12 @@ Alpha Centauri A and B circling each other with a third object. The third 'plane
 
 Note: this is a chaotic system and computations need great care. 
 
-```{iframe} https://trinket.io/embed/glowscript/b541844f22
-:width: 100%
+
+```{iframe} https://www.glowscript.org/#/user/cfjpols/folder/MyPrograms/program/threebodyproblem
 
 A stable solution of the three body problem, but slightly change one of the parameters and the solution is not stable anymore!
 ```
+
 
 ```{tip} Three body problem
 NetFlix has a great tv series called [3 Body Problem](https://www.netflix.com/nl-en/title/81024821)

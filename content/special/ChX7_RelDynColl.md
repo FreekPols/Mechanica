@@ -221,7 +221,7 @@ $$
 where we know $P^2_{e,b}=P^2_{e,a} = m_e^2c^2$ (totally elastic collision) and $P_\gamma^2=0$ directly as [shown before](ChX6_FourMomentum.md#lt-invariance-of-p). Evaluating the cross terms gives
 
 $$
-m_e^2c^2 +0+0+2m_eE'-2m_eE-2 \frac{EE'}{c^2}(1-\cos\theta)=m_e^2c^2
+m_e^2c^2 +0+0+2m_eE-2m_eE'-2 \frac{EE'}{c^2}(1-\cos\theta)=m_e^2c^2
 $$
 
 We isolate the energy after the collision $E'$
