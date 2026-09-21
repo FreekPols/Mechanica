@@ -77,6 +77,12 @@ a = 10
 b = 20
 print('Change this codeline so a + b is returned')
 ```
+
+```{marimo} python
+a = 10
+b = 20
+print('Change this codeline so a + b is returned')
+```
 ````
 
 ```{raw:typst}
