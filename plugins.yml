@@ -12,8 +12,6 @@ project:
     - plugins/h5p.mjs 
     # - plugins/lightbox.mjs
     - plugins/pyodide.mjs
-    - type: executable
-      path: jupyter-book-marimo.exe
 
     # - https://github.com/jupyter-book/myst-plugins/releases/download/updated-date-frontmatter/update-date-frontmatter.mjs
     # - plugins/aside.mjs
