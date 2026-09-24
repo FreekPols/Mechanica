@@ -23,12 +23,27 @@ extends:
   - toc.yml
   - export.yml
   - plugins.yml  
-  - https://gitlab.tudelft.nl/oicm/assets/-/raw/main/style.yml?ref_type=heads
+  # - https://gitlab.tudelft.nl/oicm/assets/-/raw/main/style.yml?ref_type=heads
   
 
 
-site:
 
+site:
+  template: book-theme
+  options:
+    logo:      https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/tudelft.png?ref_type=heads
+    # logo_url: 
+    logo_dark: https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/tudelft-dark.png?ref_type=heads
+    favicon:   https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/favicon.ico?ref_type=heads
+    hide_authors: true
+    style: https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/custom.css?ref_type=heads
+  parts:
+    footer: https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/footer.md?ref_type=heads
+    # navbar: https://gitlab.tudelft.nl/oicm/assets/-/raw/main/branding/navbar_end.md?ref_type=heads
+
+  # actions:
+  #   - title: PDF
+  #     url: ./exports/output.pdf
   actions:
     - title: Feedback
       url: https://github.com/FreekPols/Mechanica/issues
