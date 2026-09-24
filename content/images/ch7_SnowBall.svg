@@ -168,7 +168,7 @@
          cx="620.70129"
          cy="-57.256531"
          r="3" /><path
-         style="opacity:1;fill:#d3d3d3;fill-opacity:1;stroke:#d3d3d3;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ArrowWide);marker-end:url(#ArrowWide)"
+         style="opacity:1;fill:#666666;fill-opacity:1;stroke:#666666;stroke-width:1;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ArrowWide);marker-end:url(#ArrowWide)"
          d="m 521.99681,-72.154747 h 61.6504"
          id="path79" /><g
          id="g24"
@@ -347,5 +347,5 @@
          data-c="1D43F"
          xlink:href="#MJX-19-TEX-I-1D43F"
          id="use31-5"
-         style="fill:#d3d3d3;stroke:#d3d3d3;stroke-width:0"
+         style="fill:#666666;stroke:#666666;stroke-width:0"
          transform="matrix(0.00957752,0,0,-0.00957752,549.57044,-75.52107)" /></g></g></svg>

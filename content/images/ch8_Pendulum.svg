@@ -80,7 +80,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-834.46402,-325.9667)"><path
-       style="fill:#d3d3d3;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
+       style="fill:#666666;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
        d="M 898.78115,516.83417 V 347.46671"
        id="path109-3"
        sodipodi:nodetypes="cc" /><g
@@ -100,11 +100,11 @@
          inkscape:export-filename="Pendulum.png"
          inkscape:export-xdpi="386.79883"
          inkscape:export-ydpi="386.79883" /><path
-         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
          d="m 923.9007,436.07415 20.09587,34.807"
          id="path40"
          sodipodi:nodetypes="cc" /><path
-         style="fill:#000000;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:#000000;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1"
          d="m 964.09244,459.42607 -20.09587,11.45508"
          id="path43" /><path
          style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ArrowWide)"
@@ -119,7 +119,7 @@
          sodipodi:arc-type="arc"
          d="m 918.97439,381.97664 a 40.387753,40.387753 0 0 1 -20.19387,5.41093"
          sodipodi:open="true" /><path
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ArrowWide);marker-end:url(#ArrowWide)"
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#ArrowWide);marker-end:url(#ArrowWide)"
          id="circle147"
          sodipodi:type="arc"
          sodipodi:cx="898.78046"
@@ -256,7 +256,7 @@
          style="fill:#00a6d6;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#ArrowWide)"
          d="M 871.60406,408.32447 V 381.25101"
          id="path50" /><rect
-         style="fill:#d3d3d3;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round"
+         style="fill:#666666;stroke:#666666;stroke-width:1;stroke-linecap:round"
          id="rect112-2"
          width="20"
          height="90"

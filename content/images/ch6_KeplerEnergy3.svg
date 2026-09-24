@@ -57,7 +57,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-325.53118,-137.87842)"><path
-       style="fill:#f3c600;stroke:#d3d3d3;stroke-width:0.999997;stroke-linecap:round"
+       style="fill:#f3c600;stroke:#666666;stroke-width:0.999997;stroke-linecap:round"
        d="M 349.65869,202.87875 H 520.57124"
        id="path3"
        inkscape:export-filename="chx5_PythagorasMinkowskiPrime.svg"
@@ -116,7 +116,7 @@
            xlink:href="#MJX-14-NCM-N-33"
            id="use22"
            style="fill:#009b77;stroke-width:0" /></g></g><path
-       style="fill:#f3c600;stroke:#d3d3d3;stroke-width:0.999999;stroke-linecap:round"
+       style="fill:#f3c600;stroke:#666666;stroke-width:0.999999;stroke-linecap:round"
        d="M 349.48889,267.37873 V 138.37842"
        id="path2"
        sodipodi:nodetypes="cc"

@@ -56,14 +56,14 @@
        d="m 50,252 q 0,115 67,221 67,106 169,168 102,62 204,63 90,0 143,-51 9,-10 15,-17 6,-7 8,-10 l 1,-3 q 3,0 27,26 7,6 15,14 8,8 16,16 8,8 10,11 l 15,15 h 6 q 14,0 14,-7 0,-4 -32,-137 -36,-139 -36,-140 -2,-5 -5,-6 -3,-1 -18,-2 h -16 q -6,6 -6,9 0,1 1,7 1,6 2,20 1,14 1,32 0,71 -32,124 -32,53 -109,54 -26,0 -56,-7 -30,-7 -72,-24 -42,-17 -83,-56 -41,-39 -73,-93 -32,-57 -51,-133 -19,-76 -19,-124 0,-114 76,-164 48,-34 118,-34 91,0 162,68 71,68 94,148 4,13 6,15 2,2 16,2 20,0 20,-9 0,-5 -1,-9 Q 618,132 523,55 428,-22 319,-22 206,-22 128,53 50,128 50,252 Z" /><clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath145"><rect
-         style="display:none;opacity:1;fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="display:none;opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="rect145"
          width="98.999985"
          height="10.876143"
          x="661.88568"
          y="550.48541" /><path
          id="lpe_path-effect145"
-         style="opacity:1;fill:#d3d3d3;fill-opacity:1;stroke:none;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="opacity:1;fill:#666666;fill-opacity:1;stroke:none;stroke-width:0.999998;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          class="powerclip"
          d="m 656.38566,536.73004 h 109.99998 v 27.51074 H 656.38566 Z m 5.50002,13.75537 v 10.87615 h 98.99999 v -10.87615 z" /></clipPath></defs><g
      inkscape:label="Layer 1"

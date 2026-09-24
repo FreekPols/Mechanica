@@ -92,7 +92,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-1487.4825,-135.67547)"><circle
-       style="fill:none;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0"
+       style="fill:none;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:3, 3;stroke-dashoffset:0"
        id="path24"
        cx="1534.298"
        cy="182.24081"
@@ -100,7 +100,7 @@
        inkscape:export-filename="ElectronBlueSky.png"
        inkscape:export-xdpi="542.55548"
        inkscape:export-ydpi="542.55548" /><ellipse
-       style="fill:#d3d3d3;stroke:none;stroke-width:1;stroke-linecap:round;stroke-dasharray:3.00001, 3.00001;stroke-dashoffset:0"
+       style="fill:#666666;stroke:none;stroke-width:1;stroke-linecap:round;stroke-dasharray:3.00001, 3.00001;stroke-dashoffset:0"
        id="circle24"
        cx="1534.298"
        cy="182.24063"
@@ -129,7 +129,7 @@
        id="path39" /><g
        id="g54"
        transform="translate(-15.100127,-5.2916667)"><path
-         style="fill:#000000;fill-opacity:1;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         style="fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 1503.0826,270.43203 h 92.631"
          id="path51" /><path
          d="m 1548.6695,270.43201 c -1.7122,-5.40071 -3.4421,-10.8014 -5.4015,-10.8014 -3.9187,0 -6.8843,21.60282 -10.8032,21.60282 -3.9187,0 -6.8842,-21.60282 -10.803,-21.60282 -1.9594,0 -3.6893,5.40069 -5.4015,10.8014"

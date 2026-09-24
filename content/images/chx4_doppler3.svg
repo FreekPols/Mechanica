@@ -282,10 +282,10 @@
        style="fill:none;stroke:#00a6d6;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
        d="M 28.945361,276.73134 86.957718,224.49678"
        id="path52" /><path
-       style="fill:#f3c600;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       style="fill:#f3c600;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
        d="M 28.945361,276.73134 H 176.79003"
        id="path30" /><path
-       style="fill:#f3c600;stroke:#d3d3d3;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       style="fill:#f3c600;stroke:#666666;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#ArrowWide)"
        d="M 28.945361,276.30197 V 192.56352"
        id="path31" /><g
        data-mml-node="mi"
