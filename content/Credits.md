@@ -200,8 +200,14 @@ First edition.
 
 This book is part of the collection of [Interactive Open Textbooks](https://textbooks.open.tudelft.nl/textbooks/catalog/category/interactive) of [TU Delft OPEN Publishing | Delft University of Technology, The Netherlands](https://textbooks.open.tudelft.nl/textbooks/index).
 
-:::{image} images/OPEN_reg.svg
+:::{image} images/OPEN_reg.png
 :width: 40%
+:class: dark:hidden
 
 :::
 
+:::{image} images/OPEN_reg_white.png
+:width: 40%
+:class: hidden dark:block
+
+:::
