@@ -55,7 +55,7 @@ jobs:
           BASE_URL: /dev/mecharela
         run: |
           myst clean --templates --cache -y
-          myst build --execute --html --debug
+          myst build --html --debug
 
           echo "MyST version:"
           myst --version
