@@ -3,4 +3,3 @@ matplotlib
 ipython
 ipywidgets
 jupyter-book == 2.1.6
-jupyter-book-marimo

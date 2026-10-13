@@ -231,12 +231,11 @@ In {numref}`Figure {number} <fig:Scattering2D3D.png>` scattering in a 2D world a
 
 Already in the 18$^{\text{th}}$ century, work was done on what we call the kinetic theory of gases. The Swiss scientist Daniel Bernoulli proposed that gases were a large collection of molecules, i.e tiny particles moving in all directions. According to Bernoulli, their collision with walls was felt macroscopically as pressure and their averaged kinetic energy was in essence the temperature of the gas.
 
-`````{figure}
-:label: fig_hist_bernmax2
-:class: pull-up
-````{figure}
-:class: grid grid-cols-2 items-end gap-4 
 
+
+````{figure}
+:class: grid grid-cols-2 items-end gap-4 subfigure-grid
+:label: fig_hist_bernmax2
 ```{figure} ../images/DanielBernoulli.png
 :label: fig:DanielBernoulli.png
 :width: 70%
@@ -253,9 +252,9 @@ Daniel Bernoulli (1700-1782). From [Wikimedia Commons](https://commons.wikimedia
 James Clerk Maxwell (1831-1879) From [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:James_Clerk_Maxwell.png), public domain
 ```
 
-````
 Two famous scientists working on the physics of gases.
-`````
+````
+
 It took a while before these ideas were accepted, partly because the law on conservation of energy was not fully developed. Moreover, people had difficulty accepting that at a molecular level collisions could be perfectly elastic.
 
 With the further development of Thermodynamics, the kinetic theory of gases also refined. In 1856, August Krönig came up with a simple kinetic model for gases in which he only considered the possibility of translational motion of the molecules. In essence, he treated gas molecules as point particles. A year later, Rudolf Clausius incorporated the possibility of rotation and vibrations. Two years after this, James Clerk Maxwell continued along this line. He found the velocity distribution of the molecules and established a firm connection between temperature and the average kinetic energy of a molecule. However, he also noted that the theoretical predictions were not in line with experiments. What was the problem? 
@@ -353,12 +352,10 @@ The idea was to check the speed of light for two observers $S$ and $S'$. One is 
 
 The experiment essentially consists of a [Michelson interferometer](https://en.wikipedia.org/wiki/Michelson_interferometer). Light is send to a 50/50 beam splitter such that half of the light is reflected towards arm $L_1$ and half is transmitted to arm $L_2$. The mirrors at the end of each arm reflect the light back. On the way back again, half of the light is transmitted and reflected at the beamsplitter, such that half of the light from both arms is now traveling downwards towards the image plane/camera. At the image plane the light from both arms forms an interference pattern, depending on the path length difference induced by the difference of $L_1-L_2$.
 
-`````{figure}
-:label: fig_hist_bernmax
-:class: pull-up
 
 ````{figure}
-:class: grid grid-cols-2 items-end gap-4 
+:class: grid grid-cols-2 items-end gap-4 subfigure-grid
+:label: fig_hist_bernmax
 
 ```{figure} ../images/MichelsonMorleyExp.png
 :label: fig:MichelsonMorleyExp.png
@@ -375,10 +372,9 @@ The experiment essentially consists of a [Michelson interferometer](https://en.w
 
 ```
 
-```` 
 
 Michelson & Morley setup
-`````
+````
 
 
 The whole setup is mounted for stability on a heavy table that is floating in liquid mercury, to reduce vibrations coupling to the setup. If now one arm is parallel to the earth's orbit with $V=30 \; \mathrm{km/s}$, while the other is perpendicular to it, there will be some difference between the length of the two paths traveled: $\Delta \lambda_1$. If we rotate the setup by $90 \degree$ (easily done in the mercury bath), then the roles of $L_1$ and $L_2$ are exchanged, leading to another phase shift $\Delta \lambda_2$. Therefore after rotation the fringes of the interference pattern on the detector should shift as
