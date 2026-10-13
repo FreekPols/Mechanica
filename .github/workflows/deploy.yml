@@ -46,11 +46,25 @@ jobs:
       - name: Install MyST Markdown
         run: npm install -g mystmd
 
-      - name: Build HTML (main)
+      # - name: Build HTML (main)
+      #   env:
+      #     BASE_URL: /${{ github.event.repository.name }}
+      #   run: myst build --html --debug
+      - name: Build HTML (Podman comparison)
         env:
-          BASE_URL: /${{ github.event.repository.name }}
-        run: myst build --html --debug
-      
+          BASE_URL: /dev/mecharela
+        run: |
+          myst clean --templates --cache -y
+          myst build --execute --html --debug
+
+          echo "MyST version:"
+          myst --version
+
+          echo "AnyWidget files:"
+          find _build/html/build -name '*.mjs' -print
+
+          echo "Public files:"
+          find _build/site/public -name '*.mjs' -print  
 
         #debuggen
       - name: Inspect AnyWidget assets
