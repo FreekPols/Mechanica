@@ -51,10 +51,11 @@ jobs:
       #     BASE_URL: /${{ github.event.repository.name }}
       #   run: myst build --html --debug
       - name: Build HTML (Podman comparison)
-
+        env:
+          BASE_URL: /${{ github.event.repository.name }}
         run: |
           myst clean --templates --cache -y
-          myst build --html --debug
+          myst build --html --execute --debug
 
           echo "MyST version:"
           myst --version
