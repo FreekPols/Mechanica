@@ -51,6 +51,20 @@ jobs:
           BASE_URL: /${{ github.event.repository.name }}
         run: myst build --html --debug
       
+
+        #debuggen
+      - name: Inspect AnyWidget assets
+        run: |
+          echo "MyST version:"
+          myst --version
+
+          echo "Generated MJS files:"
+          find _build -type f -name '*.mjs' -print
+
+          echo "References to lightbox:"
+          grep -R -n -m 3 'lightbox-.*\.mjs' \
+            _build/html || true
+            
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
